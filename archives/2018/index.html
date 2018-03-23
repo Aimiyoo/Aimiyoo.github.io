@@ -15,22 +15,12 @@
 
 
 
-<meta name="description" content="Introductionpyenv lets you easily switch between multiple versions of Python. It’s simple, unobtrusive, and follows the UNIX tradition of single-purpose tools that do one thing well.
-Installation
-chec">
-<meta property="og:type" content="article">
-<meta property="og:title" content="pyenv的使用">
-<meta property="og:url" content="http://aimiyoo.github.io/2017/08/01/pyenv的使用/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Aimiyoo' Blog">
+<meta property="og:url" content="http://aimiyoo.github.io/archives/2018/index.html">
 <meta property="og:site_name" content="Aimiyoo' Blog">
-<meta property="og:description" content="Introductionpyenv lets you easily switch between multiple versions of Python. It’s simple, unobtrusive, and follows the UNIX tradition of single-purpose tools that do one thing well.
-Installation
-chec">
-<meta property="og:updated_time" content="2018-03-23T03:07:55.552Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="pyenv的使用">
-<meta name="twitter:description" content="Introductionpyenv lets you easily switch between multiple versions of Python. It’s simple, unobtrusive, and follows the UNIX tradition of single-purpose tools that do one thing well.
-Installation
-chec">
+<meta name="twitter:title" content="Aimiyoo' Blog">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -62,7 +52,7 @@ chec">
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>pyenv的使用 | Aimiyoo&#39; Blog</title>
+<title>Archives: 2018 | Aimiyoo&#39; Blog</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -72,8 +62,8 @@ chec">
         fancybox: true,
         animate: true,
         isHome: false,
-        isPost: true,
-        isArchive: false,
+        isPost: false,
+        isArchive: true,
         isTag: false,
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
@@ -266,215 +256,56 @@ chec">
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-pyenv的使用" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap">
   
-    <div class="article-meta">
-      <a href="/2017/08/01/pyenv的使用/" class="article-date">
-      <time datetime="2017-08-01T09:40:57.000Z" itemprop="datePublished">2017-08-01</time>
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2018" class="archive-year">2018</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+          <div class="article-meta">
+              <a href="/2018/03/23/hello-world/" class="archive-article-date">
+      <time datetime="2018-03-23T03:11:05.290Z" itemprop="datePublished">03-23</time>
 </a>
 
 
-    </div>
+        </div>
+         
   
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      pyenv的使用
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2018/03/23/hello-world/">Hello World</a>
     </h1>
   
 
-      </header>
-      
-      <div class="article-info article-info-post">
-        
-
-        
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li></ul>
-    </div>
-
-        <div class="clearfix"></div>
-      </div>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
+        <div class="article-info info-on-archive">
           
-        <h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p><strong>pyenv lets you easily switch between multiple versions of Python. It’s simple, unobtrusive, and follows the UNIX tradition of single-purpose tools that do one thing well.</strong></p>
-<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><ol>
-<li><p><strong>check out pyenv where you want it installed</strong></p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">clone</span> https://github.com/pyenv/pyenv.git ~/.pyenv</div></pre></td></tr></table></figure>
-</li>
-<li><p><strong>define environment</strong></p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">echo</span> <span class="string">'export PYENV_ROOT="$HOME/.pyenv"'</span> &gt;&gt; ~/.bashrc</div><div class="line">$ <span class="built_in">echo</span> <span class="string">'export PATH="$PYENV_ROOT/bin:$PATH"'</span> &gt;&gt; ~/.bashrc</div><div class="line">$ <span class="built_in">echo</span> <span class="string">'eval "$(pyenv init -)"'</span> &gt;&gt; ~/.bashrc</div><div class="line">$ <span class="built_in">source</span> ~/.bashrc</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><ol>
-<li><p><strong>view available python versions</strong></p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ pyenv install --list</div></pre></td></tr></table></figure>
-</li>
-<li><p><strong>install python</strong></p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ pyenv install 2.7.13 -v</div><div class="line">$ pyevn install 3.6.2 -v</div><div class="line">$ pyenv <span class="built_in">rehash</span></div></pre></td></tr></table></figure>
-</li>
-<li><p><strong>select the vesion which you want to use</strong><br> now you have two python versions in your system, you can select the version which you want to use</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ pyenv global 2.7.9</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><ol>
-<li><strong>pyenv global {version} not work</strong><br> solution: <pre><code>$ pyenv local --unset
-</code></pre></li>
-</ol>
-<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="https://github.com/pyenv/pyenv" target="_blank" rel="external">https://github.com/pyenv/pyenv</a></p>
 
-      
-    </div>
-    
-  </div>
-  
-    
-    <div class="copyright">
-        <p><span>本文标题:</span><a href="/2017/08/01/pyenv的使用/">pyenv的使用</a></p>
-        <p><span>文章作者:</span><a href="/" title="回到主页">Aimiyoo</a></p>
-        <p><span>发布时间:</span>2017-08-01, 17:40:57</p>
-        <p><span>最后更新:</span>2018-03-23, 11:07:55</p>
-        <p>
-            <span>原始链接:</span><a class="post-url" href="/2017/08/01/pyenv的使用/" title="pyenv的使用">http://aimiyoo.github.io/2017/08/01/pyenv的使用/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://aimiyoo.github.io/2017/08/01/pyenv的使用/　　作者: Aimiyoo" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
-            <script> var clipboard = new Clipboard('.copy-path'); </script>
-        </p>
-        <p>
-            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
-        </p>
+          
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
     </div>
 
-
-
-    <nav id="article-nav">
-        
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2017/08/10/ftp超时假死问题解决方法/">
-                    ftp超时假死问题解决方法
-                </a>
-            </div>
-        
-        
-            <div id="article-nav-older" class="article-nav-title">
-                <a href="/2017/05/12/elasticsearch/">
-                    elasticsearch
-                </a>
-            </div>
-        
-    </nav>
-
-  
-</article>
-
-    <div id="toc" class="toc-article">
-        <strong class="toc-title">文章目录</strong>
-        
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Introduction"><span class="toc-number">1.</span> <span class="toc-text">Introduction</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Installation"><span class="toc-number">2.</span> <span class="toc-text">Installation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Usage"><span class="toc-number">3.</span> <span class="toc-text">Usage</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Note"><span class="toc-number">4.</span> <span class="toc-text">Note</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Reference"><span class="toc-number">5.</span> <span class="toc-text">Reference</span></a></li></ol>
-        
-    </div>
-    <style>
-        .left-col .switch-btn,
-        .left-col .switch-area {
-            display: none;
-        }
-        .toc-level-3 i,
-        .toc-level-3 ol {
-            display: none !important;
-        }
-    </style>
-
-    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
-
-    <script>
-        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
-    </script>
-
-
-
-    
-<div class="share">
-    
-        <div class="bdsharebuttonbox">
-            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
-            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
-            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
-            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
-            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
-            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
         </div>
-        <script>
-            window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"pyenv的使用　| Aimiyoo' Blog　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
-        </script>
-    
+        <div class="clearfix"></div>
+    </header>
+  </div>
+</article>
+  
+  
+    </div></section>
+  
 
     
-</div>
 
-
-
-
-
-
-
-    
-      <div class="duoshuo" id="comments">
-    <div id="comment-box" ></div>
-    <div class="ds-thread" id="ds-thread" data-thread-key="2017/08/01/pyenv的使用/" data-title="pyenv的使用" data-url="http://aimiyoo.github.io/2017/08/01/pyenv的使用/"></div>
-    <script>
-        var duoshuoQuery = {short_name:"aimiyoo"};
-        var loadComment = function(){
-            var d = document, s = d.createElement('script');
-            s.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-            s.async = true; s.charset = 'UTF-8';
-            (d.head || d.body).appendChild(s);
-        }
-
-        
-    </script>
-    
-    <script> loadComment(); </script>
-
-</div>
-    
-
-
-
-
-    <div class="scroll" id="post-nav-button">
-        
-            <a href="/2017/08/10/ftp超时假死问题解决方法/" title="上一篇: ftp超时假死问题解决方法">
-                <i class="fa fa-angle-left"></i>
-            </a>
-        
-
-        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
-
-        
-            <a href="/2017/05/12/elasticsearch/" title="下一篇: elasticsearch">
-                <i class="fa fa-angle-right"></i>
-            </a>
-        
-    </div>
-
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/03/23/hello-world/">Hello World</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/23/科学上网/">科学上网</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/08/10/ftp超时假死问题解决方法/">ftp超时假死问题解决方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/08/01/pyenv的使用/">pyenv的使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/12/elasticsearch/">elasticsearch</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/27/Terminator/">Terminator</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/12/git-learning/">git-learning</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/22/老人与火/">老人与火</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/15/我的Hexo成功了/">我的Hexo成功了</a></li></ul>
-
-
-
-
-    <script>
-        
-    </script>
 </div>
       <footer id="footer">
     <div class="outer">
