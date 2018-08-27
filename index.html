@@ -263,6 +263,63 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-shell-date-range" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2018/08/27/shell-date-range/" class="article-date">
+      <time datetime="2018-08-27T10:19:58.000Z" itemprop="datePublished">2018-08-27</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/27/shell-date-range/">shell-date-range</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> [ <span class="variable">$#</span> <span class="_">-ne</span> 2 ];<span class="keyword">then</span></div><div class="line">    <span class="built_in">echo</span> <span class="string">"usage: <span class="variable">$&#123;0&#125;</span> start_day end_day"</span></div><div class="line"><span class="keyword">fi</span></div><div class="line"></div><div class="line">result=<span class="string">""</span></div><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">day_range</span></span>()</div><div class="line">&#123;</div><div class="line">    start=<span class="variable">$1</span></div><div class="line">    end=<span class="variable">$2</span></div><div class="line">    <span class="built_in">echo</span> <span class="variable">$start</span> <span class="variable">$end</span></div><div class="line">    start_sec=`date <span class="_">-d</span> <span class="variable">$start</span> +%s`</div><div class="line">    end_sec=`date <span class="_">-d</span> <span class="variable">$end</span> +%s`</div><div class="line"></div><div class="line">    cur_date=<span class="variable">$start</span></div><div class="line">    cur_sec=`date <span class="_">-d</span> <span class="variable">$cur_date</span> +%s`</div><div class="line"></div><div class="line">    <span class="keyword">while</span> [ <span class="variable">$cur_sec</span> -le <span class="variable">$end_sec</span> ]</div><div class="line">    <span class="keyword">do</span></div><div class="line">        result=<span class="string">"<span class="variable">$&#123;result&#125;</span> <span class="variable">$&#123;cur_date&#125;</span>"</span></div><div class="line">        cur_date=`date <span class="_">-d</span> <span class="string">"<span class="variable">$cur_date</span> +1 day"</span> +%Y%m%d`</div><div class="line">        cur_sec=`date <span class="_">-d</span> <span class="variable">$cur_date</span> +%s`</div><div class="line">    <span class="keyword">done</span></div><div class="line">&#125;</div><div class="line"> </div><div class="line">day_range <span class="variable">$1</span> <span class="variable">$2</span></div><div class="line"></div><div class="line"><span class="keyword">for</span> day <span class="keyword">in</span> <span class="variable">$result</span>; <span class="keyword">do</span></div><div class="line">    <span class="built_in">echo</span> <span class="variable">$&#123;day&#125;</span></div><div class="line"><span class="keyword">done</span></div></pre></td></tr></table></figure>
+<h3 id="example"><a href="#example" class="headerlink" title="example"></a>example</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">bash batch.sh 20180101 20181231</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
