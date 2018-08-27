@@ -15,19 +15,19 @@
 
 
 
-<meta name="description" content="首先感谢Litten大神的Yilia，很不错的Hexo主题里面的很多配置，作者都已经给配置好了，很nice针对我踩过的一些坑，作以下说明：
-多说评论显示的是作者的评论如果使用多说评论的话，只需要配置主题根目录_config.yml文件中duoshuo: duoshuo-key一项即可，而duoshuo-key是你在多说注册的站点的名称，如果域名为abc.duoshuo.com，那么duoshuo-">
+<meta name="description" content="首先感谢Litten大神的Yilia，很不错的Hexo主题，里面的很多配置，作者都已经给配置好了，很nice。但是在初次使用过程中，还是遇到了一些坑，针对我踩过的一些坑，记录一下：
+多说评论显示的是作者的评论如果使用多说评论的话，只需要配置主题根目录_config.yml文件中duoshuo: duoshuo-key一项即可，而duoshuo-key是你在多说注册的站点的名称，如果域名为abc.d">
 <meta property="og:type" content="article">
 <meta property="og:title" content="我的Hexo成功了">
 <meta property="og:url" content="http://aimiyoo.github.io/2017/02/15/我的Hexo成功了/index.html">
 <meta property="og:site_name" content="Aimiyoo' Blog">
-<meta property="og:description" content="首先感谢Litten大神的Yilia，很不错的Hexo主题里面的很多配置，作者都已经给配置好了，很nice针对我踩过的一些坑，作以下说明：
-多说评论显示的是作者的评论如果使用多说评论的话，只需要配置主题根目录_config.yml文件中duoshuo: duoshuo-key一项即可，而duoshuo-key是你在多说注册的站点的名称，如果域名为abc.duoshuo.com，那么duoshuo-">
-<meta property="og:updated_time" content="2018-08-27T11:01:13.392Z">
+<meta property="og:description" content="首先感谢Litten大神的Yilia，很不错的Hexo主题，里面的很多配置，作者都已经给配置好了，很nice。但是在初次使用过程中，还是遇到了一些坑，针对我踩过的一些坑，记录一下：
+多说评论显示的是作者的评论如果使用多说评论的话，只需要配置主题根目录_config.yml文件中duoshuo: duoshuo-key一项即可，而duoshuo-key是你在多说注册的站点的名称，如果域名为abc.d">
+<meta property="og:updated_time" content="2018-08-27T11:12:05.565Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="我的Hexo成功了">
-<meta name="twitter:description" content="首先感谢Litten大神的Yilia，很不错的Hexo主题里面的很多配置，作者都已经给配置好了，很nice针对我踩过的一些坑，作以下说明：
-多说评论显示的是作者的评论如果使用多说评论的话，只需要配置主题根目录_config.yml文件中duoshuo: duoshuo-key一项即可，而duoshuo-key是你在多说注册的站点的名称，如果域名为abc.duoshuo.com，那么duoshuo-">
+<meta name="twitter:description" content="首先感谢Litten大神的Yilia，很不错的Hexo主题，里面的很多配置，作者都已经给配置好了，很nice。但是在初次使用过程中，还是遇到了一些坑，针对我踩过的一些坑，记录一下：
+多说评论显示的是作者的评论如果使用多说评论的话，只需要配置主题根目录_config.yml文件中duoshuo: duoshuo-key一项即可，而duoshuo-key是你在多说注册的站点的名称，如果域名为abc.d">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -303,20 +303,21 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>首先感谢Litten大神的Yilia，很不错的Hexo主题里面的很多配置，作者都已经给配置好了，很nice针对我踩过的一些坑，作以下说明：</p>
+        <p>首先感谢Litten大神的Yilia，很不错的Hexo主题，里面的很多配置，作者都已经给配置好了，很nice。<br>但是在初次使用过程中，还是遇到了一些坑，针对我踩过的一些坑，记录一下：</p>
 <h3 id="多说评论显示的是作者的评论"><a href="#多说评论显示的是作者的评论" class="headerlink" title="多说评论显示的是作者的评论"></a>多说评论显示的是作者的评论</h3><p>如果使用多说评论的话，只需要配置主题根目录_config.yml文件中<font color="#FF4500" size="4" face="黑体">duoshuo: duoshuo-key</font>一项即可，而<font color="#FF4500" size="4" face="黑体">duoshuo-key</font>是你在<a href="http://duoshuo.com/" target="_blank" rel="external">多说</a>注册的站点的名称，如果域名为<strong>abc.duoshuo.com</strong>，那么<font color="#FF4500" size="4" face="黑体">duoshuo-key</font>就是<font color="#FF4500" size="4" face="黑体">abc</font></p>
 <h3 id="不显示tags"><a href="#不显示tags" class="headerlink" title="不显示tags"></a>不显示tags</h3><p>作者提供的模板的.md文档格式是以下这样的：</p>
 <blockquote>
-<hr>
-<p>layout: post<br>title: “hexo主题Yilia在移动端适配的一些事”<br>date: 2015-02-23 12:58<br>tags  </p>
-<ul>
-<li>hexo  </li>
-<li>主题  </li>
-</ul>
-<hr>
-<p>结果主题、标签、时间等这些配置信息都是以正文显示出来的。<br>解决方法：将第一行的”- - - “去掉，只保留最后一行的”- - -“，”- - -“前面是配置信息，后面是正文，完美解决！</p>
+<pre><code>---  
+layout: post  
+title: &quot;hexo主题Yilia在移动端适配的一些事&quot;  
+date: 2015-02-23 12:58  
+tags  
+    - hexo  
+    - 主题  
+---
+</code></pre><p>结果主题、标签、时间等这些配置信息都是以正文显示出来的。<br>解决方法：将第一行的”- - - “去掉，只保留最后一行的”- - -“，”- - -“前面是配置信息，后面是正文，完美解决！</p>
 </blockquote>
-<h3 id="markdown编辑器"><a href="#markdown编辑器" class="headerlink" title="markdown编辑器"></a>markdown编辑器</h3><p>写博文当然少不了markdown编辑器了，不同的平台，有不同的选择，这里分享一篇文章<a href="http://www.williamlong.info/archives/4319.html" target="_blank" rel="external">好用的Markdown编辑器一览</a>。我之前在windowns平台使用的是<a href="http://www.markdownpad.com/" target="_blank" rel="external">MarkdownPad</a>，真的是非常的好用，现在使用opensuse，使用的chrome的一款<a href="https://maxiang.io/" target="_blank" rel="external">马克飞象</a>的插件，也很不错。  </p>
+<h3 id="markdown编辑器"><a href="#markdown编辑器" class="headerlink" title="markdown编辑器"></a>markdown编辑器</h3><p>写博文当然少不了markdown编辑器了，不同的平台，有不同的选择，这里分享一篇文章<a href="http://www.williamlong.info/archives/4319.html" target="_blank" rel="external">好用的Markdown编辑器一览</a>。我之前在windowns平台使用的是<a href="http://www.markdownpad.com/" target="_blank" rel="external">MarkdownPad</a>，挺好用的。现在使用opensuse系统，使用的是安装markdown插件的atom，很清爽。  </p>
 <p>至于markdown语法，网上有很多文章，试着写几篇博文，很快就可以学会了。</p>
 
       
@@ -329,7 +330,7 @@
         <p><span>本文标题:</span><a href="/2017/02/15/我的Hexo成功了/">我的Hexo成功了</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Aimiyoo</a></p>
         <p><span>发布时间:</span>2017-02-15, 19:21:17</p>
-        <p><span>最后更新:</span>2018-08-27, 19:01:13</p>
+        <p><span>最后更新:</span>2018-08-27, 19:12:05</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2017/02/15/我的Hexo成功了/" title="我的Hexo成功了">http://aimiyoo.github.io/2017/02/15/我的Hexo成功了/</a>
             <span class="copy-path" data-clipboard-text="原文: http://aimiyoo.github.io/2017/02/15/我的Hexo成功了/　　作者: Aimiyoo" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
