@@ -14,10 +14,13 @@
 <meta name="author" content="Aimiyoo" />
 
 
+    
+    
+
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Aimiyoo' Blog">
-<meta property="og:url" content="http://aimiyoo.github.io/tags/hexo/index.html">
+<meta property="og:url" content="http://aimiyoo.github.io/page/2/index.html">
 <meta property="og:site_name" content="Aimiyoo' Blog">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Aimiyoo' Blog">
@@ -48,11 +51,13 @@
 <link rel="stylesheet" href="/css/style.css">
 
 
+    <style> .article { opacity: 0;} </style>
+
 
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Tag: hexo | Aimiyoo&#39; Blog</title>
+<title>Aimiyoo&#39; Blog</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -61,10 +66,10 @@
     var yiliaConfig = {
         fancybox: true,
         animate: true,
-        isHome: false,
+        isHome: true,
         isPost: false,
         isArchive: false,
-        isTag: true,
+        isTag: false,
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
         scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
@@ -258,54 +263,86 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-我的Hexo成功了" class="article article-type-post" itemscope itemprop="blogPost">
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2018/03/23/hello-world/" class="archive-article-date">
-      <time datetime="2018-03-23T03:11:05.290Z" itemprop="datePublished">03-23</time>
+    <div class="article-meta">
+      <a href="/2017/02/15/我的Hexo成功了/" class="article-date">
+      <time datetime="2017-02-15T11:21:17.000Z" itemprop="datePublished">2017-02-15</time>
 </a>
 
 
-        </div>
-         
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/23/hello-world/">Hello World</a>
+      <a class="article-title" href="/2017/02/15/我的Hexo成功了/">我的Hexo成功了</a>
     </h1>
   
 
-        <div class="article-info info-on-archive">
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
           
+        <p>首先感谢Litten大神的Yilia，很不错的Hexo主题，里面的很多配置，作者都已经给配置好了，很nice。<br>但是在初次使用过程中，还是遇到了一些坑，针对我踩过的一些坑，记录一下：</p>
+<h3 id="多说评论显示的是作者的评论"><a href="#多说评论显示的是作者的评论" class="headerlink" title="多说评论显示的是作者的评论"></a>多说评论显示的是作者的评论</h3><p>如果使用多说评论的话，只需要配置主题根目录_config.yml文件中<font color="#FF4500" size="4" face="黑体">duoshuo: duoshuo-key</font>一项即可，而<font color="#FF4500" size="4" face="黑体">duoshuo-key</font>是你在<a href="http://duoshuo.com/" target="_blank" rel="external">多说</a>注册的站点的名称，如果域名为<strong>abc.duoshuo.com</strong>，那么<font color="#FF4500" size="4" face="黑体">duoshuo-key</font>就是<font color="#FF4500" size="4" face="黑体">abc</font></p>
+<h3 id="不显示tags"><a href="#不显示tags" class="headerlink" title="不显示tags"></a>不显示tags</h3><p>作者提供的模板的.md文档格式是以下这样的：</p>
+<blockquote>
+<pre><code>---  
+layout: post  
+title: &quot;hexo主题Yilia在移动端适配的一些事&quot;  
+date: 2015-02-23 12:58  
+tags  
+    - hexo  
+    - 主题  
+---
+</code></pre><p>结果主题、标签、时间等这些配置信息都是以正文显示出来的。<br>解决方法：将第一行的”- - - “去掉，只保留最后一行的”- - -“，”- - -“前面是配置信息，后面是正文，完美解决！</p>
+</blockquote>
+<h3 id="markdown编辑器"><a href="#markdown编辑器" class="headerlink" title="markdown编辑器"></a>markdown编辑器</h3><p>写博文当然少不了markdown编辑器了，不同的平台，有不同的选择，这里分享一篇文章<a href="http://www.williamlong.info/archives/4319.html" target="_blank" rel="external">好用的Markdown编辑器一览</a>。我之前在windowns平台使用的是<a href="http://www.markdownpad.com/" target="_blank" rel="external">MarkdownPad</a>，挺好用的。现在使用opensuse系统，使用的是安装markdown插件的atom，很清爽。  </p>
+<p>至于markdown语法，网上有很多文章，试着写几篇博文，很快就可以学会了。</p>
 
-          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
     </div>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
+      
+      <div class="clearfix"></div>
+    </div>
     
+  </div>
+  
+</article>
 
+
+
+
+
+
+
+
+
+  
+  
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    </nav>
+  
 </div>
       <footer id="footer">
     <div class="outer">
