@@ -17,9 +17,13 @@
   
   
     
+      
     
-  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
-  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+    
+      
+    
+  <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+  <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-flash.min.css" rel="stylesheet">
 
 
 
@@ -47,7 +51,9 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+    
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" rel="stylesheet" type="text/css" />
 
 
 
@@ -93,7 +99,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+  
+
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css" />
 
 <link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
 
@@ -110,6 +118,10 @@
   <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#fff">
 
 
+  <link rel="manifest" href="/images/manifest.json">
+
+
+  <meta name="msapplication-config" content="/images/browserconfig.xml" />
 
 
 
@@ -127,11 +139,12 @@
 
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Aimiyoo' Blog">
+<meta property="og:title" content="Aimiyoo&#39; Blog">
 <meta property="og:url" content="http://aimiyoo.github.io/index.html">
-<meta property="og:site_name" content="Aimiyoo' Blog">
+<meta property="og:site_name" content="Aimiyoo&#39; Blog">
+<meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Aimiyoo' Blog">
+<meta name="twitter:title" content="Aimiyoo&#39; Blog">
 
 
 
@@ -278,15 +291,49 @@
             
               <i class="menu-item-icon fa fa-fw fa-signal"></i> <br />
             
-            top
+            TopX
           </a>
         </li>
       
 
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
   
 </nav>
 
@@ -320,7 +367,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aimiyoo">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/aimiyoo.png">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -364,17 +411,6 @@
 
           
           
-             <span id="/2018/08/28/关于学习/" class="leancloud_visitors" data-flag-title="关于学习">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
 
           
 
@@ -391,7 +427,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  
+                  945
                 </span>
               
 
@@ -418,7 +454,7 @@
       
         
           
-            <p>追求的是宽度，还是深度？  </p>
+            <script src="/assets/js/APlayer.min.js"> </script><p>追求的是宽度，还是深度？  </p>
 <p>目前阶段，可以拓展自己的宽度，开眼看世界  </p>
 <p>但是要注意修炼内功，内功修炼好了，修炼任何一门外功，皆在日出日落之间  </p>
 <p>我始终认为，技术都是相通的，再猴赛雷的技术，语言，框架都有波峰波谷，但是思想原理，存在的意义不会变（存在即是真理），这是历史发展的趋势所决定的，当然，技术也有发展历史，它只是整个历史发展的一部分，符合历史发展的趋势，是历史潮流的一叶扁舟</p>
@@ -481,7 +517,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aimiyoo">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/aimiyoo.png">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -525,17 +561,6 @@
 
           
           
-             <span id="/2018/08/27/shell-date-range/" class="leancloud_visitors" data-flag-title="shell-date-range">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
 
           
 
@@ -552,7 +577,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  
+                  77
                 </span>
               
 
@@ -579,8 +604,38 @@
       
         
           
-            <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> [ <span class="variable">$#</span> <span class="_">-ne</span> 2 ];<span class="keyword">then</span></div><div class="line">    <span class="built_in">echo</span> <span class="string">"usage: <span class="variable">$&#123;0&#125;</span> start_day end_day"</span></div><div class="line"><span class="keyword">fi</span></div><div class="line"></div><div class="line">result=<span class="string">""</span></div><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">day_range</span></span>()</div><div class="line">&#123;</div><div class="line">    start=<span class="variable">$1</span></div><div class="line">    end=<span class="variable">$2</span></div><div class="line">    <span class="built_in">echo</span> <span class="variable">$start</span> <span class="variable">$end</span></div><div class="line">    start_sec=`date <span class="_">-d</span> <span class="variable">$start</span> +%s`</div><div class="line">    end_sec=`date <span class="_">-d</span> <span class="variable">$end</span> +%s`</div><div class="line"></div><div class="line">    cur_date=<span class="variable">$start</span></div><div class="line">    cur_sec=`date <span class="_">-d</span> <span class="variable">$cur_date</span> +%s`</div><div class="line"></div><div class="line">    <span class="keyword">while</span> [ <span class="variable">$cur_sec</span> -le <span class="variable">$end_sec</span> ]</div><div class="line">    <span class="keyword">do</span></div><div class="line">        result=<span class="string">"<span class="variable">$&#123;result&#125;</span> <span class="variable">$&#123;cur_date&#125;</span>"</span></div><div class="line">        cur_date=`date <span class="_">-d</span> <span class="string">"<span class="variable">$cur_date</span> +1 day"</span> +%Y%m%d`</div><div class="line">        cur_sec=`date <span class="_">-d</span> <span class="variable">$cur_date</span> +%s`</div><div class="line">    <span class="keyword">done</span></div><div class="line">&#125;</div><div class="line"></div><div class="line">day_range <span class="variable">$1</span> <span class="variable">$2</span></div><div class="line"></div><div class="line"><span class="keyword">for</span> day <span class="keyword">in</span> <span class="variable">$result</span>; <span class="keyword">do</span></div><div class="line">    <span class="built_in">echo</span> <span class="variable">$&#123;day&#125;</span></div><div class="line"><span class="keyword">done</span></div></pre></td></tr></table></figure>
-<h3 id="example"><a href="#example" class="headerlink" title="example"></a>example</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ bash batch.sh 20180101 20181231</div></pre></td></tr></table></figure>
+            <script src="/assets/js/APlayer.min.js"> </script><pre><code class="bash">if [ $# -ne 2 ];then
+    echo &quot;usage: ${0} start_day end_day&quot;
+fi
+
+result=&quot;&quot;
+function day_range()
+{
+    start=$1
+    end=$2
+    echo $start $end
+    start_sec=`date -d $start +%s`
+    end_sec=`date -d $end +%s`
+
+    cur_date=$start
+    cur_sec=`date -d $cur_date +%s`
+
+    while [ $cur_sec -le $end_sec ]
+    do
+        result=&quot;${result} ${cur_date}&quot;
+        cur_date=`date -d &quot;$cur_date +1 day&quot; +%Y%m%d`
+        cur_sec=`date -d $cur_date +%s`
+    done
+}
+
+day_range $1 $2
+
+for day in $result; do
+    echo ${day}
+done
+</code></pre>
+<h3 id="example"><a href="#example" class="headerlink" title="example"></a>example</h3><pre><code class="bash">$ bash batch.sh 20180101 20181231
+</code></pre>
 
           
         
@@ -634,7 +689,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aimiyoo">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/aimiyoo.png">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -678,17 +733,6 @@
 
           
           
-             <span id="/2018/03/23/hello-world/" class="leancloud_visitors" data-flag-title="Hello World">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
 
           
 
@@ -705,7 +749,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  
+                  74
                 </span>
               
 
@@ -732,15 +776,19 @@
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+            <script src="/assets/js/APlayer.min.js"> </script><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
           
         
@@ -794,7 +842,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aimiyoo">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/aimiyoo.png">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -838,17 +886,6 @@
 
           
           
-             <span id="/2017/10/23/科学上网/" class="leancloud_visitors" data-flag-title="科学上网">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
 
           
 
@@ -865,7 +902,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  
+                  266
                 </span>
               
 
@@ -892,20 +929,20 @@
       
         
           
-            <h2 id="Hosts"><a href="#Hosts" class="headerlink" title="Hosts"></a>Hosts</h2><p>可以通过修改系统的hosts文件，来达到免费科学上网的目的。<br><a href="https://www.zhihu.com/question/19782572" target="_blank" rel="external">通过host文件科学上网原理</a></p>
-<p>推荐几个获取hosts文件的网址：<br><a href="https://laod.cn/hosts/2017-google-hosts.html" target="_blank" rel="external">老D博客</a><br><a href="https://github.com/racaljk/hosts" target="_blank" rel="external">racaljk Github</a></p>
+            <script src="/assets/js/APlayer.min.js"> </script><h2 id="Hosts"><a href="#Hosts" class="headerlink" title="Hosts"></a>Hosts</h2><p>可以通过修改系统的hosts文件，来达到免费科学上网的目的。<br><a href="https://www.zhihu.com/question/19782572" target="_blank" rel="noopener">通过host文件科学上网原理</a></p>
+<p>推荐几个获取hosts文件的网址：<br><a href="https://laod.cn/hosts/2017-google-hosts.html" target="_blank" rel="noopener">老D博客</a><br><a href="https://github.com/racaljk/hosts" target="_blank" rel="noopener">racaljk Github</a></p>
 <p>优点：1.免费，2.方便；<br>缺点：1.不稳定，需要不定时更新hosts文件，2.有些网站无法通过此方式科学上网，譬如youtube</p>
-<h2 id="VPN"><a href="#VPN" class="headerlink" title="VPN"></a>VPN</h2><p><a href="http://vc2tea.com/whats-shadowsocks/" target="_blank" rel="external">通过vpn科学上网原理</a></p>
+<h2 id="VPN"><a href="#VPN" class="headerlink" title="VPN"></a>VPN</h2><p><a href="http://vc2tea.com/whats-shadowsocks/" target="_blank" rel="noopener">通过vpn科学上网原理</a></p>
 <p>获取vpn帐号的话，有这么几种方式：</p>
 <ol>
 <li>购买vpn帐号，直接就可以使用</li>
 <li>不定时上网寻找免费vpn帐号</li>
-<li>搭建自己vpn的服务器（本人使用<a href="https://www.bwh1.net/" target="_blank" rel="external">BandwagonHost VPS</a>）</li>
+<li>搭建自己vpn的服务器（本人使用<a href="https://www.bwh1.net/" target="_blank" rel="noopener">BandwagonHost VPS</a>）</li>
 </ol>
 <p>推荐几个自己用过的比较好用的shadowsocks工具：</p>
 <ol>
 <li>windows平台：<strong>shadowsocks-gui</strong>，点击安装后，输入帐号密码即可使用</li>
-<li>linux平台：参考<a href="https://github.com/shadowsocks/shadowsocks/tree/master" target="_blank" rel="external">shadowsocks</a>。Shadowsocks使用的socks5协议,而终端很多工具目前只支持http和https等协议，所以我们要用工具把socks5转成http协议。参考<a href="http://www.renhl.com/linux/2017/02/03/use-shadowsocks-and-privoxy" target="_blank" rel="external">privoxy</a></li>
+<li>linux平台：参考<a href="https://github.com/shadowsocks/shadowsocks/tree/master" target="_blank" rel="noopener">shadowsocks</a>。Shadowsocks使用的socks5协议,而终端很多工具目前只支持http和https等协议，所以我们要用工具把socks5转成http协议。参考<a href="http://www.renhl.com/linux/2017/02/03/use-shadowsocks-and-privoxy" target="_blank" rel="noopener">privoxy</a></li>
 <li>iphone：<strong>Wingy</strong>，点击安装后，输入帐号密码即可使用</li>
 </ol>
 
@@ -961,7 +998,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aimiyoo">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/aimiyoo.png">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1005,17 +1042,6 @@
 
           
           
-             <span id="/2017/08/10/ftp超时假死问题解决方法/" class="leancloud_visitors" data-flag-title="ftp超时假死问题解决方法">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
 
           
 
@@ -1032,7 +1058,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  
+                  638
                 </span>
               
 
@@ -1059,19 +1085,60 @@
       
         
           
-            <h2 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h2><p>由于工作过程中，经常需要在服务器之间，用ftp传送数据，所以需要写shell脚本，自动化get或者put大量数据。</p>
+            <script src="/assets/js/APlayer.min.js"> </script><h2 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h2><p>由于工作过程中，经常需要在服务器之间，用ftp传送数据，所以需要写shell脚本，自动化get或者put大量数据。</p>
 <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><p>但是当单个文件比较大的时候，传输时间比较长，ftp客户端会出现假死状况，即一个文件传输成功，脚本却无法执行下一步，一直被阻塞，导致后续的文件无法被传送。</p>
 <p><strong>究其原因</strong>，是因为FTP使用两个TCP连接来通信，一条控制连接(control connection)用来提交命令和接受回复；一条数据连接(data connection)来处理实际的文件传输。在文件传输过程中，控制连接是很容易进入空闲状态的，TCP标准也没有规定一个连接的最大空闲时间。但是路由器和防火墙经常会把空闲的连接给关闭掉，并且不通知双方，就造成了传输100%但最后还是超时的现象。</p>
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ol>
-<li><p><strong>将大文件切分成较小的文件进行传输</strong></p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ split -b 1000k <span class="built_in">test</span> example.</div></pre></td></tr></table></figure>
-<p> 上边的命令是将test文件切分成大小为1M的小文件，每个文件的文件名以example为前缀。<br> 所以你最后看到的就是这样的文件：</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ example.a example.b example.c</div></pre></td></tr></table></figure>
-<p> 这样话，小文件传输不会超时，出现假死的状况。最后接收文件的另一方需要按照前缀将文件合并起来。</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cat example.* &gt; <span class="built_in">test</span></div></pre></td></tr></table></figure>
+<li><strong>将大文件切分成较小的文件进行传输</strong><pre><code class="bash"> $ split -b 1000k test example.
+</code></pre>
+ 上边的命令是将test文件切分成大小为1M的小文件，每个文件的文件名以example为前缀。<br> 所以你最后看到的就是这样的文件：<pre><code class="bash"> $ example.a example.b example.c
+</code></pre>
+ 这样话，小文件传输不会超时，出现假死的状况。最后接收文件的另一方需要按照前缀将文件合并起来。<pre><code class="bash"> cat example.* &gt; test
+</code></pre>
 </li>
 <li><p><strong>写脚本，kill掉ftp -v -n进程</strong><br> 观察发现，ftp出现假死状况以后，ftp -v -n这个进程总是在后台，而kill掉这个进程以后，自动化脚本可以继续向下执行。<br> 所以，我们可以写一个脚本，定时的检查接收到的文件大小，如果两次检查同一个文件的大小一致，说明该文件已经传输完毕，可以将ftp -v -n进程kill掉，继续接收下一个文件。</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#本地目录</span></div><div class="line">local_root=<span class="string">"/home/data/test"</span></div><div class="line">process_name=<span class="string">"ftp -v -n"</span></div><div class="line"></div><div class="line">all_files=`ls <span class="variable">$local_root</span>`</div><div class="line"><span class="keyword">for</span> file <span class="keyword">in</span> <span class="variable">$all_files</span>;<span class="keyword">do</span></div><div class="line">    last_file=<span class="variable">$file</span></div><div class="line"><span class="keyword">done</span></div><div class="line"><span class="built_in">echo</span> <span class="variable">$last_file</span></div><div class="line">size_of_last_file=`du -b <span class="variable">$&#123;local_root&#125;</span><span class="variable">$&#123;last_file&#125;</span>|awk <span class="string">'&#123;print $1&#125;'</span>`</div><div class="line">sleep 30</div><div class="line"></div><div class="line"><span class="keyword">while</span> <span class="literal">true</span>;<span class="keyword">do</span></div><div class="line">    size_new=`du -b <span class="variable">$&#123;local_root&#125;</span><span class="variable">$&#123;last_file&#125;</span>|awk <span class="string">'&#123;print $1&#125;'</span>`</div><div class="line">    <span class="keyword">if</span> [ <span class="variable">$size_new</span> <span class="_">-ne</span> <span class="variable">$size_of_last_file</span> ];<span class="keyword">then</span></div><div class="line">        size_of_last_file=<span class="variable">$size_new</span></div><div class="line">        sleep 60</div><div class="line">    <span class="keyword">else</span></div><div class="line">        <span class="comment">#如果是最后一个文件，跳出循环</span></div><div class="line">        <span class="keyword">if</span> [ <span class="variable">$last_file</span> == <span class="string">"2017-06-30.tar.gz"</span> ];<span class="keyword">then</span></div><div class="line">            <span class="built_in">break</span></div><div class="line">        <span class="keyword">fi</span></div><div class="line"></div><div class="line">        process_id=`ps -ef | grep <span class="string">"<span class="variable">$&#123;process_name&#125;</span>"</span> | grep -v <span class="string">"grep"</span> | awk <span class="string">'&#123;print $2&#125;'</span>`</div><div class="line">        <span class="keyword">for</span> id <span class="keyword">in</span> <span class="variable">$process_id</span>;<span class="keyword">do</span></div><div class="line">            <span class="built_in">kill</span> -9 <span class="variable">$id</span></div><div class="line">            <span class="built_in">echo</span> <span class="string">"killed <span class="variable">$id</span>"</span></div><div class="line">        <span class="keyword">done</span></div><div class="line">    </div><div class="line">        <span class="comment">#为了获取到新的文件</span></div><div class="line">        sleep 30</div><div class="line"></div><div class="line">        all_files=`ls <span class="variable">$local_root</span>`</div><div class="line">        <span class="keyword">for</span> file <span class="keyword">in</span> <span class="variable">$all_files</span>;<span class="keyword">do</span></div><div class="line">            last_file=<span class="variable">$file</span></div><div class="line">        <span class="keyword">done</span></div><div class="line">        <span class="built_in">echo</span> <span class="variable">$last_file</span></div><div class="line">        size_of_last_file=`du -b <span class="variable">$&#123;local_root&#125;</span><span class="variable">$&#123;last_file&#125;</span>|awk <span class="string">'&#123;print $1&#125;'</span>`</div><div class="line">        sleep 1200</div><div class="line">    <span class="keyword">fi</span></div><div class="line"><span class="keyword">done</span></div></pre></td></tr></table></figure>
+<pre><code class="bash"> #本地目录
+ local_root=&quot;/home/data/test&quot;
+ process_name=&quot;ftp -v -n&quot;
+
+ all_files=`ls $local_root`
+ for file in $all_files;do
+     last_file=$file
+ done
+ echo $last_file
+ size_of_last_file=`du -b ${local_root}${last_file}|awk &#39;{print $1}&#39;`
+ sleep 30
+
+ while true;do
+     size_new=`du -b ${local_root}${last_file}|awk &#39;{print $1}&#39;`
+     if [ $size_new -ne $size_of_last_file ];then
+         size_of_last_file=$size_new
+         sleep 60
+     else
+         #如果是最后一个文件，跳出循环
+         if [ $last_file == &quot;2017-06-30.tar.gz&quot; ];then
+             break
+         fi
+
+         process_id=`ps -ef | grep &quot;${process_name}&quot; | grep -v &quot;grep&quot; | awk &#39;{print $2}&#39;`
+         for id in $process_id;do
+             kill -9 $id
+             echo &quot;killed $id&quot;
+         done
+
+         #为了获取到新的文件
+         sleep 30
+
+         all_files=`ls $local_root`
+         for file in $all_files;do
+             last_file=$file
+         done
+         echo $last_file
+         size_of_last_file=`du -b ${local_root}${last_file}|awk &#39;{print $1}&#39;`
+         sleep 1200
+     fi
+ done
+</code></pre>
 </li>
 </ol>
 
@@ -1127,7 +1194,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aimiyoo">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/aimiyoo.png">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1171,17 +1238,6 @@
 
           
           
-             <span id="/2017/08/01/pyenv的使用/" class="leancloud_visitors" data-flag-title="pyenv的使用">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
 
           
 
@@ -1198,7 +1254,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  
+                  147
                 </span>
               
 
@@ -1225,31 +1281,34 @@
       
         
           
-            <h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p><strong>pyenv lets you easily switch between multiple versions of Python. It’s simple, unobtrusive, and follows the UNIX tradition of single-purpose tools that do one thing well.</strong></p>
+            <script src="/assets/js/APlayer.min.js"> </script><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p><strong>pyenv lets you easily switch between multiple versions of Python. It’s simple, unobtrusive, and follows the UNIX tradition of single-purpose tools that do one thing well.</strong></p>
 <h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><ol>
-<li><p><strong>check out pyenv where you want it installed</strong></p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">clone</span> https://github.com/pyenv/pyenv.git ~/.pyenv</div></pre></td></tr></table></figure>
+<li><strong>check out pyenv where you want it installed</strong><pre><code class="bash"> $ git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+</code></pre>
 </li>
-<li><p><strong>define environment</strong></p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">echo</span> <span class="string">'export PYENV_ROOT="$HOME/.pyenv"'</span> &gt;&gt; ~/.bashrc</div><div class="line">$ <span class="built_in">echo</span> <span class="string">'export PATH="$PYENV_ROOT/bin:$PATH"'</span> &gt;&gt; ~/.bashrc</div><div class="line">$ <span class="built_in">echo</span> <span class="string">'eval "$(pyenv init -)"'</span> &gt;&gt; ~/.bashrc</div><div class="line">$ <span class="built_in">source</span> ~/.bashrc</div></pre></td></tr></table></figure>
+<li><strong>define environment</strong><pre><code class="bash"> $ echo &#39;export PYENV_ROOT=&quot;$HOME/.pyenv&quot;&#39; &gt;&gt; ~/.bashrc
+ $ echo &#39;export PATH=&quot;$PYENV_ROOT/bin:$PATH&quot;&#39; &gt;&gt; ~/.bashrc
+ $ echo &#39;eval &quot;$(pyenv init -)&quot;&#39; &gt;&gt; ~/.bashrc
+ $ source ~/.bashrc
+</code></pre>
 </li>
 </ol>
 <h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><ol>
-<li><p><strong>view available python versions</strong></p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ pyenv install --list</div></pre></td></tr></table></figure>
+<li><strong>view available python versions</strong><pre><code class="bash"> $ pyenv install --list
+</code></pre>
 </li>
-<li><p><strong>install python</strong></p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ pyenv install 2.7.13 -v</div><div class="line">$ pyevn install 3.6.2 -v</div><div class="line">$ pyenv <span class="built_in">rehash</span></div></pre></td></tr></table></figure>
+<li><strong>install python</strong><pre><code class="bash"> $ pyenv install 2.7.13 -v
+ $ pyevn install 3.6.2 -v
+ $ pyenv rehash
+</code></pre>
 </li>
-<li><p><strong>select the vesion which you want to use</strong><br> now you have two python versions in your system, you can select the version which you want to use</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ pyenv global 2.7.9</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><ol>
-<li><strong>pyenv global {version} not work</strong><br> solution: <pre><code>$ pyenv local --unset
+<li><strong>select the vesion which you want to use</strong><br> now you have two python versions in your system, you can select the version which you want to use<pre><code class="bash"> $ pyenv global 2.7.9
+</code></pre>
+<h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2></li>
+<li><strong>pyenv global {version} not work</strong><br> solution: <pre><code> $ pyenv local --unset
 </code></pre></li>
 </ol>
-<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="https://github.com/pyenv/pyenv" target="_blank" rel="external">https://github.com/pyenv/pyenv</a></p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="https://github.com/pyenv/pyenv" target="_blank" rel="noopener">https://github.com/pyenv/pyenv</a></p>
 
           
         
@@ -1303,7 +1362,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aimiyoo">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/aimiyoo.png">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1347,17 +1406,6 @@
 
           
           
-             <span id="/2017/05/12/elasticsearch/" class="leancloud_visitors" data-flag-title="elasticsearch">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
 
           
 
@@ -1374,7 +1422,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  
+                  363
                 </span>
               
 
@@ -1401,38 +1449,36 @@
       
         
           
-            <h2 id="elasticsearch-licence"><a href="#elasticsearch-licence" class="headerlink" title="elasticsearch licence"></a>elasticsearch licence</h2><ol>
-<li>注册申请地址：<a href="https://register.elastic.co/marvel_register" target="_blank" rel="external">https://register.elastic.co/marvel_register</a> ps:有效期为一年<br> 然后去注册邮箱下载licence文件</li>
-<li><p>执行以下命令</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ curl -XPUT -u elastic <span class="string">'http://host:port/_xpack/license'</span> -H <span class="string">"Content-Type: application/json"</span> <span class="_">-d</span> @license.json</div></pre></td></tr></table></figure>
-<p> 默认用户名：<strong>elastic</strong>，密码：<strong>changeme</strong><br> <em>host</em>:elasticsearch 节点的主机名，本地为localhost<br> <em>port</em>:端口号，默认为9200<br> <em>licence.json</em>:是json格式的licence文件</p>
-</li>
+            <script src="/assets/js/APlayer.min.js"> </script><h2 id="elasticsearch-licence"><a href="#elasticsearch-licence" class="headerlink" title="elasticsearch licence"></a>elasticsearch licence</h2><ol>
+<li>注册申请地址：<a href="https://register.elastic.co/marvel_register" target="_blank" rel="noopener">https://register.elastic.co/marvel_register</a> ps:有效期为一年<br> 然后去注册邮箱下载licence文件</li>
+<li>执行以下命令<pre><code class="bash"> $ curl -XPUT -u elastic &#39;http://host:port/_xpack/license&#39; -H &quot;Content-Type: application/json&quot; -d @license.json
+</code></pre>
+ 默认用户名：<strong>elastic</strong>，密码：<strong>changeme</strong><br> <em>host</em>:elasticsearch 节点的主机名，本地为localhost<br> <em>port</em>:端口号，默认为9200<br> <em>licence.json</em>:是json格式的licence文件</li>
 </ol>
 <h2 id="x-pack"><a href="#x-pack" class="headerlink" title="x-pack"></a>x-pack</h2><p><em>X-Pack is an Elastic Stack extension that bundles security, alerting, monitoring, reporting, and graph capabilities into one easy-to-install package. While the X-Pack components are designed to work together seamlessly, you can easily enable or disable the features you want to use.</em> </p>
 <ol>
-<li><p>elasticsearch 安装x-pack</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ bin/elasticsearch-plugin install x-pack</div></pre></td></tr></table></figure>
+<li>elasticsearch 安装x-pack<pre><code class="bash"> $ bin/elasticsearch-plugin install x-pack
+</code></pre>
 </li>
-<li><p>kibana 安装x-pack</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ bin/kibana-plugin install x-pack</div></pre></td></tr></table></figure>
+<li>kibana 安装x-pack<pre><code class="bash"> $ bin/kibana-plugin install x-pack
+</code></pre>
 </li>
 </ol>
 <h2 id="elaticsearch-head（elasticsearch5-x版本）"><a href="#elaticsearch-head（elasticsearch5-x版本）" class="headerlink" title="elaticsearch-head（elasticsearch5.x版本）"></a>elaticsearch-head（elasticsearch5.x版本）</h2><ol>
-<li><p>下载elasticsearch-head</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">clone</span> https://github.com/mobz/elasticsearch-head</div></pre></td></tr></table></figure>
+<li>下载elasticsearch-head<pre><code class="bash"> $ git clone https://github.com/mobz/elasticsearch-head
+</code></pre>
 </li>
-<li><p>这一步需要安装node，请自己找教程安装。安装完成以后，切换到elasticsearch-head目录下，执行：</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install</div></pre></td></tr></table></figure>
-<p> 如果安装过慢，可以通过代理安装：</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install cnpm --registry=https://registry.npm.taobao.org</div></pre></td></tr></table></figure>
+<li>这一步需要安装node，请自己找教程安装。安装完成以后，切换到elasticsearch-head目录下，执行：<pre><code class="bash"> $ npm install
+</code></pre>
+ 如果安装过慢，可以通过代理安装：<pre><code class="bash"> $ npm install cnpm --registry=https://registry.npm.taobao.org　
+</code></pre>
 </li>
-<li><p>配置elasticsearch的elasticsearch.yml文件，在文件最后添加：</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">http.cors.enabled: true  </div><div class="line">http.cors.allow-origin: &quot;*&quot;</div></pre></td></tr></table></figure>
-</li>
-<li><p>启动服务。在elasticsearch-head目录下，执行</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ grunt server</div></pre></td></tr></table></figure>
-<p> 打开<a href="http://localhost:9100网址，默认连接http://localhost:9200，就可以连上elasticsearch了。" target="_blank" rel="external">http://localhost:9100网址，默认连接http://localhost:9200，就可以连上elasticsearch了。</a><br> 如果安装了x-pack，那么需要在链接中加入验证，添加默认的用户名和密码<br> <a href="http://localhost:9100/?auth_user=elastic&amp;auth_password=changeme" target="_blank" rel="external">http://localhost:9100/?auth_user=elastic&amp;auth_password=changeme</a><br> 到此为止，如果没什么问题的话，你就可以尽情的操作elasticsearch了</p>
-</li>
+<li>配置elasticsearch的elasticsearch.yml文件，在文件最后添加：<pre><code> http.cors.enabled: true  
+ http.cors.allow-origin: &quot;*&quot;
+</code></pre></li>
+<li>启动服务。在elasticsearch-head目录下，执行<pre><code class="bash"> $ grunt server
+</code></pre>
+ 打开<a href="http://localhost:9100网址，默认连接http://localhost:9200，就可以连上elasticsearch了。" target="_blank" rel="noopener">http://localhost:9100网址，默认连接http://localhost:9200，就可以连上elasticsearch了。</a><br> 如果安装了x-pack，那么需要在链接中加入验证，添加默认的用户名和密码<br> <a href="http://localhost:9100/?auth_user=elastic&amp;auth_password=changeme" target="_blank" rel="noopener">http://localhost:9100/?auth_user=elastic&amp;auth_password=changeme</a><br> 到此为止，如果没什么问题的话，你就可以尽情的操作elasticsearch了</li>
 </ol>
 
           
@@ -1487,7 +1533,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aimiyoo">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/aimiyoo.png">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1531,17 +1577,6 @@
 
           
           
-             <span id="/2017/04/27/Terminator/" class="leancloud_visitors" data-flag-title="Terminator">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
 
           
 
@@ -1558,7 +1593,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  
+                  530
                 </span>
               
 
@@ -1585,7 +1620,7 @@
       
         
           
-            <h2 id="第一部份：关于在同一个标签内的操作"><a href="#第一部份：关于在同一个标签内的操作" class="headerlink" title="第一部份：关于在同一个标签内的操作"></a>第一部份：关于在同一个标签内的操作</h2><table>
+            <script src="/assets/js/APlayer.min.js"> </script><h2 id="第一部份：关于在同一个标签内的操作"><a href="#第一部份：关于在同一个标签内的操作" class="headerlink" title="第一部份：关于在同一个标签内的操作"></a>第一部份：关于在同一个标签内的操作</h2><table>
 <thead>
 <tr>
 <th>快捷键</th>
@@ -1806,7 +1841,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aimiyoo">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/aimiyoo.png">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1850,17 +1885,6 @@
 
           
           
-             <span id="/2017/04/12/git-learning/" class="leancloud_visitors" data-flag-title="git-learning">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
 
           
 
@@ -1877,7 +1901,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  
+                  372
                 </span>
               
 
@@ -1904,60 +1928,61 @@
       
         
           
-            <h4 id="查看分支"><a href="#查看分支" class="headerlink" title="查看分支"></a>查看分支</h4><ol>
-<li>追踪本地分支 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git branch -vv</div></pre></td></tr></table></figure>
+            <script src="/assets/js/APlayer.min.js"> </script><h4 id="查看分支"><a href="#查看分支" class="headerlink" title="查看分支"></a>查看分支</h4><ol>
+<li>追踪本地分支<pre><code class="bash"> $ git branch -vv
+</code></pre>
 </li>
 </ol>
 <h4 id="删除分支"><a href="#删除分支" class="headerlink" title="删除分支"></a>删除分支</h4><ol>
-<li><p>删除本地分支</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git branch -D branch-name</div></pre></td></tr></table></figure>
+<li>删除本地分支<pre><code class="bash"> $ git branch -D branch-name
+</code></pre>
 </li>
-<li><p>删除远程分支</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git branch -r <span class="_">-d</span> origin/branch-name</div><div class="line">$ git push origin :branch-name</div></pre></td></tr></table></figure>
-<p> <em>中间的空格不能少，相当于把一个空分支push到server上，等于删除该分支</em></p>
-</li>
+<li>删除远程分支<pre><code class="bash"> $ git branch -r -d origin/branch-name
+ $ git push origin :branch-name
+</code></pre>
+ <em>中间的空格不能少，相当于把一个空分支push到server上，等于删除该分支</em></li>
 </ol>
 <h4 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h4><ol>
-<li><p>fetch<br> 相当于从远程获取最新版本到本地，不会自动merge</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git fetch origin remoteName:branchname</div></pre></td></tr></table></figure>
+<li>fetch<br> 相当于从远程获取最新版本到本地，不会自动merge<pre><code class="bash"> $ git fetch origin remoteName:branchname
+</code></pre>
 </li>
-<li><p>checkout<br> 获取远程分支remoteName到本地新分支localName，并跳到localName分支</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git checkout origin/remoteName -b <span class="built_in">local</span>Name</div><div class="line">$ git pull origin remoteName:<span class="built_in">local</span>Name</div></pre></td></tr></table></figure>
-<p> pull相当于git fetch和git merge</p>
-</li>
+<li>checkout<br> 获取远程分支remoteName到本地新分支localName，并跳到localName分支<pre><code class="bash"> $ git checkout origin/remoteName -b localName
+ $ git pull origin remoteName:localName
+</code></pre>
+ pull相当于git fetch和git merge</li>
 </ol>
 <h4 id="更新远程分支列表"><a href="#更新远程分支列表" class="headerlink" title="更新远程分支列表"></a>更新远程分支列表</h4><ol>
-<li>更新远程分支列表 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git fetch -t -p <span class="_">-f</span></div></pre></td></tr></table></figure>
+<li>更新远程分支列表<pre><code class="bash"> $ git fetch -t -p -f
+</code></pre>
 </li>
 </ol>
 <h4 id="tag"><a href="#tag" class="headerlink" title="tag"></a>tag</h4><ol>
-<li><p>获取远程tag</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git checkout -b branch_name tag_name</div></pre></td></tr></table></figure>
+<li>获取远程tag<pre><code class="bash"> $ git checkout -b branch_name tag_name
+</code></pre>
 </li>
-<li><p>删除本地tag</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git tag <span class="_">-d</span> tagname</div></pre></td></tr></table></figure>
+<li>删除本地tag<pre><code class="bash"> $ git tag -d tagname
+</code></pre>
 </li>
-<li><p>删除远程tag</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git push origin :tagname</div></pre></td></tr></table></figure>
-<p> 或者</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git push origin --delete tagname</div></pre></td></tr></table></figure>
+<li>删除远程tag<pre><code class="bash"> $ git push origin :tagname
+</code></pre>
+ 或者<pre><code class="bash"> $ git push origin --delete tagname
+</code></pre>
 </li>
 </ol>
 <h4 id="stash"><a href="#stash" class="headerlink" title="stash"></a>stash</h4><ol>
-<li><p>添加stash<br> git stash用于保存当前的工作进度，不用commit即可checkout到另外的branch</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git stash</div></pre></td></tr></table></figure>
+<li>添加stash<br> git stash用于保存当前的工作进度，不用commit即可checkout到另外的branch<pre><code class="bash"> $ git stash
+</code></pre>
 </li>
-<li><p>显示stash列表<br> git stash list用于显示所有的stash列表</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git stash list</div></pre></td></tr></table></figure>
+<li>显示stash列表<br> git stash list用于显示所有的stash列表<pre><code class="bash"> $ git stash list
+</code></pre>
 </li>
-<li><p>恢复stash<br> git stash pop用于恢复某一次的改动，默认不加hash代表恢复最近的一次改动</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git stash pop --hash</div></pre></td></tr></table></figure>
+<li>恢复stash<br> git stash pop用于恢复某一次的改动，默认不加hash代表恢复最近的一次改动<pre><code class="bash"> $ git stash pop --hash
+</code></pre>
 </li>
-<li><p>删除stash<br> git stash drop用于删除某一次的改动，默认不加hash代表删除最近的一次改动</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git stash pop --hash</div></pre></td></tr></table></figure>
+<li>删除stash<br> git stash drop用于删除某一次的改动，默认不加hash代表删除最近的一次改动<pre><code class="bash"> $ git stash pop --hash
+</code></pre>
 </li>
-<li><p>git stash pop和git stash apply区别<br> pop命令从stash列表中<strong>恢复并删除</strong>某一次改动<br> apply命令从stash<strong>恢复但不删除</strong>某一次改动</p>
-</li>
+<li>git stash pop和git stash apply区别<br> pop命令从stash列表中<strong>恢复并删除</strong>某一次改动<br> apply命令从stash<strong>恢复但不删除</strong>某一次改动</li>
 </ol>
 
           
@@ -2012,7 +2037,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aimiyoo">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/aimiyoo.png">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -2056,17 +2081,6 @@
 
           
           
-             <span id="/2017/02/22/老人与火/" class="leancloud_visitors" data-flag-title="老人与火">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
 
           
 
@@ -2083,7 +2097,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  
+                  0
                 </span>
               
 
@@ -2110,7 +2124,7 @@
       
         
           
-            <blockquote>
+            <script src="/assets/js/APlayer.min.js"> </script><blockquote>
 <p><img src="/material/roujinnohi.gif" alt="Alt text"></p>
 </blockquote>
 
@@ -2189,9 +2203,11 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image"
-                src="/images/aimiyoo.png"
-                alt="Aimiyoo" />
+               <a href="/">
+                 <img class="site-author-image" itemprop="image"
+                   src="/images/avatar.gif"
+                   alt="Aimiyoo" />
+               </a>
             
               <p class="site-author-name" itemprop="name">Aimiyoo</p>
               <p class="site-description motion-element" itemprop="description"></p>
@@ -2241,7 +2257,46 @@
 
           
           
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-globe"></i>
+                神奇的链接
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://aimiyoo.github.io/about/" title="关于此博客" target="_blank">关于此博客</a>
+                  </li>
+                
+              </ul>
+            <div id="days"></div>
+<script>
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+BirthDay=new Date("02/15/2017 19:21:17");
+today=new Date();
+timeold=(today.getTime()-BirthDay.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(e_daysold-daysold)*24;
+hrsold=setzero(Math.floor(e_hrsold));
+e_minsold=(e_hrsold-hrsold)*60;
+minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+seconds=setzero(Math.floor((e_minsold-minsold)*60));
+document.getElementById('days').innerHTML="已运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+}
+function setzero(i){
+if (i<10)
+{i="0" + i};
+return i;
+}
+show_date_time();
+</script>
 
+            </div>
           
 
         </div>
@@ -2262,8 +2317,8 @@
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
+  <span class="with-love" id="heart">
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Aimiyoo</span>
 
@@ -2354,32 +2409,32 @@
 
   
   
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.min.js"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.ui.min.js"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
   
 
 
@@ -2439,125 +2494,326 @@
 
   
 
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
 
-
-
-
-  
-
-  
-  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
-  <script>AV.initialize("", "");</script>
-  <script>
-    function showTime(Counter) {
-      var query = new AV.Query(Counter);
-      var entries = [];
-      var $visitors = $(".leancloud_visitors");
-
-      $visitors.each(function () {
-        entries.push( $(this).attr("id").trim() );
-      });
-
-      query.containedIn('url', entries);
-      query.find()
-        .done(function (results) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.get('url');
-            var time = item.get('time');
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-          for(var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = document.getElementById(url);
-            var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if( countSpan.text() == '') {
-              countSpan.text(0);
-            }
-          }
-        })
-        .fail(function (object, error) {
-          console.log("Error: " + error.code + " " + error.message);
-        });
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
     }
 
-    function addCount(Counter) {
-      var $visitors = $(".leancloud_visitors");
-      var url = $visitors.attr('id').trim();
-      var title = $visitors.attr('data-flag-title').trim();
-      var query = new AV.Query(Counter);
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
 
-      query.equalTo("url", url);
-      query.find({
-        success: function(results) {
-          if (results.length > 0) {
-            var counter = results[0];
-            counter.fetchWhenSave(true);
-            counter.increment("time");
-            counter.save(null, {
-              success: function(counter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(counter.get('time'));
-              },
-              error: function(counter, error) {
-                console.log('Failed to save Visitor num, with error message: ' + error.message);
-              }
-            });
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
           } else {
-            var newcounter = new Counter();
-            /* Set ACL */
-            var acl = new AV.ACL();
-            acl.setPublicReadAccess(true);
-            acl.setPublicWriteAccess(true);
-            newcounter.setACL(acl);
-            /* End Set ACL */
-            newcounter.set("title", title);
-            newcounter.set("url", url);
-            newcounter.set("time", 1);
-            newcounter.save(null, {
-              success: function(newcounter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
-              },
-              error: function(newcounter, error) {
-                console.log('Failed to create');
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
               }
             });
           }
-        },
-        error: function(error) {
-          console.log('Error:' + error.code + " " + error.message);
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
         }
       });
     }
 
-    $(function() {
-      var Counter = AV.Object.extend("Counter");
-      if ($('.leancloud_visitors').length == 1) {
-        addCount(Counter);
-      } else if ($('.post-title-link').length > 1) {
-        showTime(Counter);
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
       }
     });
   </script>
 
 
 
-  
 
-  
-
-  
-  
 
   
 
@@ -2565,5 +2821,18 @@
 
   
 
+  
+  
+
+  
+
+  
+
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>;
+  <script>
+  $("body").backstretch("https://背景图.jpg");
+  </script>
 </body>
 </html>
