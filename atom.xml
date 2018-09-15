@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Aimiyoo&#39; Blog</title>
+  <title>The Peach Colony</title>
   
   <subtitle>Big Data &amp;&amp; Cloud Computing &amp;&amp; Machine Learning</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://aimiyoo.github.io/"/>
-  <updated>2018-08-28T07:38:59.381Z</updated>
+  <updated>2018-09-15T05:12:40.013Z</updated>
   <id>http://aimiyoo.github.io/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>关于学习</title>
-    <link href="http://aimiyoo.github.io/2018/08/28/%E5%85%B3%E4%BA%8E%E5%AD%A6%E4%B9%A0/"/>
-    <id>http://aimiyoo.github.io/2018/08/28/关于学习/</id>
+    <link href="http://aimiyoo.github.io/beautiful/bb-for-fun/2018/08/28/%E5%85%B3%E4%BA%8E%E5%AD%A6%E4%B9%A0.html"/>
+    <id>http://aimiyoo.github.io/beautiful/bb-for-fun/2018/08/28/关于学习.html</id>
     <published>2018-08-28T07:27:27.000Z</published>
-    <updated>2018-08-28T07:38:59.381Z</updated>
+    <updated>2018-09-15T05:12:40.013Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>追求的是宽度，还是深度？  </p><p>目前阶段，可以拓展自己的宽度，开眼看世界  </p><p>但是要注意修炼内功，内功修炼好了，修炼任何一门外功，皆在日出日落之间  </p><p>我始终认为，技术都是相通的，再猴赛雷的技术，语言，框架都有波峰波谷，但是思想原理，存在的意义不会变（存在即是真理），这是历史发展的趋势所决定的，当然，技术也有发展历史，它只是整个历史发展的一部分，符合历史发展的趋势，是历史潮流的一叶扁舟</p><p>凡练习武事之人, 除各种拳法之外, 必兼练一二种功夫以辅其不足。 盖以拳法为临敌时动作之法则, 而功夫则为制敌取胜之根本。若练就功夫而不谙拳法, 应敌时虽不免为人所乘, 其吃亏尚小; 若单知拳法而不习功夫,则动作虽灵敏, 要不足以制人, 结果必大吃其亏。 故有 “ 打拳不练功, 到老一场空”之谚。 此功夫之不可不练也。</p><p>功夫之种类, 亦繁复众多, 不胜枚举, 然就大体区分之, 则不出乎两种, 即外功与内功是也。外功则专练刚劲, 如打马鞍、铁臂膊等,制人则有余, 而自卫则不足。 内功则专练柔劲, 如易筋经、捶练等法, 皆行气入膜, 以充实其全体, 虽不足以制人, 而练至炉火纯青之境, 非但拳打脚踢不能损伤其毫发, 即刀劈剑刺亦不能稍受伤害。依此而论, 则内功之优于外功, 固不待智者而后知也。 且练习武术之人, 本以强健体魄却病延年为本旨, 学之兼以防毒蛇猛兽之侵凌及盗贼意外等患害, 非所以教人尚攻杀斗狠者也。故涵虚禅师之言曰:“ 学武技者, 尚德不尚力, 重守不重攻; 唯守斯静, 静是生机; 唯攻乃动, 动是死机。 ”练外功者, 劈击点刺, 念念在于制人, 是重于攻, 若守则此等功夫, 完全失其效用。攻则非但足以杀人, 亦且足以自杀, 故谓之死机。练内功者, 运气充体, 如筑壁垒, 念念在于自保。他人来攻,即有功夫兵刀, 皆不足以伤我, 我亦处之泰然, 任其袭击, 亦不至于杀人。则守之一字, 其功正大, 既能自保, 亦正不必再出手攻人, 因攻我者不能得志, 势必知难而退也, 故谓之生机。  </p><p>然世之学武者, 又恒多练习外功, 而少见练内功者, 则又何故耶? 因外功一事, 学习既较为便利, 而所费时日又较短少, 无论所习者为何种外功, 多则三年, 少则一年, 必可见效。如练打马鞍, 三年之后, 拳如铁石, 用力一击,可洞坚壁。 余亦类是。 避重就轻之心理, 固人人皆有者也。 至若内功, 则殊不易言成, 一层进一层, 深奥异常, 学之既繁复难行, 而所费时日, 亦必数倍于外功, 且不能限期成功, 故人皆畏其难而却步矣。他派固勿论，即投身少林门中者, 彼未始不知少林一派中亦有精纯之内功, 顾皆舍此而习外功者, 实避重就轻之心理使然也。 至练习内功, 略无根基, 入手即练, 其难自不待言。若意志坚强, 身体壮健, 而其人又具夙慧者, 练此最为相宜, 因内功固重于悟性也。  </p><blockquote><p>   — —摘自薛颠 《 少林内功秘传》</p></blockquote>]]></content>
     
@@ -36,6 +36,10 @@
     
     </summary>
     
+      <category term="beautiful" scheme="http://aimiyoo.github.io/categories/beautiful/"/>
+    
+      <category term="bb-for-fun" scheme="http://aimiyoo.github.io/categories/beautiful/bb-for-fun/"/>
+    
     
       <category term="随笔" scheme="http://aimiyoo.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
     
@@ -43,10 +47,10 @@
   
   <entry>
     <title>shell-date-range</title>
-    <link href="http://aimiyoo.github.io/2018/08/27/shell-date-range/"/>
-    <id>http://aimiyoo.github.io/2018/08/27/shell-date-range/</id>
+    <link href="http://aimiyoo.github.io/philosophy/how/2018/08/27/shell-date-range.html"/>
+    <id>http://aimiyoo.github.io/philosophy/how/2018/08/27/shell-date-range.html</id>
     <published>2018-08-27T10:19:58.000Z</published>
-    <updated>2018-08-28T07:39:01.545Z</updated>
+    <updated>2018-09-15T05:13:11.921Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><pre><code class="bash">if [ $# -ne 2 ];then    echo &quot;usage: ${0} start_day end_day&quot;firesult=&quot;&quot;function day_range(){    start=$1    end=$2    echo $start $end    start_sec=`date -d $start +%s`    end_sec=`date -d $end +%s`    cur_date=$start    cur_sec=`date -d $cur_date +%s`    while [ $cur_sec -le $end_sec ]    do        result=&quot;${result} ${cur_date}&quot;        cur_date=`date -d &quot;$cur_date +1 day&quot; +%Y%m%d`        cur_sec=`date -d $cur_date +%s`    done}day_range $1 $2for day in $result; do    echo ${day}done</code></pre><h3 id="example"><a href="#example" class="headerlink" title="example"></a>example</h3><pre><code class="bash">$ bash batch.sh 20180101 20181231</code></pre>]]></content>
     
@@ -60,40 +64,21 @@
     
     </summary>
     
+      <category term="philosophy" scheme="http://aimiyoo.github.io/categories/philosophy/"/>
+    
+      <category term="how" scheme="http://aimiyoo.github.io/categories/philosophy/how/"/>
+    
     
       <category term="shell" scheme="http://aimiyoo.github.io/tags/shell/"/>
     
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://aimiyoo.github.io/2018/03/23/hello-world/"/>
-    <id>http://aimiyoo.github.io/2018/03/23/hello-world/</id>
-    <published>2018-03-23T03:11:05.290Z</published>
-    <updated>2018-03-23T03:11:05.262Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is 
-      
-    
-    </summary>
-    
-    
-      <category term="hexo" scheme="http://aimiyoo.github.io/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
     <title>科学上网</title>
-    <link href="http://aimiyoo.github.io/2017/10/23/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
-    <id>http://aimiyoo.github.io/2017/10/23/科学上网/</id>
+    <link href="http://aimiyoo.github.io/beautiful/share/2017/10/23/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91.html"/>
+    <id>http://aimiyoo.github.io/beautiful/share/2017/10/23/科学上网.html</id>
     <published>2017-10-23T05:21:41.000Z</published>
-    <updated>2017-10-23T07:53:54.861Z</updated>
+    <updated>2018-09-15T05:14:11.109Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="Hosts"><a href="#Hosts" class="headerlink" title="Hosts"></a>Hosts</h2><p>可以通过修改系统的hosts文件，来达到免费科学上网的目的。<br><a href="https://www.zhihu.com/question/19782572" target="_blank" rel="noopener">通过host文件科学上网原理</a></p><p>推荐几个获取hosts文件的网址：<br><a href="https://laod.cn/hosts/2017-google-hosts.html" target="_blank" rel="noopener">老D博客</a><br><a href="https://github.com/racaljk/hosts" target="_blank" rel="noopener">racaljk Github</a></p><p>优点：1.免费，2.方便；<br>缺点：1.不稳定，需要不定时更新hosts文件，2.有些网站无法通过此方式科学上网，譬如youtube</p><h2 id="VPN"><a href="#VPN" class="headerlink" title="VPN"></a>VPN</h2><p><a href="http://vc2tea.com/whats-shadowsocks/" target="_blank" rel="noopener">通过vpn科学上网原理</a></p><p>获取vpn帐号的话，有这么几种方式：</p><ol><li>购买vpn帐号，直接就可以使用</li><li>不定时上网寻找免费vpn帐号</li><li>搭建自己vpn的服务器（本人使用<a href="https://www.bwh1.net/" target="_blank" rel="noopener">BandwagonHost VPS</a>）</li></ol><p>推荐几个自己用过的比较好用的shadowsocks工具：</p><ol><li>windows平台：<strong>shadowsocks-gui</strong>，点击安装后，输入帐号密码即可使用</li><li>linux平台：参考<a href="https://github.com/shadowsocks/shadowsocks/tree/master" target="_blank" rel="noopener">shadowsocks</a>。Shadowsocks使用的socks5协议,而终端很多工具目前只支持http和https等协议，所以我们要用工具把socks5转成http协议。参考<a href="http://www.renhl.com/linux/2017/02/03/use-shadowsocks-and-privoxy" target="_blank" rel="noopener">privoxy</a></li><li>iphone：<strong>Wingy</strong>，点击安装后，输入帐号密码即可使用</li></ol>]]></content>
     
@@ -106,17 +91,21 @@
     
     </summary>
     
+      <category term="beautiful" scheme="http://aimiyoo.github.io/categories/beautiful/"/>
     
-      <category term="黑科技" scheme="http://aimiyoo.github.io/tags/%E9%BB%91%E7%A7%91%E6%8A%80/"/>
+      <category term="share" scheme="http://aimiyoo.github.io/categories/beautiful/share/"/>
+    
+    
+      <category term="科学上网" scheme="http://aimiyoo.github.io/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
     
   </entry>
   
   <entry>
     <title>ftp超时假死问题解决方法</title>
-    <link href="http://aimiyoo.github.io/2017/08/10/ftp%E8%B6%85%E6%97%B6%E5%81%87%E6%AD%BB%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
-    <id>http://aimiyoo.github.io/2017/08/10/ftp超时假死问题解决方法/</id>
+    <link href="http://aimiyoo.github.io/philosophy/how/2017/08/10/ftp%E8%B6%85%E6%97%B6%E5%81%87%E6%AD%BB%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html"/>
+    <id>http://aimiyoo.github.io/philosophy/how/2017/08/10/ftp超时假死问题解决方法.html</id>
     <published>2017-08-10T04:50:04.000Z</published>
-    <updated>2017-08-15T09:43:23.071Z</updated>
+    <updated>2018-09-15T05:13:26.469Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h2><p>由于工作过程中，经常需要在服务器之间，用ftp传送数据，所以需要写shell脚本，自动化get或者put大量数据。</p><h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><p>但是当单个文件比较大的时候，传输时间比较长，ftp客户端会出现假死状况，即一个文件传输成功，脚本却无法执行下一步，一直被阻塞，导致后续的文件无法被传送。</p><p><strong>究其原因</strong>，是因为FTP使用两个TCP连接来通信，一条控制连接(control connection)用来提交命令和接受回复；一条数据连接(data connection)来处理实际的文件传输。在文件传输过程中，控制连接是很容易进入空闲状态的，TCP标准也没有规定一个连接的最大空闲时间。但是路由器和防火墙经常会把空闲的连接给关闭掉，并且不通知双方，就造成了传输100%但最后还是超时的现象。</p><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ol><li><strong>将大文件切分成较小的文件进行传输</strong><pre><code class="bash"> $ split -b 1000k test example.</code></pre> 上边的命令是将test文件切分成大小为1M的小文件，每个文件的文件名以example为前缀。<br> 所以你最后看到的就是这样的文件：<pre><code class="bash"> $ example.a example.b example.c</code></pre> 这样话，小文件传输不会超时，出现假死的状况。最后接收文件的另一方需要按照前缀将文件合并起来。<pre><code class="bash"> cat example.* &gt; test</code></pre></li><li><p><strong>写脚本，kill掉ftp -v -n进程</strong><br> 观察发现，ftp出现假死状况以后，ftp -v -n这个进程总是在后台，而kill掉这个进程以后，自动化脚本可以继续向下执行。<br> 所以，我们可以写一个脚本，定时的检查接收到的文件大小，如果两次检查同一个文件的大小一致，说明该文件已经传输完毕，可以将ftp -v -n进程kill掉，继续接收下一个文件。</p><pre><code class="bash"> #本地目录 local_root=&quot;/home/data/test&quot; process_name=&quot;ftp -v -n&quot; all_files=`ls $local_root` for file in $all_files;do     last_file=$file done echo $last_file size_of_last_file=`du -b ${local_root}${last_file}|awk &#39;{print $1}&#39;` sleep 30 while true;do     size_new=`du -b ${local_root}${last_file}|awk &#39;{print $1}&#39;`     if [ $size_new -ne $size_of_last_file ];then         size_of_last_file=$size_new         sleep 60     else         #如果是最后一个文件，跳出循环         if [ $last_file == &quot;2017-06-30.tar.gz&quot; ];then             break         fi         process_id=`ps -ef | grep &quot;${process_name}&quot; | grep -v &quot;grep&quot; | awk &#39;{print $2}&#39;`         for id in $process_id;do             kill -9 $id             echo &quot;killed $id&quot;         done         #为了获取到新的文件         sleep 30         all_files=`ls $local_root`         for file in $all_files;do             last_file=$file         done         echo $last_file         size_of_last_file=`du -b ${local_root}${last_file}|awk &#39;{print $1}&#39;`         sleep 1200     fi done</code></pre></li></ol>]]></content>
     
@@ -129,6 +118,10 @@
     
     </summary>
     
+      <category term="philosophy" scheme="http://aimiyoo.github.io/categories/philosophy/"/>
+    
+      <category term="how" scheme="http://aimiyoo.github.io/categories/philosophy/how/"/>
+    
     
       <category term="ftp" scheme="http://aimiyoo.github.io/tags/ftp/"/>
     
@@ -136,10 +129,10 @@
   
   <entry>
     <title>pyenv的使用</title>
-    <link href="http://aimiyoo.github.io/2017/08/01/pyenv%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
-    <id>http://aimiyoo.github.io/2017/08/01/pyenv的使用/</id>
+    <link href="http://aimiyoo.github.io/philosophy/how/2017/08/01/pyenv%E7%9A%84%E4%BD%BF%E7%94%A8.html"/>
+    <id>http://aimiyoo.github.io/philosophy/how/2017/08/01/pyenv的使用.html</id>
     <published>2017-08-01T09:40:57.000Z</published>
-    <updated>2018-03-23T03:07:55.552Z</updated>
+    <updated>2018-09-15T05:07:04.194Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p><strong>pyenv lets you easily switch between multiple versions of Python. It’s simple, unobtrusive, and follows the UNIX tradition of single-purpose tools that do one thing well.</strong></p><h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><ol><li><strong>check out pyenv where you want it installed</strong><pre><code class="bash"> $ git clone https://github.com/pyenv/pyenv.git ~/.pyenv</code></pre></li><li><strong>define environment</strong><pre><code class="bash"> $ echo &#39;export PYENV_ROOT=&quot;$HOME/.pyenv&quot;&#39; &gt;&gt; ~/.bashrc $ echo &#39;export PATH=&quot;$PYENV_ROOT/bin:$PATH&quot;&#39; &gt;&gt; ~/.bashrc $ echo &#39;eval &quot;$(pyenv init -)&quot;&#39; &gt;&gt; ~/.bashrc $ source ~/.bashrc</code></pre></li></ol><h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><ol><li><strong>view available python versions</strong><pre><code class="bash"> $ pyenv install --list</code></pre></li><li><strong>install python</strong><pre><code class="bash"> $ pyenv install 2.7.13 -v $ pyevn install 3.6.2 -v $ pyenv rehash</code></pre></li><li><strong>select the vesion which you want to use</strong><br> now you have two python versions in your system, you can select the version which you want to use<pre><code class="bash"> $ pyenv global 2.7.9</code></pre><h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2></li><li><strong>pyenv global {version} not work</strong><br> solution: <pre><code> $ pyenv local --unset</code></pre></li></ol><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="https://github.com/pyenv/pyenv" target="_blank" rel="noopener">https://github.com/pyenv/pyenv</a></p>]]></content>
     
@@ -152,15 +145,19 @@
     
     </summary>
     
+      <category term="philosophy" scheme="http://aimiyoo.github.io/categories/philosophy/"/>
     
-      <category term="python" scheme="http://aimiyoo.github.io/tags/python/"/>
+      <category term="how" scheme="http://aimiyoo.github.io/categories/philosophy/how/"/>
+    
+    
+      <category term="pyenv" scheme="http://aimiyoo.github.io/tags/pyenv/"/>
     
   </entry>
   
   <entry>
     <title>elasticsearch</title>
-    <link href="http://aimiyoo.github.io/2017/05/12/elasticsearch/"/>
-    <id>http://aimiyoo.github.io/2017/05/12/elasticsearch/</id>
+    <link href="http://aimiyoo.github.io/philosophy/how/2017/05/12/elasticsearch.html"/>
+    <id>http://aimiyoo.github.io/philosophy/how/2017/05/12/elasticsearch.html</id>
     <published>2017-05-12T08:31:24.000Z</published>
     <updated>2018-09-15T03:51:02.899Z</updated>
     
@@ -188,10 +185,10 @@
   
   <entry>
     <title>Terminator</title>
-    <link href="http://aimiyoo.github.io/2017/04/27/Terminator/"/>
-    <id>http://aimiyoo.github.io/2017/04/27/Terminator/</id>
+    <link href="http://aimiyoo.github.io/philosophy/how/2017/04/27/Terminator.html"/>
+    <id>http://aimiyoo.github.io/philosophy/how/2017/04/27/Terminator.html</id>
     <published>2017-04-27T07:29:40.000Z</published>
-    <updated>2018-08-28T07:50:51.207Z</updated>
+    <updated>2018-09-15T05:08:59.431Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="第一部份：关于在同一个标签内的操作"><a href="#第一部份：关于在同一个标签内的操作" class="headerlink" title="第一部份：关于在同一个标签内的操作"></a>第一部份：关于在同一个标签内的操作</h2><table><thead><tr><th>快捷键</th><th>作用</th></tr></thead><tbody><tr><td>Alt+Up</td><td>移动到上面的终端</td></tr><tr><td>Alt+Down</td><td>移动到下面的终端</td></tr><tr><td>Alt+Left</td><td>移动到左边的终端</td></tr><tr><td>Alt+Right</td><td>移动到右边的终端</td></tr><tr><td>Ctrl+Shift+O</td><td>水平分割终端</td></tr><tr><td>Ctrl+Shift+E</td><td>垂直分割终端</td></tr><tr><td>Ctrl+Shift+Right</td><td>在垂直分割的终端中将分割条向右移动</td></tr><tr><td>Ctrl+Shift+Left</td><td>在垂直分割的终端中将分割条向左移动</td></tr><tr><td>Ctrl+Shift+Up</td><td>在水平分割的终端中将分割条向上移动</td></tr><tr><td>Ctrl+Shift+Down</td><td>在水平分割的终端中将分割条向下移动</td></tr><tr><td>Ctrl+Shift+S</td><td>隐藏/显示滚动条</td></tr><tr><td>Ctrl+Shift+F</td><td>搜索</td></tr><tr><td>Ctrl+Shift+C</td><td>复制选中的内容到剪贴板</td></tr><tr><td>Ctrl+Shift+V</td><td>粘贴剪贴板的内容到此处</td></tr><tr><td>Ctrl+Shift+W</td><td>关闭当前终端</td></tr><tr><td>Ctrl+Shift+Q</td><td>退出当前窗口，当前窗口的所有终端都将被关闭</td></tr><tr><td>Ctrl+Shift+X</td><td>最大化显示当前终端</td></tr><tr><td>Ctrl+Shift+Z</td><td>最大化显示当前终端并使字体放大</td></tr><tr><td>Ctrl+Shift+N or Ctrl+Tab</td><td>移动到下一个终端</td></tr><tr><td>Ctrl+Shift+P or Ctrl+Shift+Tab</td><td>移动到之前的一个终端</td></tr></tbody></table><h2 id="第二部份：有关各个标签之间的操作"><a href="#第二部份：有关各个标签之间的操作" class="headerlink" title="第二部份：有关各个标签之间的操作"></a>第二部份：有关各个标签之间的操作</h2><table><thead><tr><th>快捷键</th><th>作用</th></tr></thead><tbody><tr><td>F11</td><td>全屏开关</td></tr><tr><td>Ctrl+Shift+T</td><td>打开一个新的标签</td></tr><tr><td>Ctrl+PageDown</td><td>移动到下一个标签</td></tr><tr><td>Ctrl+PageUp</td><td>移动到上一个标签</td></tr><tr><td>Ctrl+Shift+PageDown</td><td>将当前标签与其后一个标签交换位置</td></tr><tr><td>Ctrl+Shift+PageUp</td><td>将当前标签与其前一个标签交换位置</td></tr><tr><td>Ctrl+Plus (+)</td><td>增大字体</td></tr><tr><td>Ctrl+Minus (-)</td><td>减小字体</td></tr><tr><td>Ctrl+Zero (0)</td><td>恢复字体到原始大小</td></tr><tr><td>Ctrl+Shift+R</td><td>重置终端状态</td></tr><tr><td>Ctrl+Shift+G</td><td>重置终端状态并clear屏幕</td></tr><tr><td>Super+g</td><td>绑定所有的终端，以便向一个输入能够输入到所有的终端</td></tr><tr><td>Super+Shift+G</td><td>解除绑定</td></tr><tr><td>Super+t</td><td>绑定当前标签的所有终端，向一个终端输入的内容会自动输入到其他终端</td></tr><tr><td>Super+Shift+T</td><td>解除绑定</td></tr><tr><td>Ctrl+Shift+I</td><td>打开一个窗口，新窗口与原来的窗口使用同一个进程</td></tr><tr><td>Super+i</td><td>打开一个新窗口，新窗口与原来的窗口使用不同的进程</td></tr></tbody></table>]]></content>
     
@@ -204,17 +201,48 @@
     
     </summary>
     
+      <category term="philosophy" scheme="http://aimiyoo.github.io/categories/philosophy/"/>
+    
+      <category term="how" scheme="http://aimiyoo.github.io/categories/philosophy/how/"/>
+    
     
       <category term="Terminator" scheme="http://aimiyoo.github.io/tags/Terminator/"/>
     
   </entry>
   
   <entry>
-    <title>git-learning</title>
-    <link href="http://aimiyoo.github.io/2017/04/12/git-learning/"/>
-    <id>http://aimiyoo.github.io/2017/04/12/git-learning/</id>
+    <title>Hello Hexo</title>
+    <link href="http://aimiyoo.github.io/philosophy/how/2017/04/12/hello-world.html"/>
+    <id>http://aimiyoo.github.io/philosophy/how/2017/04/12/hello-world.html</id>
     <published>2017-04-12T04:26:52.000Z</published>
-    <updated>2017-08-15T10:16:13.287Z</updated>
+    <updated>2018-09-15T05:13:22.641Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is 
+      
+    
+    </summary>
+    
+      <category term="philosophy" scheme="http://aimiyoo.github.io/categories/philosophy/"/>
+    
+      <category term="how" scheme="http://aimiyoo.github.io/categories/philosophy/how/"/>
+    
+    
+      <category term="hexo" scheme="http://aimiyoo.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git-learning</title>
+    <link href="http://aimiyoo.github.io/philosophy/how/2017/04/12/git-learning.html"/>
+    <id>http://aimiyoo.github.io/philosophy/how/2017/04/12/git-learning.html</id>
+    <published>2017-04-12T04:26:52.000Z</published>
+    <updated>2018-09-15T05:03:40.268Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h4 id="查看分支"><a href="#查看分支" class="headerlink" title="查看分支"></a>查看分支</h4><ol><li>追踪本地分支<pre><code class="bash"> $ git branch -vv</code></pre></li></ol><h4 id="删除分支"><a href="#删除分支" class="headerlink" title="删除分支"></a>删除分支</h4><ol><li>删除本地分支<pre><code class="bash"> $ git branch -D branch-name</code></pre></li><li>删除远程分支<pre><code class="bash"> $ git branch -r -d origin/branch-name $ git push origin :branch-name</code></pre> <em>中间的空格不能少，相当于把一个空分支push到server上，等于删除该分支</em></li></ol><h4 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h4><ol><li>fetch<br> 相当于从远程获取最新版本到本地，不会自动merge<pre><code class="bash"> $ git fetch origin remoteName:branchname</code></pre></li><li>checkout<br> 获取远程分支remoteName到本地新分支localName，并跳到localName分支<pre><code class="bash"> $ git checkout origin/remoteName -b localName $ git pull origin remoteName:localName</code></pre> pull相当于git fetch和git merge</li></ol><h4 id="更新远程分支列表"><a href="#更新远程分支列表" class="headerlink" title="更新远程分支列表"></a>更新远程分支列表</h4><ol><li>更新远程分支列表<pre><code class="bash"> $ git fetch -t -p -f</code></pre></li></ol><h4 id="tag"><a href="#tag" class="headerlink" title="tag"></a>tag</h4><ol><li>获取远程tag<pre><code class="bash"> $ git checkout -b branch_name tag_name</code></pre></li><li>删除本地tag<pre><code class="bash"> $ git tag -d tagname</code></pre></li><li>删除远程tag<pre><code class="bash"> $ git push origin :tagname</code></pre> 或者<pre><code class="bash"> $ git push origin --delete tagname</code></pre></li></ol><h4 id="stash"><a href="#stash" class="headerlink" title="stash"></a>stash</h4><ol><li>添加stash<br> git stash用于保存当前的工作进度，不用commit即可checkout到另外的branch<pre><code class="bash"> $ git stash</code></pre></li><li>显示stash列表<br> git stash list用于显示所有的stash列表<pre><code class="bash"> $ git stash list</code></pre></li><li>恢复stash<br> git stash pop用于恢复某一次的改动，默认不加hash代表恢复最近的一次改动<pre><code class="bash"> $ git stash pop --hash</code></pre></li><li>删除stash<br> git stash drop用于删除某一次的改动，默认不加hash代表删除最近的一次改动<pre><code class="bash"> $ git stash pop --hash</code></pre></li><li>git stash pop和git stash apply区别<br> pop命令从stash列表中<strong>恢复并删除</strong>某一次改动<br> apply命令从stash<strong>恢复但不删除</strong>某一次改动</li></ol>]]></content>
     
@@ -228,6 +256,10 @@
     
     </summary>
     
+      <category term="philosophy" scheme="http://aimiyoo.github.io/categories/philosophy/"/>
+    
+      <category term="how" scheme="http://aimiyoo.github.io/categories/philosophy/how/"/>
+    
     
       <category term="git" scheme="http://aimiyoo.github.io/tags/git/"/>
     
@@ -235,10 +267,10 @@
   
   <entry>
     <title>老人与火</title>
-    <link href="http://aimiyoo.github.io/2017/02/22/%E8%80%81%E4%BA%BA%E4%B8%8E%E7%81%AB/"/>
-    <id>http://aimiyoo.github.io/2017/02/22/老人与火/</id>
+    <link href="http://aimiyoo.github.io/beautiful/share/2017/02/22/%E8%80%81%E4%BA%BA%E4%B8%8E%E7%81%AB.html"/>
+    <id>http://aimiyoo.github.io/beautiful/share/2017/02/22/老人与火.html</id>
     <published>2017-02-22T06:57:23.000Z</published>
-    <updated>2017-04-12T04:38:00.825Z</updated>
+    <updated>2018-09-15T05:15:13.590Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><blockquote><p><img src="/material/roujinnohi.gif" alt="Alt text"></p></blockquote>]]></content>
     
@@ -254,6 +286,10 @@
     
     </summary>
     
+      <category term="beautiful" scheme="http://aimiyoo.github.io/categories/beautiful/"/>
+    
+      <category term="share" scheme="http://aimiyoo.github.io/categories/beautiful/share/"/>
+    
     
       <category term="随笔" scheme="http://aimiyoo.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
     
@@ -261,10 +297,10 @@
   
   <entry>
     <title>我的Hexo成功了</title>
-    <link href="http://aimiyoo.github.io/2017/02/15/%E6%88%91%E7%9A%84Hexo%E6%88%90%E5%8A%9F%E4%BA%86/"/>
-    <id>http://aimiyoo.github.io/2017/02/15/我的Hexo成功了/</id>
+    <link href="http://aimiyoo.github.io/beautiful/share/2017/02/15/%E6%88%91%E7%9A%84Hexo%E6%88%90%E5%8A%9F%E4%BA%86.html"/>
+    <id>http://aimiyoo.github.io/beautiful/share/2017/02/15/我的Hexo成功了.html</id>
     <published>2017-02-15T11:21:17.000Z</published>
-    <updated>2018-08-28T07:57:25.895Z</updated>
+    <updated>2018-09-15T05:13:03.749Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>首先感谢Litten大神的Yilia，很不错的Hexo主题，里面的很多配置，作者都已经给配置好了，很nice。<br>但是在初次使用过程中，还是遇到了一些坑，针对我踩过的一些坑，记录一下：</p><h3 id="多说评论显示的是作者的评论"><a href="#多说评论显示的是作者的评论" class="headerlink" title="多说评论显示的是作者的评论"></a>多说评论显示的是作者的评论</h3><p>如果使用多说评论的话，只需要配置主题根目录_config.yml文件中<font color="#FF4500" size="4" face="黑体">duoshuo: duoshuo-key</font>一项即可，而<font color="#FF4500" size="4" face="黑体">duoshuo-key</font>是你在<a href="http://duoshuo.com/" target="_blank" rel="noopener">多说</a>注册的站点的名称，如果域名为<strong>abc.duoshuo.com</strong>，那么<font color="#FF4500" size="4" face="黑体">duoshuo-key</font>就是<font color="#FF4500" size="4" face="黑体">abc</font></p><h3 id="不显示tags"><a href="#不显示tags" class="headerlink" title="不显示tags"></a>不显示tags</h3><p>作者提供的模板的.md文档格式是以下这样的：</p><blockquote><pre><code>---  layout: post  title: &quot;hexo主题Yilia在移动端适配的一些事&quot;  date: 2015-02-23 12:58  tags      - hexo      - 主题  ---</code></pre></blockquote><p>结果主题、标签、时间等这些配置信息都是以正文显示出来的。<br>解决方法：将第一行的”- - - “去掉，只保留最后一行的”- - -“，”- - -“前面是配置信息，后面是正文，完美解决！</p><h3 id="markdown编辑器"><a href="#markdown编辑器" class="headerlink" title="markdown编辑器"></a>markdown编辑器</h3><p>写博文当然少不了markdown编辑器了，不同的平台，有不同的选择，这里分享一篇文章<a href="http://www.williamlong.info/archives/4319.html" target="_blank" rel="noopener">好用的Markdown编辑器一览</a>。我之前在windowns平台使用的是<a href="http://www.markdownpad.com/" target="_blank" rel="noopener">MarkdownPad</a>，挺好用的。现在使用opensuse系统，使用的是安装markdown插件的atom，很清爽。  </p><p>至于markdown语法，网上有很多文章，试着写几篇博文，很快就可以学会了。</p>]]></content>
     
@@ -276,6 +312,10 @@
       
     
     </summary>
+    
+      <category term="beautiful" scheme="http://aimiyoo.github.io/categories/beautiful/"/>
+    
+      <category term="share" scheme="http://aimiyoo.github.io/categories/beautiful/share/"/>
     
     
       <category term="随笔" scheme="http://aimiyoo.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
