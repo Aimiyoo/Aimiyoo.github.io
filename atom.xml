@@ -162,7 +162,7 @@
     <link href="http://aimiyoo.github.io/2017/05/12/elasticsearch/"/>
     <id>http://aimiyoo.github.io/2017/05/12/elasticsearch/</id>
     <published>2017-05-12T08:31:24.000Z</published>
-    <updated>2017-08-15T09:53:15.859Z</updated>
+    <updated>2018-09-15T03:51:02.899Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="elasticsearch-licence"><a href="#elasticsearch-licence" class="headerlink" title="elasticsearch licence"></a>elasticsearch licence</h2><ol><li>注册申请地址：<a href="https://register.elastic.co/marvel_register" target="_blank" rel="noopener">https://register.elastic.co/marvel_register</a> ps:有效期为一年<br> 然后去注册邮箱下载licence文件</li><li>执行以下命令<pre><code class="bash"> $ curl -XPUT -u elastic &#39;http://host:port/_xpack/license&#39; -H &quot;Content-Type: application/json&quot; -d @license.json</code></pre> 默认用户名：<strong>elastic</strong>，密码：<strong>changeme</strong><br> <em>host</em>:elasticsearch 节点的主机名，本地为localhost<br> <em>port</em>:端口号，默认为9200<br> <em>licence.json</em>:是json格式的licence文件</li></ol><h2 id="x-pack"><a href="#x-pack" class="headerlink" title="x-pack"></a>x-pack</h2><p><em>X-Pack is an Elastic Stack extension that bundles security, alerting, monitoring, reporting, and graph capabilities into one easy-to-install package. While the X-Pack components are designed to work together seamlessly, you can easily enable or disable the features you want to use.</em> </p><ol><li>elasticsearch 安装x-pack<pre><code class="bash"> $ bin/elasticsearch-plugin install x-pack</code></pre></li><li>kibana 安装x-pack<pre><code class="bash"> $ bin/kibana-plugin install x-pack</code></pre></li></ol><h2 id="elaticsearch-head（elasticsearch5-x版本）"><a href="#elaticsearch-head（elasticsearch5-x版本）" class="headerlink" title="elaticsearch-head（elasticsearch5.x版本）"></a>elaticsearch-head（elasticsearch5.x版本）</h2><ol><li>下载elasticsearch-head<pre><code class="bash"> $ git clone https://github.com/mobz/elasticsearch-head</code></pre></li><li>这一步需要安装node，请自己找教程安装。安装完成以后，切换到elasticsearch-head目录下，执行：<pre><code class="bash"> $ npm install</code></pre> 如果安装过慢，可以通过代理安装：<pre><code class="bash"> $ npm install cnpm --registry=https://registry.npm.taobao.org　</code></pre></li><li>配置elasticsearch的elasticsearch.yml文件，在文件最后添加：<pre><code> http.cors.enabled: true   http.cors.allow-origin: &quot;*&quot;</code></pre></li><li>启动服务。在elasticsearch-head目录下，执行<pre><code class="bash"> $ grunt server</code></pre> 打开<a href="http://localhost:9100网址，默认连接http://localhost:9200，就可以连上elasticsearch了。" target="_blank" rel="noopener">http://localhost:9100网址，默认连接http://localhost:9200，就可以连上elasticsearch了。</a><br> 如果安装了x-pack，那么需要在链接中加入验证，添加默认的用户名和密码<br> <a href="http://localhost:9100/?auth_user=elastic&amp;auth_password=changeme" target="_blank" rel="noopener">http://localhost:9100/?auth_user=elastic&amp;auth_password=changeme</a><br> 到此为止，如果没什么问题的话，你就可以尽情的操作elasticsearch了</li></ol>]]></content>
     
@@ -175,8 +175,14 @@
     
     </summary>
     
+      <category term="philosophy" scheme="http://aimiyoo.github.io/categories/philosophy/"/>
+    
+      <category term="how" scheme="http://aimiyoo.github.io/categories/philosophy/how/"/>
+    
     
       <category term="elasticsearch" scheme="http://aimiyoo.github.io/tags/elasticsearch/"/>
+    
+      <category term="elk" scheme="http://aimiyoo.github.io/tags/elk/"/>
     
   </entry>
   
