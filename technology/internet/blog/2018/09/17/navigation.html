@@ -125,7 +125,7 @@
 
 
 
-  <meta name="keywords" content="ftp," />
+  <meta name="keywords" content="navigation," />
 
 
 
@@ -138,16 +138,16 @@
 
 
 
-<meta name="keywords" content="ftp">
+<meta name="keywords" content="navigation">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ftp超时假死问题解决方法">
-<meta property="og:url" content="http://aimiyoo.github.io/philosophy/how/2017/08/10/ftp超时假死问题解决方法.html">
+<meta property="og:title" content="navigation">
+<meta property="og:url" content="http://aimiyoo.github.io/technology/internet/blog/2018/09/17/navigation.html">
 <meta property="og:site_name" content="The Peach Colony">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https:///">
-<meta property="og:updated_time" content="2018-09-17T06:39:56.804Z">
+<meta property="og:updated_time" content="2018-09-17T06:39:49.736Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ftp超时假死问题解决方法">
+<meta name="twitter:title" content="navigation">
 <meta name="twitter:image" content="https:///">
 
 
@@ -178,13 +178,13 @@
 
 
 
-  <link rel="canonical" href="http://aimiyoo.github.io/philosophy/how/2017/08/10/ftp超时假死问题解决方法.html"/>
+  <link rel="canonical" href="http://aimiyoo.github.io/technology/internet/blog/2018/09/17/navigation.html"/>
 
 
 
 
 
-  <title>ftp超时假死问题解决方法 | The Peach Colony</title>
+  <title>navigation | The Peach Colony</title>
   
 
 
@@ -355,7 +355,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://aimiyoo.github.io/philosophy/how/2017/08/10/ftp超时假死问题解决方法.html">
+    <link itemprop="mainEntityOfPage" href="http://aimiyoo.github.io/technology/internet/blog/2018/09/17/navigation.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aimiyoo">
@@ -372,7 +372,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">ftp超时假死问题解决方法</h1>
+          <h1 class="post-title" itemprop="name headline">navigation</h1>
         
 
         <div class="post-meta">
@@ -384,8 +384,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-10T12:50:04+08:00">
-                2017-08-10
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-17T13:59:22+08:00">
+                2018-09-17
               </time>
             
 
@@ -407,8 +407,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/philosophy/" itemprop="url" rel="index">
-                    <span itemprop="name">philosophy</span>
+                  <a href="/categories/technology/" itemprop="url" rel="index">
+                    <span itemprop="name">technology</span>
                   </a>
                 </span>
 
@@ -418,8 +418,19 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/philosophy/how/" itemprop="url" rel="index">
-                    <span itemprop="name">how</span>
+                  <a href="/categories/technology/internet/" itemprop="url" rel="index">
+                    <span itemprop="name">internet</span>
+                  </a>
+                </span>
+
+                
+                
+                  /
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/technology/internet/blog/" itemprop="url" rel="index">
+                    <span itemprop="name">blog</span>
                   </a>
                 </span>
 
@@ -456,7 +467,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  638
+                  68
                 </span>
               
 
@@ -472,7 +483,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3
+                  1
                 </span>
               
             </div>
@@ -497,63 +508,49 @@
 
 <p><img src="https://" alt="" style="width:100%"></p>
 <a id="more"></a>
-<h2 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h2><p>由于工作过程中，经常需要在服务器之间，用ftp传送数据，所以需要写shell脚本，自动化get或者put大量数据。</p>
-<h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><p>但是当单个文件比较大的时候，传输时间比较长，ftp客户端会出现假死状况，即一个文件传输成功，脚本却无法执行下一步，一直被阻塞，导致后续的文件无法被传送。</p>
-<p><strong>究其原因</strong>，是因为FTP使用两个TCP连接来通信，一条控制连接(control connection)用来提交命令和接受回复；一条数据连接(data connection)来处理实际的文件传输。在文件传输过程中，控制连接是很容易进入空闲状态的，TCP标准也没有规定一个连接的最大空闲时间。但是路由器和防火墙经常会把空闲的连接给关闭掉，并且不通知双方，就造成了传输100%但最后还是超时的现象。</p>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><ol>
-<li><strong>将大文件切分成较小的文件进行传输</strong><pre><code class="bash"> $ split -b 1000k test example.
-</code></pre>
- 上边的命令是将test文件切分成大小为1M的小文件，每个文件的文件名以example为前缀。<br> 所以你最后看到的就是这样的文件：<pre><code class="bash"> $ example.a example.b example.c
-</code></pre>
- 这样话，小文件传输不会超时，出现假死的状况。最后接收文件的另一方需要按照前缀将文件合并起来。<pre><code class="bash"> cat example.* &gt; test
-</code></pre>
-</li>
-<li><p><strong>写脚本，kill掉ftp -v -n进程</strong><br> 观察发现，ftp出现假死状况以后，ftp -v -n这个进程总是在后台，而kill掉这个进程以后，自动化脚本可以继续向下执行。<br> 所以，我们可以写一个脚本，定时的检查接收到的文件大小，如果两次检查同一个文件的大小一致，说明该文件已经传输完毕，可以将ftp -v -n进程kill掉，继续接收下一个文件。</p>
-<pre><code class="bash"> #本地目录
- local_root=&quot;/home/data/test&quot;
- process_name=&quot;ftp -v -n&quot;
-
- all_files=`ls $local_root`
- for file in $all_files;do
-     last_file=$file
- done
- echo $last_file
- size_of_last_file=`du -b ${local_root}${last_file}|awk &#39;{print $1}&#39;`
- sleep 30
-
- while true;do
-     size_new=`du -b ${local_root}${last_file}|awk &#39;{print $1}&#39;`
-     if [ $size_new -ne $size_of_last_file ];then
-         size_of_last_file=$size_new
-         sleep 60
-     else
-         #如果是最后一个文件，跳出循环
-         if [ $last_file == &quot;2017-06-30.tar.gz&quot; ];then
-             break
-         fi
-
-         process_id=`ps -ef | grep &quot;${process_name}&quot; | grep -v &quot;grep&quot; | awk &#39;{print $2}&#39;`
-         for id in $process_id;do
-             kill -9 $id
-             echo &quot;killed $id&quot;
-         done
-
-         #为了获取到新的文件
-         sleep 30
-
-         all_files=`ls $local_root`
-         for file in $all_files;do
-             last_file=$file
-         done
-         echo $last_file
-         size_of_last_file=`du -b ${local_root}${last_file}|awk &#39;{print $1}&#39;`
-         sleep 1200
-     fi
- done
-</code></pre>
-<hr></li>
-</ol>
-
+<table>
+<thead>
+<tr>
+<th style="text-align:center">程序员</th>
+<th style="text-align:center">社交</th>
+<th style="text-align:center">直播</th>
+<th style="text-align:center">购物</th>
+<th style="text-align:center">新闻</th>
+<th style="text-align:center">影视</th>
+<th style="text-align:center">邮 箱</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><a href="https://github.com/" target="_blank" rel="noopener">Github</a></td>
+<td style="text-align:center"><a href="http://www.weibo.com/" target="_blank" rel="noopener">新浪微博</a></td>
+<td style="text-align:center"><a href="https://www.douyu.com" target="_blank" rel="noopener">斗鱼</a></td>
+<td style="text-align:center"><a href="https://www.jd.com/" target="_blank" rel="noopener">京东</a></td>
+<td style="text-align:center"><a href="http://news.163.com/" target="_blank" rel="noopener">网易新闻</a></td>
+<td style="text-align:center"><a href="http://zimuzu.tv" target="_blank" rel="noopener">人人字幕组</a></td>
+<td style="text-align:center"><a href="http://mail.163.com/" target="_blank" rel="noopener">163邮箱</a></td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="http://gold.xitu.io/" target="_blank" rel="noopener">掘金</a></td>
+<td style="text-align:center"><a href="http://www.zhihu.com/" target="_blank" rel="noopener">知乎</a></td>
+<td style="text-align:center"><a href="http://www.panda.tv" target="_blank" rel="noopener">熊猫</a></td>
+<td style="text-align:center"><a href="http://www.taobao.com/" target="_blank" rel="noopener">淘宝</a></td>
+<td style="text-align:center"><a href="https://news.qq.com/" target="_blank" rel="noopener">腾讯新闻</a></td>
+<td style="text-align:center"><a href="http://www.dy2018.com" target="_blank" rel="noopener">电影天堂</a></td>
+<td style="text-align:center"><a href="https://mail.google.com/" target="_blank" rel="noopener">Gmail</a></td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="http://stackoverflow.com/" target="_blank" rel="noopener">Stackoverflow</a></td>
+<td style="text-align:center"><a href="http://www.douban.com/" target="_blank" rel="noopener">豆瓣</a></td>
+<td style="text-align:center"><a href="http://www.huya.com" target="_blank" rel="noopener">虎牙</a></td>
+<td style="text-align:center"><a href="www.jumei.com">聚美</a></td>
+<td style="text-align:center"><a href="http://photo.sina.com.cn/" target="_blank" rel="noopener">新浪图片</a></td>
+<td style="text-align:center"><a href="http://www.msj1.com/" target="_blank" rel="noopener">天天看美剧</a></td>
+<td style="text-align:center"><a href="http://mail.qq.com/" target="_blank" rel="noopener">QQ邮箱</a></td>
+</tr>
+</tbody>
+</table>
+<hr>
       
     </div>
     
@@ -580,7 +577,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/ftp/" rel="tag"><i class="fa fa-tag"></i> ftp</a>
+            <a href="/tags/navigation/" rel="tag"><i class="fa fa-tag"></i> navigation</a>
           
         </div>
       
@@ -593,8 +590,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/philosophy/how/2017/08/01/pyenv的使用.html" rel="next" title="pyenv的使用">
-                <i class="fa fa-chevron-left"></i> pyenv的使用
+              <a href="/beautiful/bb-for-fun/2018/08/28/关于学习.html" rel="next" title="关于学习">
+                <i class="fa fa-chevron-left"></i> 关于学习
               </a>
             
           </div>
@@ -602,10 +599,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/beautiful/share/2017/10/23/科学上网.html" rel="prev" title="科学上网">
-                科学上网 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -659,17 +652,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -781,22 +765,6 @@ show_date_time();
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Background"><span class="nav-number">1.</span> <span class="nav-text">Background</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">2.</span> <span class="nav-text">Problem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">3.</span> <span class="nav-text">Solution</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
