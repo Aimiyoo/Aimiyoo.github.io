@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[hadoop常见错误]]></title>
+    <url>%2Funcategorized%2F2018%2F10%2F17%2Fhadoop%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF.html</url>
+    <content type="text"><![CDATA[## ## ##]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[无线充电]]></title>
     <url>%2Funcategorized%2F2018%2F09%2F27%2F%E6%97%A0%E7%BA%BF%E5%85%85%E7%94%B5.html</url>
     <content type="text"><![CDATA[## ## ##]]></content>
@@ -37,7 +42,7 @@
   <entry>
     <title><![CDATA[navigation]]></title>
     <url>%2Ftechnology%2Finternet%2Fblog%2F2018%2F09%2F17%2Fnavigation.html</url>
-    <content type="text"><![CDATA[* * * * 程序员 Github 掘金 Stackoverflow 社交 新浪微博 知乎 豆瓣 直播 斗鱼 熊猫 虎牙 购物 京东 淘宝 聚美 新闻 网易新闻 腾讯新闻 新浪图片 影视 人人字幕组 电影天堂 天天看美剧 邮箱 163邮箱 Gmail QQ邮箱 摄影 蜂鸟网 网易摄影 色影无忌 好玩 v2ex youtube CNTV 投资 投资界 工具 百度脑图]]></content>
+    <content type="text"><![CDATA[* * * * 程序员 Github 掘金 Stackoverflow 社交 新浪微博 知乎 豆瓣 直播 斗鱼 熊猫 虎牙 购物 京东 淘宝 聚美 新闻 网易新闻 腾讯新闻 新浪图片 影视 人人字幕组 电影天堂 天天看美剧 邮箱 163邮箱 Gmail QQ邮箱 摄影 蜂鸟网 网易摄影 色影无忌 好玩 v2ex youtube CNTV IPV6 六维空间 北邮人 投资 投资界 工具 百度脑图]]></content>
       <categories>
         <category>technology</category>
         <category>internet</category>
@@ -133,18 +138,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[git-learning]]></title>
-    <url>%2Fphilosophy%2Fhow%2F2017%2F04%2F12%2Fgit-learning.html</url>
-    <content type="text"><![CDATA[查看分支 追踪本地分支 $ git branch -vv 删除分支 删除本地分支 $ git branch -D branch-name 删除远程分支 $ git branch -r -d origin/branch-name $ git push origin :branch-name 中间的空格不能少，相当于把一个空分支push到server上，等于删除该分支 创建分支 fetch 相当于从远程获取最新版本到本地，不会自动merge $ git fetch origin remoteName:branchname checkout 获取远程分支remoteName到本地新分支localName，并跳到localName分支 $ git checkout origin/remoteName -b localName $ git pull origin remoteName:localName pull相当于git fetch和git merge 更新远程分支列表 更新远程分支列表 $ git fetch -t -p -f tag 获取远程tag $ git checkout -b branch_name tag_name 删除本地tag $ git tag -d tagname 删除远程tag $ git push origin :tagname 或者 $ git push origin --delete tagname stash 添加stash git stash用于保存当前的工作进度，不用commit即可checkout到另外的branch $ git stash 显示stash列表 git stash list用于显示所有的stash列表 $ git stash list 恢复stash git stash pop用于恢复某一次的改动，默认不加hash代表恢复最近的一次改动 $ git stash pop --hash 删除stash git stash drop用于删除某一次的改动，默认不加hash代表删除最近的一次改动 $ git stash pop --hash git stash pop和git stash apply区别 pop命令从stash列表中恢复并删除某一次改动 apply命令从stash恢复但不删除某一次改动]]></content>
-      <categories>
-        <category>philosophy</category>
-        <category>how</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Hello Hexo]]></title>
     <url>%2Fphilosophy%2Fhow%2F2017%2F04%2F12%2Fhello-world.html</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post$ hexo new &quot;My New Post&quot; More info: Writing Run server$ hexo server More info: Server Generate static files$ hexo generate More info: Generating Deploy to remote sites$ hexo deploy More info: Deployment]]></content>
@@ -154,6 +147,18 @@
       </categories>
       <tags>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[git-learning]]></title>
+    <url>%2Fphilosophy%2Fhow%2F2017%2F04%2F12%2Fgit-learning.html</url>
+    <content type="text"><![CDATA[查看分支 追踪本地分支 $ git branch -vv 删除分支 删除本地分支 $ git branch -D branch-name 删除远程分支 $ git branch -r -d origin/branch-name $ git push origin :branch-name 中间的空格不能少，相当于把一个空分支push到server上，等于删除该分支 创建分支 fetch 相当于从远程获取最新版本到本地，不会自动merge $ git fetch origin remoteName:branchname checkout 获取远程分支remoteName到本地新分支localName，并跳到localName分支 $ git checkout origin/remoteName -b localName $ git pull origin remoteName:localName pull相当于git fetch和git merge 更新远程分支列表 更新远程分支列表 $ git fetch -t -p -f tag 获取远程tag $ git checkout -b branch_name tag_name 删除本地tag $ git tag -d tagname 删除远程tag $ git push origin :tagname 或者 $ git push origin --delete tagname stash 添加stash git stash用于保存当前的工作进度，不用commit即可checkout到另外的branch $ git stash 显示stash列表 git stash list用于显示所有的stash列表 $ git stash list 恢复stash git stash pop用于恢复某一次的改动，默认不加hash代表恢复最近的一次改动 $ git stash pop --hash 删除stash git stash drop用于删除某一次的改动，默认不加hash代表删除最近的一次改动 $ git stash pop --hash git stash pop和git stash apply区别 pop命令从stash列表中恢复并删除某一次改动 apply命令从stash恢复但不删除某一次改动]]></content>
+      <categories>
+        <category>philosophy</category>
+        <category>how</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
       </tags>
   </entry>
   <entry>
