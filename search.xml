@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[设计模式]]></title>
+    <url>%2Funcategorized%2F2018%2F10%2F24%2F%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.html</url>
+    <content type="text"><![CDATA[## ## ##]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[vscode插件]]></title>
+    <url>%2Funcategorized%2F2018%2F10%2F22%2Fvscode%E6%8F%92%E4%BB%B6.html</url>
+    <content type="text"><![CDATA[polacode-[代码截图]## ##]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[hadoop常见错误]]></title>
     <url>%2Funcategorized%2F2018%2F10%2F17%2Fhadoop%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF.html</url>
-    <content type="text"><![CDATA[## ## ##]]></content>
+    <content type="text"><![CDATA[客户端内存不够问题 java.lang.OutOfMemoryError: Java heap space Error:GC overhead limit exceeded 原因可能是因为小文件太多造成的 解决方法 export HADOOP_CLIENT_OPTS=-Xmx5000m ## ##]]></content>
   </entry>
   <entry>
     <title><![CDATA[无线充电]]></title>
