@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[设计模式]]></title>
     <url>%2Funcategorized%2F2018%2F10%2F24%2F%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.html</url>
-    <content type="text"><![CDATA[简单工厂模式工厂方法模式##]]></content>
+    <content type="text"><![CDATA[创建型模式简单工厂模式(Simple Factory)工厂方法模式(Factory Method)抽象工厂模式(Abstract Factory)构建者模式(Builder)单例模式(Singleton)结构型模式适配器模式(Adapter)桥接模式(Bridge)组合模式(Composite)装饰模式(Decorator)外观模式(Facade)享元模式(Flyweight)代理模式(Proxy)行为型模式职责链模式(Chain of Responsibility)命令模式(Command)解释器模式(Interpreter)迭代器模式(Iterator)中介者模式(Mediator)备忘录模式(Memento)观察者模式(Observer)状态模式(State)策略模式(Strategy)模板方法模式(Template Method)访问者模式(Visitor)]]></content>
   </entry>
   <entry>
     <title><![CDATA[vscode插件]]></title>
@@ -47,7 +47,7 @@
   <entry>
     <title><![CDATA[navigation]]></title>
     <url>%2Ftechnology%2Finternet%2Fblog%2F2018%2F09%2F17%2Fnavigation.html</url>
-    <content type="text"><![CDATA[* * * * 程序员 Github 掘金 Stackoverflow 社交 新浪微博 知乎 豆瓣 直播 斗鱼 熊猫 虎牙 购物 京东 淘宝 聚美 新闻 网易新闻 腾讯新闻 新浪图片 影视 人人字幕组 电影天堂 天天看美剧 邮箱 163邮箱 Gmail QQ邮箱 摄影 蜂鸟网 网易摄影 色影无忌 好玩 v2ex youtube CNTV IPV6 六维空间 北邮人 投资 投资界 工具 百度脑图]]></content>
+    <content type="text"><![CDATA[* * * * * 程序员 Github 掘金 Stackoverflow 头条 社交 新浪微博 知乎 豆瓣 直播 斗鱼 熊猫 虎牙 购物 京东 淘宝 聚美 新闻 网易新闻 腾讯新闻 新浪图片 影视 人人字幕组 电影天堂 天天看美剧 邮箱 163邮箱 Gmail QQ邮箱 摄影 蜂鸟网 网易摄影 色影无忌 好玩 v2ex youtube CNTV IPV6 六维空间 北邮人 投资 投资界 工具 百度脑图]]></content>
       <categories>
         <category>technology</category>
         <category>internet</category>
