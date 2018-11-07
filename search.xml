@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Node.js升级]]></title>
+    <url>%2Fphilosophy%2Fhow%2F2018%2F11%2F07%2FNode.js%E5%8D%87%E7%BA%A7.html</url>
+    <content type="text"><![CDATA[Node.js升级的两种方法版本管理工具”n“# n本身一个node模块，可以用npm安装 # 安装n模块 npm install -g n # 升级到最新稳定版 n stable # 升级到最新版 n lastest # 升级到指定版本 n v11.0.0 # 查看当前安装的node版本列表 n # 切换版本 n 11.0.0 # 删除指定版本 n rm 11.0.0 # 用指定版本执行脚本 n use 11.0.0 some.js # 安装的node在/usr/local/n/versions/node/11.0.0目录下 # 最后可能需要修改环境变量才能生效 版本管理工具”nvm“# nvm是独立于node/nmp之外的shell脚本 # 安装nvm curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh|bash # 安装指定版本 npm install v11.0.0 # 查看当前安装的node版本列表 nvm ls # 切换版本 nvm use v11.0.0 # 删除指定版本 nvm uninstall v11.0.0 # 显示当前node版本 nvm current 一些Node.js知识关于Node.js版本自从Node.js基金会成立以来，Node.js就有一个发布计划，就是同时发布两个版本：稳定版和试验版在Node.js中，带有长期支持（LTS）的稳定版是以偶数开始（4,6,8,10…），而试验版是以奇数开始（5,7,11…） 所以推荐在生产环境中用LTS版本，尝试新东西用试验版本 Node.js和Javascript的区别Javascript是一种web前端语言，主要用于web开发，由浏览器解析执行Node.js是一个可以快速构建网络服务及应用的平台，使用Javascript语言构建的服务平台，可用于后端建立服务器 它们都是js语法，前者主要应用于前端，后者主要应用于后端： 1. Node.js和Javasript，一个是平台，一个是编程语言 2. Javasript是客户端编程语言，需要浏览器的javascript解释器解释执行 3. Node.js是一个基于Chrome Javascript运行时建立的平台，它是对Google V8引擎进行了封装的运行环境 4. 简单的说Node.js就是把浏览器的解释器封装起来作为服务器运行平台，用类似Javascript的结构语法进行编程，在Node.js上运行]]></content>
+      <categories>
+        <category>philosophy</category>
+        <category>how</category>
+      </categories>
+      <tags>
+        <tag>Node.js</tag>
+        <tag>npm</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[设计模式]]></title>
     <url>%2Fphilosophy%2Fhow%2F2018%2F10%2F24%2F%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.html</url>
     <content type="text"><![CDATA[6大原则单一职责原则开放原则里氏转换原则依赖倒置原则接口隔离原则迪米特法则23种设计模式创建型模式简单工厂模式(Simple Factory)工厂方法模式(Factory Method)抽象工厂模式(Abstract Factory)构建者模式(Builder)单例模式(Singleton)结构型模式适配器模式(Adapter)桥接模式(Bridge)组合模式(Composite)装饰模式(Decorator)外观模式(Facade)享元模式(Flyweight)代理模式(Proxy)行为型模式职责链模式(Chain of Responsibility)命令模式(Command)解释器模式(Interpreter)迭代器模式(Iterator)中介者模式(Mediator)备忘录模式(Memento)观察者模式(Observer)状态模式(State)策略模式(Strategy)模板方法模式(Template Method)访问者模式(Visitor)]]></content>

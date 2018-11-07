@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://aimiyoo.github.io/philosophy/how/2018/11/07/Node.js%E5%8D%87%E7%BA%A7.html</loc>
+    
+    <lastmod>2018-11-07T12:54:55.932Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://aimiyoo.github.io/philosophy/how/2018/10/24/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.html</loc>
     
     <lastmod>2018-11-01T12:57:35.230Z</lastmod>
@@ -11,35 +18,35 @@
   <url>
     <loc>http://aimiyoo.github.io/technology/internet/blog/2018/09/17/navigation.html</loc>
     
-    <lastmod>2018-10-31T15:28:15.876Z</lastmod>
+    <lastmod>2018-10-31T15:28:15.877Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://aimiyoo.github.io/uncategorized/2018/10/22/vscode%E6%8F%92%E4%BB%B6.html</loc>
     
-    <lastmod>2018-10-25T02:43:09.399Z</lastmod>
+    <lastmod>2018-10-25T02:43:09.400Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://aimiyoo.github.io/uncategorized/2018/09/27/%E6%97%A0%E7%BA%BF%E5%85%85%E7%94%B5.html</loc>
     
-    <lastmod>2018-09-27T06:21:03.766Z</lastmod>
+    <lastmod>2018-09-27T06:21:03.767Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://aimiyoo.github.io/philosophy/how/2017/08/01/pyenv%E7%9A%84%E4%BD%BF%E7%94%A8.html</loc>
     
-    <lastmod>2018-09-26T10:07:15.621Z</lastmod>
+    <lastmod>2018-09-26T10:07:15.622Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://aimiyoo.github.io/beautiful/share/2018/09/22/%E7%9B%B8%E5%A3%B0%E4%BC%A0%E6%89%BF%E8%A1%A8.html</loc>
     
-    <lastmod>2018-09-22T15:16:03.022Z</lastmod>
+    <lastmod>2018-09-22T15:16:03.023Z</lastmod>
     
   </url>
   
@@ -60,98 +67,98 @@
   <url>
     <loc>http://aimiyoo.github.io/categories/index.html</loc>
     
-    <lastmod>2018-09-21T03:23:16.618Z</lastmod>
+    <lastmod>2018-09-21T03:23:16.619Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://aimiyoo.github.io/archives/index.html</loc>
     
-    <lastmod>2018-09-21T03:22:52.034Z</lastmod>
+    <lastmod>2018-09-21T03:22:52.035Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://aimiyoo.github.io/philosophy/how/2017/05/12/elasticsearch.html</loc>
     
-    <lastmod>2018-09-17T06:39:58.444Z</lastmod>
+    <lastmod>2018-09-17T06:39:58.445Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://aimiyoo.github.io/philosophy/how/2017/08/10/ftp%E8%B6%85%E6%97%B6%E5%81%87%E6%AD%BB%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html</loc>
     
-    <lastmod>2018-09-17T06:39:56.804Z</lastmod>
+    <lastmod>2018-09-17T06:39:56.805Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://aimiyoo.github.io/philosophy/how/2017/04/12/git-learning.html</loc>
     
-    <lastmod>2018-09-17T06:39:55.268Z</lastmod>
+    <lastmod>2018-09-17T06:39:55.269Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://aimiyoo.github.io/philosophy/how/2017/04/12/hello-world.html</loc>
     
-    <lastmod>2018-09-17T06:39:52.652Z</lastmod>
+    <lastmod>2018-09-17T06:39:52.653Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://aimiyoo.github.io/beautiful/share/2017/10/23/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91.html</loc>
     
-    <lastmod>2018-09-17T06:39:45.196Z</lastmod>
+    <lastmod>2018-09-17T06:39:45.197Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://aimiyoo.github.io/beautiful/share/2017/02/22/%E8%80%81%E4%BA%BA%E4%B8%8E%E7%81%AB.html</loc>
     
-    <lastmod>2018-09-17T06:39:42.860Z</lastmod>
+    <lastmod>2018-09-17T06:39:42.861Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://aimiyoo.github.io/beautiful/share/2017/02/15/%E6%88%91%E7%9A%84Hexo%E6%88%90%E5%8A%9F%E4%BA%86.html</loc>
     
-    <lastmod>2018-09-17T06:39:40.720Z</lastmod>
+    <lastmod>2018-09-17T06:39:40.721Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://aimiyoo.github.io/beautiful/bb-for-fun/2018/08/28/%E5%85%B3%E4%BA%8E%E5%AD%A6%E4%B9%A0.html</loc>
     
-    <lastmod>2018-09-17T06:39:36.136Z</lastmod>
+    <lastmod>2018-09-17T06:39:36.137Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://aimiyoo.github.io/philosophy/how/2017/04/27/Terminator.html</loc>
     
-    <lastmod>2018-09-17T06:39:33.328Z</lastmod>
+    <lastmod>2018-09-17T06:39:33.329Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://aimiyoo.github.io/philosophy/how/2018/08/27/shell-date-range.html</loc>
     
-    <lastmod>2018-09-17T06:39:31.224Z</lastmod>
+    <lastmod>2018-09-17T06:39:31.225Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://aimiyoo.github.io/tags/index.html</loc>
     
-    <lastmod>2018-09-15T05:49:43.443Z</lastmod>
+    <lastmod>2018-09-15T05:49:43.444Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://aimiyoo.github.io/top/index.html</loc>
     
-    <lastmod>2018-09-02T09:52:23.441Z</lastmod>
+    <lastmod>2018-09-02T09:52:23.442Z</lastmod>
     
   </url>
   
