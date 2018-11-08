@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://aimiyoo.github.io/"/>
-  <updated>2018-11-08T02:29:04.863Z</updated>
+  <updated>2018-11-08T05:37:26.373Z</updated>
   <id>http://aimiyoo.github.io/</id>
   
   <author>
@@ -17,17 +17,43 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Nginx详解</title>
+    <link href="http://aimiyoo.github.io/philosophy/how/2018/11/08/Nginx%E8%AF%A6%E8%A7%A3.html"/>
+    <id>http://aimiyoo.github.io/philosophy/how/2018/11/08/Nginx详解.html</id>
+    <published>2018-11-08T02:48:50.000Z</published>
+    <updated>2018-11-08T05:37:26.373Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p class="description">分享一下Nginx基本使用技巧</p><p><img src="http://wx2.sinaimg.cn/mw690/a151a781ly1fx0lavez7bj214k0kat8k.jpg" alt="" style="width:100%"></p><a id="more"></a><h1 id="Nginx详解"><a href="#Nginx详解" class="headerlink" title="Nginx详解"></a>Nginx详解</h1><h2 id="Nginx能做什么"><a href="#Nginx能做什么" class="headerlink" title="Nginx能做什么"></a>Nginx能做什么</h2><pre><code>1. 反向代理2. 正向代理3. 负载均衡4. HTTP服务器(包含动静分离)</code></pre><h2 id="反向代理"><a href="#反向代理" class="headerlink" title="反向代理"></a>反向代理</h2><h2 id="正向代理"><a href="#正向代理" class="headerlink" title="正向代理"></a>正向代理</h2><h2 id="负载均衡"><a href="#负载均衡" class="headerlink" title="负载均衡"></a>负载均衡</h2><h2 id="HTTP服务器"><a href="#HTTP服务器" class="headerlink" title="HTTP服务器"></a>HTTP服务器</h2><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p class=&quot;description&quot;&gt;分享一下Nginx基本使用技巧&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://wx2.sinaimg.cn/mw690/a151a781ly1fx0lavez7bj214k0kat8k.jpg&quot; alt=&quot;&quot; style=&quot;width:100%&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="philosophy" scheme="http://aimiyoo.github.io/categories/philosophy/"/>
+    
+      <category term="how" scheme="http://aimiyoo.github.io/categories/philosophy/how/"/>
+    
+    
+      <category term="nginx" scheme="http://aimiyoo.github.io/tags/nginx/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Node.js升级</title>
     <link href="http://aimiyoo.github.io/philosophy/how/2018/11/07/Node.js%E5%8D%87%E7%BA%A7.html"/>
     <id>http://aimiyoo.github.io/philosophy/how/2018/11/07/Node.js升级.html</id>
     <published>2018-11-07T09:05:25.000Z</published>
-    <updated>2018-11-08T02:29:04.863Z</updated>
+    <updated>2018-11-08T05:30:52.823Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p class="description"></p><p><img src="http://wx1.sinaimg.cn/mw690/a151a781ly1fx0g36ybclj21420kbtar.jpg" alt="" style="width:100%"></p><a id="more"></a><h1 id="Node-js升级的两种方法"><a href="#Node-js升级的两种方法" class="headerlink" title="Node.js升级的两种方法"></a>Node.js升级的两种方法</h1><h2 id="版本管理工具——n"><a href="#版本管理工具——n" class="headerlink" title="版本管理工具——n"></a>版本管理工具——<a href="https://github.com/tj/n" target="_blank" rel="noopener">n</a></h2><pre><code class="shell"># n本身一个node模块，可以用npm安装# 安装n模块npm install -g n# 升级到最新稳定版n stable# 升级到最新版n lastest# 升级到指定版本n v11.0.0# 查看当前安装的node版本列表n# 切换版本n 11.0.0# 删除指定版本n rm 11.0.0# 用指定版本执行脚本n use 11.0.0 some.js# 安装的node在/usr/local/n/versions/node/11.0.0目录下# 最后可能需要修改环境变量才能生效</code></pre><h2 id="版本管理工具——nvm"><a href="#版本管理工具——nvm" class="headerlink" title="版本管理工具——nvm"></a>版本管理工具——<a href="https://github.com/creationix/nvm" target="_blank" rel="noopener">nvm</a></h2><pre><code class="shell"># nvm是独立于node/nmp之外的shell脚本# 安装nvmcurl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh|bash# 安装指定版本npm install v11.0.0# 查看当前安装的node版本列表nvm ls# 切换版本nvm use v11.0.0# 删除指定版本nvm uninstall v11.0.0# 显示当前node版本nvm current</code></pre><h2 id="一些Node-js知识"><a href="#一些Node-js知识" class="headerlink" title="一些Node.js知识"></a>一些Node.js知识</h2><h3 id="关于Node-js版本"><a href="#关于Node-js版本" class="headerlink" title="关于Node.js版本"></a>关于Node.js版本</h3><p>自从Node.js基金会成立以来，Node.js就有一个发布计划，就是同时发布两个版本：稳定版和试验版<br>在Node.js中，带有长期支持（LTS）的稳定版是以偶数开始（4,6,8,10…），而试验版是以奇数开始（5,7,11…）  </p><p>所以推荐在生产环境中用LTS版本，尝试新东西用试验版本</p><h3 id="Node-js和Javascript的区别"><a href="#Node-js和Javascript的区别" class="headerlink" title="Node.js和Javascript的区别"></a>Node.js和Javascript的区别</h3><p>Javascript是一种web前端语言，主要用于web开发，由浏览器解析执行<br>Node.js是一个可以快速构建网络服务及应用的平台，使用Javascript语言构建的服务平台，可用于后端建立服务器  </p><p>它们都是js语法，前者主要应用于前端，后者主要应用于后端：</p><pre><code>1. Node.js和Javasript，一个是平台，一个是编程语言2. Javasript是客户端编程语言，需要浏览器的javascript解释器解释执行3. Node.js is a JavaScript runtime built on Chrome&#39;s V8 JavaScript engine4. 简单的说Node.js就是把浏览器的解释器封装起来作为服务器运行平台，用类似Javascript的结构语法进行编程，在Node.js上运行</code></pre><hr>]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p class="description">分享Node.js版本升级的两种方法</p><p><img src="http://wx1.sinaimg.cn/mw690/a151a781ly1fx0g36ybclj21420kbtar.jpg" alt="" style="width:100%"></p><a id="more"></a><h1 id="Node-js升级的两种方法"><a href="#Node-js升级的两种方法" class="headerlink" title="Node.js升级的两种方法"></a>Node.js升级的两种方法</h1><h2 id="版本管理工具——n"><a href="#版本管理工具——n" class="headerlink" title="版本管理工具——n"></a>版本管理工具——<a href="https://github.com/tj/n" target="_blank" rel="noopener">n</a></h2><pre><code class="shell"># n本身一个node模块，可以用npm安装# 安装n模块npm install -g n# 升级到最新稳定版n stable# 升级到最新版n lastest# 升级到指定版本n v11.0.0# 查看当前安装的node版本列表n# 切换版本n 11.0.0# 删除指定版本n rm 11.0.0# 用指定版本执行脚本n use 11.0.0 some.js# 安装的node在/usr/local/n/versions/node/11.0.0目录下# 最后可能需要修改环境变量才能生效</code></pre><h2 id="版本管理工具——nvm"><a href="#版本管理工具——nvm" class="headerlink" title="版本管理工具——nvm"></a>版本管理工具——<a href="https://github.com/creationix/nvm" target="_blank" rel="noopener">nvm</a></h2><pre><code class="shell"># nvm是独立于node/nmp之外的shell脚本# 安装nvmcurl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh|bash# 安装指定版本npm install v11.0.0# 查看当前安装的node版本列表nvm ls# 切换版本nvm use v11.0.0# 删除指定版本nvm uninstall v11.0.0# 显示当前node版本nvm current</code></pre><h2 id="一些Node-js知识"><a href="#一些Node-js知识" class="headerlink" title="一些Node.js知识"></a>一些Node.js知识</h2><h3 id="关于Node-js版本"><a href="#关于Node-js版本" class="headerlink" title="关于Node.js版本"></a>关于Node.js版本</h3><p>自从Node.js基金会成立以来，Node.js就有一个发布计划，就是同时发布两个版本：稳定版和试验版<br>在Node.js中，带有长期支持（LTS）的稳定版是以偶数开始（4,6,8,10…），而试验版是以奇数开始（5,7,11…）  </p><p>所以推荐在生产环境中用LTS版本，尝试新东西用试验版本</p><h3 id="Node-js和Javascript的区别"><a href="#Node-js和Javascript的区别" class="headerlink" title="Node.js和Javascript的区别"></a>Node.js和Javascript的区别</h3><p>Javascript是一种web前端语言，主要用于web开发，由浏览器解析执行<br>Node.js是一个可以快速构建网络服务及应用的平台，使用Javascript语言构建的服务平台，可用于后端建立服务器  </p><p>它们都是js语法，前者主要应用于前端，后者主要应用于后端：</p><pre><code>1. Node.js和Javasript，一个是平台，一个是编程语言2. Javasript是客户端编程语言，需要浏览器的javascript解释器解释执行3. Node.js is a JavaScript runtime built on Chrome&#39;s V8 JavaScript engine4. 简单的说Node.js就是把浏览器的解释器封装起来作为服务器运行平台，用类似Javascript的结构语法进行编程，在Node.js上运行</code></pre><hr>]]></content>
     
     <summary type="html">
     
-      &lt;p class=&quot;description&quot;&gt;&lt;/p&gt;
+      &lt;p class=&quot;description&quot;&gt;分享Node.js版本升级的两种方法&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://wx1.sinaimg.cn/mw690/a151a781ly1fx0g36ybclj21420kbtar.jpg&quot; alt=&quot;&quot; style=&quot;width:100%&quot;&gt;&lt;/p&gt;
     
@@ -337,15 +363,15 @@
     <link href="http://aimiyoo.github.io/philosophy/how/2017/05/12/elasticsearch.html"/>
     <id>http://aimiyoo.github.io/philosophy/how/2017/05/12/elasticsearch.html</id>
     <published>2017-05-12T08:31:24.000Z</published>
-    <updated>2018-09-17T06:39:58.445Z</updated>
+    <updated>2018-11-08T08:31:03.097Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p class="description"></p><p><img src="https://" alt="" style="width:100%"></p><a id="more"></a><h2 id="elasticsearch-licence"><a href="#elasticsearch-licence" class="headerlink" title="elasticsearch licence"></a>elasticsearch licence</h2><ol><li>注册申请地址：<a href="https://register.elastic.co/marvel_register" target="_blank" rel="noopener">https://register.elastic.co/marvel_register</a> ps:有效期为一年<br> 然后去注册邮箱下载licence文件</li><li>执行以下命令<pre><code class="bash"> $ curl -XPUT -u elastic &#39;http://host:port/_xpack/license&#39; -H &quot;Content-Type: application/json&quot; -d @license.json</code></pre> 默认用户名：<strong>elastic</strong>，密码：<strong>changeme</strong><br> <em>host</em>:elasticsearch 节点的主机名，本地为localhost<br> <em>port</em>:端口号，默认为9200<br> <em>licence.json</em>:是json格式的licence文件</li></ol><h2 id="x-pack"><a href="#x-pack" class="headerlink" title="x-pack"></a>x-pack</h2><p><em>X-Pack is an Elastic Stack extension that bundles security, alerting, monitoring, reporting, and graph capabilities into one easy-to-install package. While the X-Pack components are designed to work together seamlessly, you can easily enable or disable the features you want to use.</em> </p><ol><li>elasticsearch 安装x-pack<pre><code class="bash"> $ bin/elasticsearch-plugin install x-pack</code></pre></li><li>kibana 安装x-pack<pre><code class="bash"> $ bin/kibana-plugin install x-pack</code></pre></li></ol><h2 id="elaticsearch-head（elasticsearch5-x版本）"><a href="#elaticsearch-head（elasticsearch5-x版本）" class="headerlink" title="elaticsearch-head（elasticsearch5.x版本）"></a>elaticsearch-head（elasticsearch5.x版本）</h2><ol><li>下载elasticsearch-head<pre><code class="bash"> $ git clone https://github.com/mobz/elasticsearch-head</code></pre></li><li>这一步需要安装node，请自己找教程安装。安装完成以后，切换到elasticsearch-head目录下，执行：<pre><code class="bash"> $ npm install</code></pre> 如果安装过慢，可以通过代理安装：<pre><code class="bash"> $ npm install cnpm --registry=https://registry.npm.taobao.org　</code></pre></li><li>配置elasticsearch的elasticsearch.yml文件，在文件最后添加：<pre><code> http.cors.enabled: true   http.cors.allow-origin: &quot;*&quot;</code></pre></li><li>启动服务。在elasticsearch-head目录下，执行<pre><code class="bash"> $ grunt server</code></pre> 打开<a href="http://localhost:9100网址，默认连接http://localhost:9200，就可以连上elasticsearch了。" target="_blank" rel="noopener">http://localhost:9100网址，默认连接http://localhost:9200，就可以连上elasticsearch了。</a><br> 如果安装了x-pack，那么需要在链接中加入验证，添加默认的用户名和密码<br> <a href="http://localhost:9100/?auth_user=elastic&amp;auth_password=changeme" target="_blank" rel="noopener">http://localhost:9100/?auth_user=elastic&amp;auth_password=changeme</a><br> 到此为止，如果没什么问题的话，你就可以尽情的操作elasticsearch了</li></ol><hr>]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p class="description"></p><p><img src="http://wx1.sinaimg.cn/mw690/a151a781ly1fx0nm5rwuej21kw0tljsy.jpg" alt="" style="width:100%"></p><a id="more"></a><h1 id="Elasticsearch简单搭建"><a href="#Elasticsearch简单搭建" class="headerlink" title="Elasticsearch简单搭建"></a>Elasticsearch简单搭建</h1><h2 id="elasticsearch-licence"><a href="#elasticsearch-licence" class="headerlink" title="elasticsearch licence"></a>elasticsearch licence</h2><ol><li>注册申请地址：<a href="https://register.elastic.co/marvel_register" target="_blank" rel="noopener">https://register.elastic.co/marvel_register</a> ps:有效期为一年<br> 然后去注册邮箱下载licence文件</li><li>执行以下命令</li></ol><pre><code class="bash">curl -XPUT -u elastic &#39;http://host:port/_xpack/license&#39; -H &quot;Content-Type: application/json&quot; -d @license.json</code></pre><div class="note success"><p><br>用户名：默认elastic<br>密码：默认changeme<br>host：elasticsearch节点的主机名，本地为localhost<br>port：端口号，默认为9200<br>licence.json：是json格式的licence文件<br></p></div><h2 id="x-pack"><a href="#x-pack" class="headerlink" title="x-pack"></a>x-pack</h2><p><em>X-Pack is an Elastic Stack extension that bundles security, alerting, monitoring, reporting, and graph capabilities into one easy-to-install package. While the X-Pack components are designed to work together seamlessly, you can easily enable or disable the features you want to use.</em>   </p><ol><li>elasticsearch 安装x-pack</li></ol><pre><code class="bash">bin/elasticsearch-plugin install x-pack</code></pre><ol start="2"><li>kibana 安装x-pack</li></ol><pre><code class="bash">bin/kibana-plugin install x-pack</code></pre><h2 id="elaticsearch-head（elasticsearch5-x版本）"><a href="#elaticsearch-head（elasticsearch5-x版本）" class="headerlink" title="elaticsearch-head（elasticsearch5.x版本）"></a>elaticsearch-head（elasticsearch5.x版本）</h2><ol><li>下载elasticsearch-head</li></ol><pre><code class="bash">git clone https://github.com/mobz/elasticsearch-head</code></pre><ol start="2"><li>这一步需要安装node，请自己找教程安装。安装完成以后，切换到elasticsearch-head目录下，执行：</li></ol><pre><code class="bash">npm install# 如果安装过慢，可以通过代理安装：npm install cnpm --registry=https://registry.npm.taobao.org　</code></pre><ol start="3"><li>配置elasticsearch的elasticsearch.yml文件，在文件最后添加：</li></ol><pre><code class="yaml">http.cors.enabled: true  http.cors.allow-origin: &quot;*&quot;</code></pre><ol start="4"><li>启动服务。在elasticsearch-head目录下，执行</li></ol><pre><code class="bash">grunt server</code></pre><div class="note success"><p><br>浏览器打开<a href="http://localhost:9100" target="_blank" rel="noopener">http://localhost:9100</a> ，就可以连上elasticsearch了。<br>如果安装了x-pack，那么需要在链接中加入验证，添加默认的用户名和密码<br><a href="http://localhost:9100/?auth_user=elastic&amp;auth_password=changeme" target="_blank" rel="noopener">http://localhost:9100/?auth_user=elastic&amp;auth_password=changeme</a><br>到此为止，如果没什么问题的话，你就可以尽情的操作elasticsearch了<br></p></div><hr>]]></content>
     
     <summary type="html">
     
       &lt;p class=&quot;description&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://&quot; alt=&quot;&quot; style=&quot;width:100%&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://wx1.sinaimg.cn/mw690/a151a781ly1fx0nm5rwuej21kw0tljsy.jpg&quot; alt=&quot;&quot; style=&quot;width:100%&quot;&gt;&lt;/p&gt;
     
     </summary>
     

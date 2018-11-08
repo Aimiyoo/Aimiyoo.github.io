@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Nginx详解]]></title>
+    <url>%2Fphilosophy%2Fhow%2F2018%2F11%2F08%2FNginx%E8%AF%A6%E8%A7%A3.html</url>
+    <content type="text"><![CDATA[分享一下Nginx基本使用技巧 Nginx详解Nginx能做什么1. 反向代理 2. 正向代理 3. 负载均衡 4. HTTP服务器(包含动静分离) 反向代理正向代理负载均衡HTTP服务器]]></content>
+      <categories>
+        <category>philosophy</category>
+        <category>how</category>
+      </categories>
+      <tags>
+        <tag>nginx</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Node.js升级]]></title>
     <url>%2Fphilosophy%2Fhow%2F2018%2F11%2F07%2FNode.js%E5%8D%87%E7%BA%A7.html</url>
-    <content type="text"><![CDATA[Node.js升级的两种方法版本管理工具——n# n本身一个node模块，可以用npm安装 # 安装n模块 npm install -g n # 升级到最新稳定版 n stable # 升级到最新版 n lastest # 升级到指定版本 n v11.0.0 # 查看当前安装的node版本列表 n # 切换版本 n 11.0.0 # 删除指定版本 n rm 11.0.0 # 用指定版本执行脚本 n use 11.0.0 some.js # 安装的node在/usr/local/n/versions/node/11.0.0目录下 # 最后可能需要修改环境变量才能生效 版本管理工具——nvm# nvm是独立于node/nmp之外的shell脚本 # 安装nvm curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh|bash # 安装指定版本 npm install v11.0.0 # 查看当前安装的node版本列表 nvm ls # 切换版本 nvm use v11.0.0 # 删除指定版本 nvm uninstall v11.0.0 # 显示当前node版本 nvm current 一些Node.js知识关于Node.js版本自从Node.js基金会成立以来，Node.js就有一个发布计划，就是同时发布两个版本：稳定版和试验版在Node.js中，带有长期支持（LTS）的稳定版是以偶数开始（4,6,8,10…），而试验版是以奇数开始（5,7,11…） 所以推荐在生产环境中用LTS版本，尝试新东西用试验版本 Node.js和Javascript的区别Javascript是一种web前端语言，主要用于web开发，由浏览器解析执行Node.js是一个可以快速构建网络服务及应用的平台，使用Javascript语言构建的服务平台，可用于后端建立服务器 它们都是js语法，前者主要应用于前端，后者主要应用于后端： 1. Node.js和Javasript，一个是平台，一个是编程语言 2. Javasript是客户端编程语言，需要浏览器的javascript解释器解释执行 3. Node.js is a JavaScript runtime built on Chrome&#39;s V8 JavaScript engine 4. 简单的说Node.js就是把浏览器的解释器封装起来作为服务器运行平台，用类似Javascript的结构语法进行编程，在Node.js上运行]]></content>
+    <content type="text"><![CDATA[分享Node.js版本升级的两种方法 Node.js升级的两种方法版本管理工具——n# n本身一个node模块，可以用npm安装 # 安装n模块 npm install -g n # 升级到最新稳定版 n stable # 升级到最新版 n lastest # 升级到指定版本 n v11.0.0 # 查看当前安装的node版本列表 n # 切换版本 n 11.0.0 # 删除指定版本 n rm 11.0.0 # 用指定版本执行脚本 n use 11.0.0 some.js # 安装的node在/usr/local/n/versions/node/11.0.0目录下 # 最后可能需要修改环境变量才能生效 版本管理工具——nvm# nvm是独立于node/nmp之外的shell脚本 # 安装nvm curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh|bash # 安装指定版本 npm install v11.0.0 # 查看当前安装的node版本列表 nvm ls # 切换版本 nvm use v11.0.0 # 删除指定版本 nvm uninstall v11.0.0 # 显示当前node版本 nvm current 一些Node.js知识关于Node.js版本自从Node.js基金会成立以来，Node.js就有一个发布计划，就是同时发布两个版本：稳定版和试验版在Node.js中，带有长期支持（LTS）的稳定版是以偶数开始（4,6,8,10…），而试验版是以奇数开始（5,7,11…） 所以推荐在生产环境中用LTS版本，尝试新东西用试验版本 Node.js和Javascript的区别Javascript是一种web前端语言，主要用于web开发，由浏览器解析执行Node.js是一个可以快速构建网络服务及应用的平台，使用Javascript语言构建的服务平台，可用于后端建立服务器 它们都是js语法，前者主要应用于前端，后者主要应用于后端： 1. Node.js和Javasript，一个是平台，一个是编程语言 2. Javasript是客户端编程语言，需要浏览器的javascript解释器解释执行 3. Node.js is a JavaScript runtime built on Chrome&#39;s V8 JavaScript engine 4. 简单的说Node.js就是把浏览器的解释器封装起来作为服务器运行平台，用类似Javascript的结构语法进行编程，在Node.js上运行]]></content>
       <categories>
         <category>philosophy</category>
         <category>how</category>
@@ -141,7 +153,7 @@
   <entry>
     <title><![CDATA[elasticsearch]]></title>
     <url>%2Fphilosophy%2Fhow%2F2017%2F05%2F12%2Felasticsearch.html</url>
-    <content type="text"><![CDATA[elasticsearch licence 注册申请地址：https://register.elastic.co/marvel_register ps:有效期为一年 然后去注册邮箱下载licence文件 执行以下命令 $ curl -XPUT -u elastic &#39;http://host:port/_xpack/license&#39; -H &quot;Content-Type: application/json&quot; -d @license.json 默认用户名：elastic，密码：changeme host:elasticsearch 节点的主机名，本地为localhost port:端口号，默认为9200 licence.json:是json格式的licence文件 x-packX-Pack is an Elastic Stack extension that bundles security, alerting, monitoring, reporting, and graph capabilities into one easy-to-install package. While the X-Pack components are designed to work together seamlessly, you can easily enable or disable the features you want to use. elasticsearch 安装x-pack $ bin/elasticsearch-plugin install x-pack kibana 安装x-pack $ bin/kibana-plugin install x-pack elaticsearch-head（elasticsearch5.x版本） 下载elasticsearch-head $ git clone https://github.com/mobz/elasticsearch-head 这一步需要安装node，请自己找教程安装。安装完成以后，切换到elasticsearch-head目录下，执行： $ npm install 如果安装过慢，可以通过代理安装： $ npm install cnpm --registry=https://registry.npm.taobao.org 配置elasticsearch的elasticsearch.yml文件，在文件最后添加： http.cors.enabled: true http.cors.allow-origin: &quot;*&quot; 启动服务。在elasticsearch-head目录下，执行 $ grunt server 打开http://localhost:9100网址，默认连接http://localhost:9200，就可以连上elasticsearch了。 如果安装了x-pack，那么需要在链接中加入验证，添加默认的用户名和密码 http://localhost:9100/?auth_user=elastic&amp;auth_password=changeme 到此为止，如果没什么问题的话，你就可以尽情的操作elasticsearch了]]></content>
+    <content type="text"><![CDATA[Elasticsearch简单搭建elasticsearch licence 注册申请地址：https://register.elastic.co/marvel_register ps:有效期为一年 然后去注册邮箱下载licence文件 执行以下命令 curl -XPUT -u elastic &#39;http://host:port/_xpack/license&#39; -H &quot;Content-Type: application/json&quot; -d @license.json 用户名：默认elastic密码：默认changemehost：elasticsearch节点的主机名，本地为localhostport：端口号，默认为9200licence.json：是json格式的licence文件 x-packX-Pack is an Elastic Stack extension that bundles security, alerting, monitoring, reporting, and graph capabilities into one easy-to-install package. While the X-Pack components are designed to work together seamlessly, you can easily enable or disable the features you want to use. elasticsearch 安装x-pack bin/elasticsearch-plugin install x-pack kibana 安装x-pack bin/kibana-plugin install x-pack elaticsearch-head（elasticsearch5.x版本） 下载elasticsearch-head git clone https://github.com/mobz/elasticsearch-head 这一步需要安装node，请自己找教程安装。安装完成以后，切换到elasticsearch-head目录下，执行： npm install # 如果安装过慢，可以通过代理安装： npm install cnpm --registry=https://registry.npm.taobao.org 配置elasticsearch的elasticsearch.yml文件，在文件最后添加： http.cors.enabled: true http.cors.allow-origin: &quot;*&quot; 启动服务。在elasticsearch-head目录下，执行 grunt server 浏览器打开http://localhost:9100 ，就可以连上elasticsearch了。如果安装了x-pack，那么需要在链接中加入验证，添加默认的用户名和密码http://localhost:9100/?auth_user=elastic&amp;auth_password=changeme到此为止，如果没什么问题的话，你就可以尽情的操作elasticsearch了]]></content>
       <categories>
         <category>philosophy</category>
         <category>how</category>
