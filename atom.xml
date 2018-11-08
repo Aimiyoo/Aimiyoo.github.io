@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://aimiyoo.github.io/"/>
-  <updated>2018-11-07T12:58:09.701Z</updated>
+  <updated>2018-11-08T02:29:04.863Z</updated>
   <id>http://aimiyoo.github.io/</id>
   
   <author>
@@ -21,15 +21,15 @@
     <link href="http://aimiyoo.github.io/philosophy/how/2018/11/07/Node.js%E5%8D%87%E7%BA%A7.html"/>
     <id>http://aimiyoo.github.io/philosophy/how/2018/11/07/Node.js升级.html</id>
     <published>2018-11-07T09:05:25.000Z</published>
-    <updated>2018-11-07T12:58:09.701Z</updated>
+    <updated>2018-11-08T02:29:04.863Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p class="description"></p><p><img src="https://" alt="" style="width:100%"></p><a id="more"></a><h1 id="Node-js升级的两种方法"><a href="#Node-js升级的两种方法" class="headerlink" title="Node.js升级的两种方法"></a>Node.js升级的两种方法</h1><h2 id="版本管理工具——n"><a href="#版本管理工具——n" class="headerlink" title="版本管理工具——n"></a>版本管理工具——<a href="https://github.com/tj/n" target="_blank" rel="noopener">n</a></h2><pre><code class="shell"># n本身一个node模块，可以用npm安装# 安装n模块npm install -g n# 升级到最新稳定版n stable# 升级到最新版n lastest# 升级到指定版本n v11.0.0# 查看当前安装的node版本列表n# 切换版本n 11.0.0# 删除指定版本n rm 11.0.0# 用指定版本执行脚本n use 11.0.0 some.js# 安装的node在/usr/local/n/versions/node/11.0.0目录下# 最后可能需要修改环境变量才能生效</code></pre><h2 id="版本管理工具——nvm"><a href="#版本管理工具——nvm" class="headerlink" title="版本管理工具——nvm"></a>版本管理工具——<a href="https://github.com/creationix/nvm" target="_blank" rel="noopener">nvm</a></h2><pre><code class="shell"># nvm是独立于node/nmp之外的shell脚本# 安装nvmcurl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh|bash# 安装指定版本npm install v11.0.0# 查看当前安装的node版本列表nvm ls# 切换版本nvm use v11.0.0# 删除指定版本nvm uninstall v11.0.0# 显示当前node版本nvm current</code></pre><h2 id="一些Node-js知识"><a href="#一些Node-js知识" class="headerlink" title="一些Node.js知识"></a>一些Node.js知识</h2><h3 id="关于Node-js版本"><a href="#关于Node-js版本" class="headerlink" title="关于Node.js版本"></a>关于Node.js版本</h3><p>自从Node.js基金会成立以来，Node.js就有一个发布计划，就是同时发布两个版本：稳定版和试验版<br>在Node.js中，带有长期支持（LTS）的稳定版是以偶数开始（4,6,8,10…），而试验版是以奇数开始（5,7,11…）  </p><p>所以推荐在生产环境中用LTS版本，尝试新东西用试验版本</p><h3 id="Node-js和Javascript的区别"><a href="#Node-js和Javascript的区别" class="headerlink" title="Node.js和Javascript的区别"></a>Node.js和Javascript的区别</h3><p>Javascript是一种web前端语言，主要用于web开发，由浏览器解析执行<br>Node.js是一个可以快速构建网络服务及应用的平台，使用Javascript语言构建的服务平台，可用于后端建立服务器  </p><p>它们都是js语法，前者主要应用于前端，后者主要应用于后端：</p><pre><code>1. Node.js和Javasript，一个是平台，一个是编程语言2. Javasript是客户端编程语言，需要浏览器的javascript解释器解释执行3. Node.js是一个基于Chrome Javascript运行时建立的平台，它是对Google V8引擎进行了封装的运行环境4. 简单的说Node.js就是把浏览器的解释器封装起来作为服务器运行平台，用类似Javascript的结构语法进行编程，在Node.js上运行</code></pre><hr>]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p class="description"></p><p><img src="http://wx1.sinaimg.cn/mw690/a151a781ly1fx0g36ybclj21420kbtar.jpg" alt="" style="width:100%"></p><a id="more"></a><h1 id="Node-js升级的两种方法"><a href="#Node-js升级的两种方法" class="headerlink" title="Node.js升级的两种方法"></a>Node.js升级的两种方法</h1><h2 id="版本管理工具——n"><a href="#版本管理工具——n" class="headerlink" title="版本管理工具——n"></a>版本管理工具——<a href="https://github.com/tj/n" target="_blank" rel="noopener">n</a></h2><pre><code class="shell"># n本身一个node模块，可以用npm安装# 安装n模块npm install -g n# 升级到最新稳定版n stable# 升级到最新版n lastest# 升级到指定版本n v11.0.0# 查看当前安装的node版本列表n# 切换版本n 11.0.0# 删除指定版本n rm 11.0.0# 用指定版本执行脚本n use 11.0.0 some.js# 安装的node在/usr/local/n/versions/node/11.0.0目录下# 最后可能需要修改环境变量才能生效</code></pre><h2 id="版本管理工具——nvm"><a href="#版本管理工具——nvm" class="headerlink" title="版本管理工具——nvm"></a>版本管理工具——<a href="https://github.com/creationix/nvm" target="_blank" rel="noopener">nvm</a></h2><pre><code class="shell"># nvm是独立于node/nmp之外的shell脚本# 安装nvmcurl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh|bash# 安装指定版本npm install v11.0.0# 查看当前安装的node版本列表nvm ls# 切换版本nvm use v11.0.0# 删除指定版本nvm uninstall v11.0.0# 显示当前node版本nvm current</code></pre><h2 id="一些Node-js知识"><a href="#一些Node-js知识" class="headerlink" title="一些Node.js知识"></a>一些Node.js知识</h2><h3 id="关于Node-js版本"><a href="#关于Node-js版本" class="headerlink" title="关于Node.js版本"></a>关于Node.js版本</h3><p>自从Node.js基金会成立以来，Node.js就有一个发布计划，就是同时发布两个版本：稳定版和试验版<br>在Node.js中，带有长期支持（LTS）的稳定版是以偶数开始（4,6,8,10…），而试验版是以奇数开始（5,7,11…）  </p><p>所以推荐在生产环境中用LTS版本，尝试新东西用试验版本</p><h3 id="Node-js和Javascript的区别"><a href="#Node-js和Javascript的区别" class="headerlink" title="Node.js和Javascript的区别"></a>Node.js和Javascript的区别</h3><p>Javascript是一种web前端语言，主要用于web开发，由浏览器解析执行<br>Node.js是一个可以快速构建网络服务及应用的平台，使用Javascript语言构建的服务平台，可用于后端建立服务器  </p><p>它们都是js语法，前者主要应用于前端，后者主要应用于后端：</p><pre><code>1. Node.js和Javasript，一个是平台，一个是编程语言2. Javasript是客户端编程语言，需要浏览器的javascript解释器解释执行3. Node.js is a JavaScript runtime built on Chrome&#39;s V8 JavaScript engine4. 简单的说Node.js就是把浏览器的解释器封装起来作为服务器运行平台，用类似Javascript的结构语法进行编程，在Node.js上运行</code></pre><hr>]]></content>
     
     <summary type="html">
     
       &lt;p class=&quot;description&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://&quot; alt=&quot;&quot; style=&quot;width:100%&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://wx1.sinaimg.cn/mw690/a151a781ly1fx0g36ybclj21420kbtar.jpg&quot; alt=&quot;&quot; style=&quot;width:100%&quot;&gt;&lt;/p&gt;
     
     </summary>
     
