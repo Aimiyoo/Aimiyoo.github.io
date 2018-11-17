@@ -147,7 +147,7 @@
 <meta property="og:description" content="分享一下Nginx基本使用技巧">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://wx2.sinaimg.cn/mw690/a151a781ly1fx0lavez7bj214k0kat8k.jpg">
-<meta property="og:updated_time" content="2018-11-16T04:05:18.795Z">
+<meta property="og:updated_time" content="2018-11-17T07:27:55.027Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Nginx详解">
 <meta name="twitter:description" content="分享一下Nginx基本使用技巧">
@@ -459,7 +459,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  338
+                  1,503
                 </span>
               
 
@@ -475,7 +475,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  6
                 </span>
               
             </div>
@@ -504,10 +504,8 @@
 2. 正向代理
 3. 负载均衡
 4. HTTP服务器(包含动静分离)
-</code></pre><h2 id="反向代理"><a href="#反向代理" class="headerlink" title="反向代理"></a>反向代理</h2><p>反向代理应该是Nginx做的最多的一件事情了，什么是反向代理呢？</p>
-<div class="note info"><p><br>反向代理(Reverse Proxy)方式是值以代理服务器来接受internet上的连接请求，然后将请求转发给内部网络上的服务器，并将从服务器上得到的结果返回给internet上请求连接的客户端，此时代理服务器对外就表现为一个反向代理服务器。<br>简单来说就是真实的服务器不能直接被外部网络访问，所以需要一台代理服务器，而代理服务器能被外部网络访问的同时又跟真实服务器在同一个网络环境，当然也可能是同一台服务器，端口不同而已。<br></p></div>
-
-<pre><code class="nginx">server{
+</code></pre><h2 id="反向代理"><a href="#反向代理" class="headerlink" title="反向代理"></a>反向代理</h2><p>反向代理应该是Nginx做的最多的一件事情了，什么是反向代理呢？<br>反向代理(Reverse Proxy)方式是指以代理服务器来接受internet上的连接请求，然后将请求转发给内部网络上的服务器，并将从服务器上得到的结果返回给internet上请求连接的客户端，此时代理服务器对外就表现为一个反向代理服务器。<br>简单来说就是真实的服务器不能直接被外部网络访问，所以需要一台代理服务器，而代理服务器能被外部网络访问的同时又跟真实服务器在同一个网络环境，当然也可能是同一台服务器，端口不同而已。<br>对客户端来说，反向代理是透明的，感知不到反向代理的存在</p>
+<pre><code class="nginx">server {
     listen 80;
     server_name localhost;
     client_max_body_size 1024M;
@@ -519,9 +517,134 @@
 }
 </code></pre>
 <p>保存配置文件后启动Nginx，这样当我们访问localhost的时候，就相当于访问localhost:8080了</p>
-<h2 id="正向代理"><a href="#正向代理" class="headerlink" title="正向代理"></a>正向代理</h2><p>正向代理，意思是一个位于客户端和原始</p>
-<h2 id="负载均衡"><a href="#负载均衡" class="headerlink" title="负载均衡"></a>负载均衡</h2><p>负载均衡也是Nginx常用的一个功能，</p>
-<h2 id="HTTP服务器"><a href="#HTTP服务器" class="headerlink" title="HTTP服务器"></a>HTTP服务器</h2><hr>
+<h2 id="正向代理"><a href="#正向代理" class="headerlink" title="正向代理"></a>正向代理</h2><p>正向代理，意思是一个位于客户端和原始服务器之间的服务器，为了从原始服务器取得内容，客户端向代理发送一个请求并指定目标，然后代理向原始服务器转交请求并将获得的内容返回给客户端，客户端才能使用正向代理。<br>一种用法是通过vps科学上网，vps就是正向代理的角色。</p>
+<pre><code class="nginx">resolver 114.114.114.114 8.8.8.8
+server {
+    resolver_timeout 5s;
+
+    listen 81;
+
+    access_log e:wwwrootproxy.access.log;
+    error_log e:wwwrootproxy.error.log;
+
+    location / {
+        proxy_pass http://$host$request_uri;
+    }
+}
+</code></pre>
+<p>resolver是配置正向代理的DNS服务器，listen是正向代理的端口，配置好了就可以在IE上面或者其他代理插件上面使用服务器ip+端口号进行代理了</p>
+<h2 id="负载均衡"><a href="#负载均衡" class="headerlink" title="负载均衡"></a>负载均衡</h2><p>负载均衡也是Nginx常用的一个功能，负载均衡其意思是分摊到多个操作单元上进行执行，例如web服务器、FTP服务器、企业关键应用服务器和其它关键任务服务器，从而共同完成工作任务。  </p>
+<p>简而言之就是当有2台或者以上服务器时，根据规则随机的将请求分发到指定的服务器上处理，负载均衡配置一般都需要同时配置反向代理，通过反向代理跳转到负载均衡服务器。  </p>
+<p>而Nginx目前支持自带3种负载均衡策略，还有2种常用的第三方策略。</p>
+<ol>
+<li>RR (默认)  </li>
+</ol>
+<p>每个请求按时间顺序逐一分配到不同的后端服务器，如果后端服务器宕掉，能自动剔除。  </p>
+<pre><code class="nginx">upstream test {
+    server localhost：8080;
+    server localhost：8081;
+}
+server {
+    listen 81;
+
+    server_name 81;
+    client_max_body_size 1024M;
+
+    location / {
+        proxy_pass http://test;
+        proxy_set_header Host $host:$server_port;
+    }
+}
+</code></pre>
+<ol start="2">
+<li>权重</li>
+</ol>
+<p>指定轮询几率，weight和访问几率成正比，用于后端服务器性能不均的情况。例如:</p>
+<pre><code class="nginx">upstream test {
+    server localhost:8080 weight=9;
+    server localhost:8081 weight=1;
+}
+</code></pre>
+<p>这样10次一般会有1次会访问到8081，而有9次会访问到8080</p>
+<ol start="3">
+<li>ip_hash</li>
+</ol>
+<p>上面2种方式有一个问题，那就是下一个请求来的时候可能会分发到另外一个服务器，当我们的程序不是无状态的(采用了session保存数据)，这时候就有一个很大的问题了，比如把登录信息保存到了session中，那么跳转到另外一台服务器的时候就需要重新登录了，所以很多时候我们需要一个客户只访问一个服务器，那么就需要iphash了，iphash的每个请求按访问ip的hash结果分配，这样每个访客固定访问一个后端服务器，可以解决session的问题。</p>
+<pre><code class="nginx">upstream test {
+    ip_hash;
+    server localhost:8080;
+    server localhost:8081;
+}
+</code></pre>
+<ol start="4">
+<li>fair (第三方)</li>
+</ol>
+<p>按后端服务器的响应时间来分配请求，响应时间短的优先分配。</p>
+<pre><code class="nginx">upstream backend {
+    fair;
+    server localhost:8080;
+    server localhost:8081;
+}
+</code></pre>
+<ol start="5">
+<li>url_hash (第三方)</li>
+</ol>
+<p>按访问url的hash结果来分配请求，使每个url定向到同一个后端服务器，后端服务器为缓存时比较有效。在upstream中加入hash语句，server语句中不能写入weight等其他参数，hash_method是使用的hash算法。</p>
+<pre><code class="nginx">upstream backend {
+    hash $request_uri;
+    hash_method crc32;
+    server localhost:8080;
+    server localhost:8081;
+}
+</code></pre>
+<div class="note info"><p><br>以上5种负载均衡各自适用不同情况，所以可根据实际情况选择使用哪种策略模式，不过fair和url_hash需要安装第三方模块才能使用。<br></p></div>
+
+<h2 id="HTTP服务器"><a href="#HTTP服务器" class="headerlink" title="HTTP服务器"></a>HTTP服务器</h2><p>Nginx本身也是一个静态资源的服务器，当只有静态资源的时候，就可以使用Nginx来做服务器，同时现在也很流行动静分离，就可以通过Nginx来实现，首先看看Nginx做静态资源服务器。</p>
+<pre><code class="nginx">server {
+    listen 80;
+
+    server_name localhost;
+    client_max_body_size 1024M;
+
+    location / {
+        root e:\wwwroot;
+        index index.html;
+    }
+}
+</code></pre>
+<p>这样如果访问 <a href="http://localhost" target="_blank" rel="noopener">http://localhost</a> 就会访问E盘wwwroot目录下面的index.html，如果一个网站只是静态页面的话，那么就可以通过这种方式来实现部署。</p>
+<h2 id="动静分离"><a href="#动静分离" class="headerlink" title="动静分离"></a>动静分离</h2><p>动静分离是让动态网站里的动态网页根据一定规则把不变的资源和经常变的资源区分开来，动静资源做好了拆分以后，我们就可以根据静态资源的特点将其做缓存操作，这就是网站静态化处理的核心思路。</p>
+<pre><code class="nginx">upstream test {
+    server localhost:8080;
+    server localhost:8081;
+}
+
+server {
+    listen 80;
+    server_name localhost;
+
+    location / {
+        root e:\wwwroot;
+        index index.html;
+    }
+
+    # 所有静态请求都由nginx处理，存放目录为html
+    location ～ \.(gif|jpg|jpeg|png|bmp|swf|css|js)$ {
+        root e:\wwwroot;
+    }
+
+    # 所有动态请求都转发给tomcat处理
+    location ～\.(jsp|do)$ {
+        proxy_pass http://test;
+    }
+
+    error_page 500 502 503 504 /50x.html;
+    location = /50x.html {
+        root e:\wwwroot;
+    }
+}
+</code></pre>
+<hr>
       
     </div>
     
@@ -755,7 +878,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Nginx详解"><span class="nav-number">1.</span> <span class="nav-text">Nginx详解</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Nginx能做什么"><span class="nav-number">1.1.</span> <span class="nav-text">Nginx能做什么</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#反向代理"><span class="nav-number">1.2.</span> <span class="nav-text">反向代理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#正向代理"><span class="nav-number">1.3.</span> <span class="nav-text">正向代理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#负载均衡"><span class="nav-number">1.4.</span> <span class="nav-text">负载均衡</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTTP服务器"><span class="nav-number">1.5.</span> <span class="nav-text">HTTP服务器</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Nginx详解"><span class="nav-number">1.</span> <span class="nav-text">Nginx详解</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Nginx能做什么"><span class="nav-number">1.1.</span> <span class="nav-text">Nginx能做什么</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#反向代理"><span class="nav-number">1.2.</span> <span class="nav-text">反向代理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#正向代理"><span class="nav-number">1.3.</span> <span class="nav-text">正向代理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#负载均衡"><span class="nav-number">1.4.</span> <span class="nav-text">负载均衡</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTTP服务器"><span class="nav-number">1.5.</span> <span class="nav-text">HTTP服务器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#动静分离"><span class="nav-number">1.6.</span> <span class="nav-text">动静分离</span></a></li></ol></li></ol></div>
             
 
           </div>
