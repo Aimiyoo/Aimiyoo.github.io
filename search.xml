@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Nginx详解]]></title>
     <url>%2Fphilosophy%2Fhow%2F2018%2F11%2F08%2FNginx%E8%AF%A6%E8%A7%A3.html</url>
-    <content type="text"><![CDATA[分享一下Nginx基本使用技巧 Nginx详解Nginx能做什么1. 反向代理 2. 正向代理 3. 负载均衡 4. HTTP服务器(包含动静分离) 反向代理正向代理负载均衡HTTP服务器]]></content>
+    <content type="text"><![CDATA[分享一下Nginx基本使用技巧 Nginx详解Nginx能做什么1. 反向代理 2. 正向代理 3. 负载均衡 4. HTTP服务器(包含动静分离) 反向代理反向代理应该是Nginx做的最多的一件事情了，什么是反向代理呢？ 反向代理(Reverse Proxy)方式是值以代理服务器来接受internet上的连接请求，然后将请求转发给内部网络上的服务器，并将从服务器上得到的结果返回给internet上请求连接的客户端，此时代理服务器对外就表现为一个反向代理服务器。简单来说就是真实的服务器不能直接被外部网络访问，所以需要一台代理服务器，而代理服务器能被外部网络访问的同时又跟真实服务器在同一个网络环境，当然也可能是同一台服务器，端口不同而已。 server{ listen 80; server_name localhost; client_max_body_size 1024M; location / { proxy_pass http://localhost:8080; proxy_set_header Host $host:$server_port; } } 保存配置文件后启动Nginx，这样当我们访问localhost的时候，就相当于访问localhost:8080了 正向代理正向代理，意思是一个位于客户端和原始 负载均衡负载均衡也是Nginx常用的一个功能， HTTP服务器]]></content>
       <categories>
         <category>philosophy</category>
         <category>how</category>

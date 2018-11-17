@@ -147,7 +147,7 @@
 <meta property="og:description" content="分享一下Nginx基本使用技巧">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://wx2.sinaimg.cn/mw690/a151a781ly1fx0lavez7bj214k0kat8k.jpg">
-<meta property="og:updated_time" content="2018-11-08T05:37:26.373Z">
+<meta property="og:updated_time" content="2018-11-16T04:05:18.795Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Nginx详解">
 <meta name="twitter:description" content="分享一下Nginx基本使用技巧">
@@ -459,7 +459,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  61
+                  338
                 </span>
               
 
@@ -504,7 +504,24 @@
 2. 正向代理
 3. 负载均衡
 4. HTTP服务器(包含动静分离)
-</code></pre><h2 id="反向代理"><a href="#反向代理" class="headerlink" title="反向代理"></a>反向代理</h2><h2 id="正向代理"><a href="#正向代理" class="headerlink" title="正向代理"></a>正向代理</h2><h2 id="负载均衡"><a href="#负载均衡" class="headerlink" title="负载均衡"></a>负载均衡</h2><h2 id="HTTP服务器"><a href="#HTTP服务器" class="headerlink" title="HTTP服务器"></a>HTTP服务器</h2><hr>
+</code></pre><h2 id="反向代理"><a href="#反向代理" class="headerlink" title="反向代理"></a>反向代理</h2><p>反向代理应该是Nginx做的最多的一件事情了，什么是反向代理呢？</p>
+<div class="note info"><p><br>反向代理(Reverse Proxy)方式是值以代理服务器来接受internet上的连接请求，然后将请求转发给内部网络上的服务器，并将从服务器上得到的结果返回给internet上请求连接的客户端，此时代理服务器对外就表现为一个反向代理服务器。<br>简单来说就是真实的服务器不能直接被外部网络访问，所以需要一台代理服务器，而代理服务器能被外部网络访问的同时又跟真实服务器在同一个网络环境，当然也可能是同一台服务器，端口不同而已。<br></p></div>
+
+<pre><code class="nginx">server{
+    listen 80;
+    server_name localhost;
+    client_max_body_size 1024M;
+
+    location / {
+        proxy_pass http://localhost:8080;
+        proxy_set_header Host $host:$server_port;
+    }
+}
+</code></pre>
+<p>保存配置文件后启动Nginx，这样当我们访问localhost的时候，就相当于访问localhost:8080了</p>
+<h2 id="正向代理"><a href="#正向代理" class="headerlink" title="正向代理"></a>正向代理</h2><p>正向代理，意思是一个位于客户端和原始</p>
+<h2 id="负载均衡"><a href="#负载均衡" class="headerlink" title="负载均衡"></a>负载均衡</h2><p>负载均衡也是Nginx常用的一个功能，</p>
+<h2 id="HTTP服务器"><a href="#HTTP服务器" class="headerlink" title="HTTP服务器"></a>HTTP服务器</h2><hr>
       
     </div>
     

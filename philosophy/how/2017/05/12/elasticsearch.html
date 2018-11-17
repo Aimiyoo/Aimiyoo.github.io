@@ -145,7 +145,7 @@
 <meta property="og:site_name" content="The Peach Colony">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://wx1.sinaimg.cn/mw690/a151a781ly1fx0nm5rwuej21kw0tljsy.jpg">
-<meta property="og:updated_time" content="2018-11-08T08:31:03.097Z">
+<meta property="og:updated_time" content="2018-11-08T10:39:01.767Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="elasticsearch">
 <meta name="twitter:image" content="http://wx1.sinaimg.cn/mw690/a151a781ly1fx0nm5rwuej21kw0tljsy.jpg">
@@ -503,7 +503,7 @@
 </ol>
 <pre><code class="bash">curl -XPUT -u elastic &#39;http://host:port/_xpack/license&#39; -H &quot;Content-Type: application/json&quot; -d @license.json
 </code></pre>
-<div class="note success"><p><br>用户名：默认elastic<br>密码：默认changeme<br>host：elasticsearch节点的主机名，本地为localhost<br>port：端口号，默认为9200<br>licence.json：是json格式的licence文件<br></p></div>
+<div class="note info"><p><br>用户名：默认elastic<br>密码：默认changeme<br>host：elasticsearch节点的主机名，本地为localhost<br>port：端口号，默认为9200<br>licence.json：是json格式的licence文件<br></p></div>
 
 <h2 id="x-pack"><a href="#x-pack" class="headerlink" title="x-pack"></a>x-pack</h2><p><em>X-Pack is an Elastic Stack extension that bundles security, alerting, monitoring, reporting, and graph capabilities into one easy-to-install package. While the X-Pack components are designed to work together seamlessly, you can easily enable or disable the features you want to use.</em>   </p>
 <ol>
@@ -539,7 +539,7 @@ http.cors.allow-origin: &quot;*&quot;
 </ol>
 <pre><code class="bash">grunt server
 </code></pre>
-<div class="note success"><p><br>浏览器打开<a href="http://localhost:9100" target="_blank" rel="noopener">http://localhost:9100</a> ，就可以连上elasticsearch了。<br>如果安装了x-pack，那么需要在链接中加入验证，添加默认的用户名和密码<br><a href="http://localhost:9100/?auth_user=elastic&amp;auth_password=changeme" target="_blank" rel="noopener">http://localhost:9100/?auth_user=elastic&amp;auth_password=changeme</a><br>到此为止，如果没什么问题的话，你就可以尽情的操作elasticsearch了<br></p></div>
+<div class="note info"><p><br>浏览器打开<a href="http://localhost:9100" target="_blank" rel="noopener">http://localhost:9100</a> ，就可以连上elasticsearch了。<br>如果安装了x-pack，那么需要在链接中加入验证，添加默认的用户名和密码<br><a href="http://localhost:9100/?auth_user=elastic&amp;auth_password=changeme" target="_blank" rel="noopener">http://localhost:9100/?auth_user=elastic&amp;auth_password=changeme</a><br>到此为止，如果没什么问题的话，你就可以尽情的操作elasticsearch了<br></p></div>
 
 <hr>
 
