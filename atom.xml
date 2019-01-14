@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://aimiyoo.github.io/"/>
-  <updated>2018-11-22T12:10:10.931Z</updated>
+  <updated>2019-01-14T04:47:25.034Z</updated>
   <id>http://aimiyoo.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>privoxy实现全局代理</title>
+    <link href="http://aimiyoo.github.io/philosophy/how/2019/01/14/privoxy%E5%AE%9E%E7%8E%B0%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86.html"/>
+    <id>http://aimiyoo.github.io/philosophy/how/2019/01/14/privoxy实现全局代理.html</id>
+    <published>2019-01-14T03:01:25.000Z</published>
+    <updated>2019-01-14T04:47:25.034Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p class="description"></p><p><img src="https://" alt="" style="width:100%"></p><a id="more"></a><p>##</p><p>##</p><p>##</p><hr><h1 id="privoxy"><a href="#privoxy" class="headerlink" title="privoxy"></a>privoxy</h1><p><a href="http://www.privoxy.org/" target="_blank" rel="noopener">http://www.privoxy.org/</a><br>需要和shadowsocks配合使用，shadowsocks只能开socks端口的代理，privoxy将socks代理转为http代理</p><h2 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h2><pre><code class="bash"># 不同linux系统有不同的工具sudo zypper in privoxy</code></pre><h2 id="Configuration"><a href="#Configuration" class="headerlink" title="Configuration"></a>Configuration</h2><pre><code class="bash">vim /etc/privoxy/config# 添加如下内容，其中1080是ss的socks5端口，8118是http端口listen-address  127.0.0.1:8118forward-socks5 / 127.0.0.1:1080 .</code></pre><pre><code class="bash">vim ~.zshrc # 或者vim ~.bashrc# 添加如下内容export http_proxy=http://127.0.0.1:8118export https_proxy=http://127.0.0.1:8118export ftp_proxy=http://127.0.0.1:8118</code></pre><h2 id="Run"><a href="#Run" class="headerlink" title="Run"></a>Run</h2><pre><code class="bash">sudo service privoxy start</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p class=&quot;description&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://&quot; alt=&quot;&quot; style=&quot;width:100%&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="philosophy" scheme="http://aimiyoo.github.io/categories/philosophy/"/>
+    
+      <category term="how" scheme="http://aimiyoo.github.io/categories/philosophy/how/"/>
+    
+    
+      <category term="shdowsocks" scheme="http://aimiyoo.github.io/tags/shdowsocks/"/>
+    
+      <category term="ss" scheme="http://aimiyoo.github.io/tags/ss/"/>
+    
+      <category term="privoxy" scheme="http://aimiyoo.github.io/tags/privoxy/"/>
+    
+  </entry>
   
   <entry>
     <title>manjaro使用指南</title>
