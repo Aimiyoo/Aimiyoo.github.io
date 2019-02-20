@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://aimiyoo.github.io/"/>
-  <updated>2019-02-18T12:42:49.963Z</updated>
+  <updated>2019-02-20T03:57:20.518Z</updated>
   <id>http://aimiyoo.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MySQL数据类型</title>
+    <link href="http://aimiyoo.github.io/philosophy/what/2019/02/19/MySQL%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.html"/>
+    <id>http://aimiyoo.github.io/philosophy/what/2019/02/19/MySQL数据类型.html</id>
+    <published>2019-02-19T09:55:00.000Z</published>
+    <updated>2019-02-20T03:57:20.518Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p class="description"></p><p><img src="https://" alt="" style="width:100%"></p><a id="more"></a><ol><li>字符串类型<br>字符串：char、varchar<br>文本：tinytext、text、mediumtext、longtext</li><li>数字类型<br>整数： tinyint、smallint、mediumint、int、bigint<br>浮点数：float、double、real、decimal  </li><li>日期和时间<br>date、time、datetime、timestamp、year  </li><li>二进制（可用来存储图片、音乐等）<br>tinyblob、blob、mediumblob、longblob</li></ol><h2 id="字符串类型"><a href="#字符串类型" class="headerlink" title="字符串类型"></a>字符串类型</h2><table><thead><tr><th>类型</th><th>单位</th><th>最大</th><th>特性</th></tr></thead><tbody><tr><td>CHAR</td><td>字符</td><td>最大为255字符</td><td>存储定长，容易造成空间的浪费</td></tr><tr><td>VARCHAR</td><td>字符</td><td>可以超过255字符</td><td>存储变长，节省存储空间</td></tr><tr><td>TEXT</td><td>字节</td><td>总大小为65535字节，约为64KB</td><td>-</td></tr></tbody></table><ol><li>TEXT在MySQL内部大多存储格式为溢出页，效率不如CHAR  </li><li>MYSQL默认为utf-8，那么在英文模式下1个字符=1个字节，在中文模式下1个字符=3个字节</li></ol><h2 id="数字类型"><a href="#数字类型" class="headerlink" title="数字类型"></a>数字类型</h2><h3 id="整数类型"><a href="#整数类型" class="headerlink" title="整数类型"></a>整数类型</h3><table><thead><tr><th>类型</th><th>字节数（bytes）</th><th>最小（    (Signed-Unsigned)）</th><th>最大(Signed-Unsigned)</th></tr></thead><tbody><tr><td>TINYINT</td><td>1</td><td>-128-0</td><td>127-255</td></tr><tr><td>SMALLINT</td><td>2</td><td>-32768-0</td><td>32767-65535</td></tr><tr><td>MEDIUMINT</td><td>3</td><td>-8388608-0</td><td>8388607-16777215</td></tr><tr><td>INT</td><td>4</td><td>-2147483648-0</td><td>2147483647-4294967295</td></tr><tr><td>BIGINT</td><td>8</td><td>-9223372036854775808-0</td><td>9223372036854775807-18446744073709551615</td></tr></tbody></table><h3 id="浮点类型"><a href="#浮点类型" class="headerlink" title="浮点类型"></a>浮点类型</h3><table><thead><tr><th>类型</th><th>字节数（bytes）</th><th>精度</th><th>精确性</th><th>说明</th></tr></thead><tbody><tr><td>FLOAT(M,D)</td><td>4</td><td>单精度</td><td>非精确</td><td>单精度类型，m总个数，d小数位</td></tr><tr><td>DOUBLE(M,D)</td><td>8</td><td>双精度</td><td>比FLOAT精度高</td><td>双精度浮点数，m总个数，d小数位</td></tr></tbody></table><h3 id="定点数DECIMAL"><a href="#定点数DECIMAL" class="headerlink" title="定点数DECIMAL"></a>定点数DECIMAL</h3><ol><li>高精度的数据类型，常用来存储交易相关的数据</li><li>DECIMAL(M,N). M代表总精度，N代表小数点右侧的位数（标度）</li><li>1&lt;M&lt;254,0&lt;N&lt;60</li><li>存储空间变长</li></ol><h2 id="时间类型"><a href="#时间类型" class="headerlink" title="时间类型"></a>时间类型</h2><table><thead><tr><th>类型</th><th>字节数（bytes）</th><th>样例</th><th>精确性</th></tr></thead><tbody><tr><td>DATE</td><td>3</td><td>2015-05-01</td><td>精确到年月日</td></tr><tr><td>TIME</td><td>3</td><td>11:12:00</td><td>精确到时分秒</td></tr><tr><td>DATETIME</td><td>8</td><td>2015-05-01 11::12:00</td><td>精确到年月日时分秒</td></tr><tr><td>TIEMSTAMP</td><td>-</td><td>2015-05-01 11::12:00</td><td>精确到年月日时分秒</td></tr></tbody></table><ol><li>MySQL 5.6.4版本之后，TIMESTAMP和DATETIME都支持到微秒</li><li>TIMESTAMP会根据系统时区进行转换，DATETIME不会</li><li>存储的区别：<br> . TIMESTAMP存储范围：1970-01-01 00::00:01 to 2038-01-19 03:14:07<br> . DATETIME存储范围：1000-01-01 00:00:00 to 9999-12-31 23:59:59  </li><li>一般使用TIMESTAMP国际化</li><li>如存储时间戳使用数字类型BIGINT<hr></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p class=&quot;description&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://&quot; alt=&quot;&quot; style=&quot;width:100%&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="philosophy" scheme="http://aimiyoo.github.io/categories/philosophy/"/>
+    
+      <category term="what" scheme="http://aimiyoo.github.io/categories/philosophy/what/"/>
+    
+    
+      <category term="mysql" scheme="http://aimiyoo.github.io/tags/mysql/"/>
+    
+  </entry>
   
   <entry>
     <title>Go之json-iterator</title>
@@ -521,32 +547,6 @@
   </entry>
   
   <entry>
-    <title>git-learning</title>
-    <link href="http://aimiyoo.github.io/philosophy/how/2017/04/12/git-learning.html"/>
-    <id>http://aimiyoo.github.io/philosophy/how/2017/04/12/git-learning.html</id>
-    <published>2017-04-12T04:26:52.000Z</published>
-    <updated>2019-02-18T03:50:38.834Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p class="description"></p><p><img src="https://" alt="" style="width:100%"></p><a id="more"></a><h4 id="查看分支"><a href="#查看分支" class="headerlink" title="查看分支"></a>查看分支</h4><ol><li>追踪本地分支<pre><code class="bash"> git branch -vv</code></pre></li></ol><h4 id="删除分支"><a href="#删除分支" class="headerlink" title="删除分支"></a>删除分支</h4><ol><li>删除本地分支<pre><code class="bash"> git branch -D branch-name</code></pre></li><li>删除远程分支<pre><code class="bash"> git branch -r -d origin/branch-name git push origin :branch-name</code></pre> <em>中间的空格不能少，相当于把一个空分支push到server上，等于删除该分支</em></li></ol><h4 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h4><ol><li>fetch<br> 相当于从远程获取最新版本到本地，不会自动merge<pre><code class="bash"> git fetch origin remoteName:branchname</code></pre></li><li>checkout<br> 获取远程分支remoteName到本地新分支localName，并跳到localName分支<pre><code class="bash"> git checkout origin/remoteName -b localName git pull origin remoteName:localName</code></pre> pull相当于git fetch和git merge</li></ol><h4 id="关联远程分支"><a href="#关联远程分支" class="headerlink" title="关联远程分支"></a>关联远程分支</h4><pre><code class="bash">git initgit add .git commit -m &#39;[WIP]&#39;git remote add origin remoteNamegit remote -v # 查看上游分支git pull origin master --allow-unrelated-historiesgit push -u origin master</code></pre><h4 id="更新远程分支列表"><a href="#更新远程分支列表" class="headerlink" title="更新远程分支列表"></a>更新远程分支列表</h4><ol><li>更新远程分支列表<pre><code class="bash"> git fetch -t -p -f</code></pre></li><li><p>修改远程分支地址</p><pre><code class="bash"> # 查看远程分支地址 git remote -v git remote origin set-url [url]</code></pre></li></ol><h4 id="tag"><a href="#tag" class="headerlink" title="tag"></a>tag</h4><ol><li>获取远程tag<pre><code class="bash"> git checkout -b branch_name tag_name</code></pre></li><li>删除本地tag<pre><code class="bash"> git tag -d tagname</code></pre></li><li>删除远程tag<pre><code class="bash"> git push origin :tagname</code></pre> 或者<pre><code class="bash"> git push origin --delete tagname</code></pre></li></ol><h4 id="stash"><a href="#stash" class="headerlink" title="stash"></a>stash</h4><ol><li>添加stash<br> git stash用于保存当前的工作进度，不用commit即可checkout到另外的branch<pre><code class="bash"> git stash</code></pre></li><li>显示stash列表<br> git stash list用于显示所有的stash列表<pre><code class="bash"> git stash list</code></pre></li><li>恢复stash<br> git stash pop用于恢复某一次的改动，默认不加hash代表恢复最近的一次改动<pre><code class="bash"> git stash pop --hash</code></pre></li><li>删除stash<br> git stash drop用于删除某一次的改动，默认不加hash代表删除最近的一次改动<pre><code class="bash"> git stash pop --hash</code></pre></li><li>git stash pop和git stash apply区别<br> pop命令从stash列表中<strong>恢复并删除</strong>某一次改动<br> apply命令从stash<strong>恢复但不删除</strong>某一次改动</li></ol><hr>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p class=&quot;description&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://&quot; alt=&quot;&quot; style=&quot;width:100%&quot;&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="philosophy" scheme="http://aimiyoo.github.io/categories/philosophy/"/>
-    
-      <category term="how" scheme="http://aimiyoo.github.io/categories/philosophy/how/"/>
-    
-    
-      <category term="git" scheme="http://aimiyoo.github.io/tags/git/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Hello Hexo</title>
     <link href="http://aimiyoo.github.io/philosophy/how/2017/04/12/hello-world.html"/>
     <id>http://aimiyoo.github.io/philosophy/how/2017/04/12/hello-world.html</id>
@@ -569,6 +569,32 @@
     
     
       <category term="hexo" scheme="http://aimiyoo.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git-learning</title>
+    <link href="http://aimiyoo.github.io/philosophy/how/2017/04/12/git-learning.html"/>
+    <id>http://aimiyoo.github.io/philosophy/how/2017/04/12/git-learning.html</id>
+    <published>2017-04-12T04:26:52.000Z</published>
+    <updated>2019-02-18T03:50:38.834Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p class="description"></p><p><img src="https://" alt="" style="width:100%"></p><a id="more"></a><h4 id="查看分支"><a href="#查看分支" class="headerlink" title="查看分支"></a>查看分支</h4><ol><li>追踪本地分支<pre><code class="bash"> git branch -vv</code></pre></li></ol><h4 id="删除分支"><a href="#删除分支" class="headerlink" title="删除分支"></a>删除分支</h4><ol><li>删除本地分支<pre><code class="bash"> git branch -D branch-name</code></pre></li><li>删除远程分支<pre><code class="bash"> git branch -r -d origin/branch-name git push origin :branch-name</code></pre> <em>中间的空格不能少，相当于把一个空分支push到server上，等于删除该分支</em></li></ol><h4 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h4><ol><li>fetch<br> 相当于从远程获取最新版本到本地，不会自动merge<pre><code class="bash"> git fetch origin remoteName:branchname</code></pre></li><li>checkout<br> 获取远程分支remoteName到本地新分支localName，并跳到localName分支<pre><code class="bash"> git checkout origin/remoteName -b localName git pull origin remoteName:localName</code></pre> pull相当于git fetch和git merge</li></ol><h4 id="关联远程分支"><a href="#关联远程分支" class="headerlink" title="关联远程分支"></a>关联远程分支</h4><pre><code class="bash">git initgit add .git commit -m &#39;[WIP]&#39;git remote add origin remoteNamegit remote -v # 查看上游分支git pull origin master --allow-unrelated-historiesgit push -u origin master</code></pre><h4 id="更新远程分支列表"><a href="#更新远程分支列表" class="headerlink" title="更新远程分支列表"></a>更新远程分支列表</h4><ol><li>更新远程分支列表<pre><code class="bash"> git fetch -t -p -f</code></pre></li><li><p>修改远程分支地址</p><pre><code class="bash"> # 查看远程分支地址 git remote -v git remote origin set-url [url]</code></pre></li></ol><h4 id="tag"><a href="#tag" class="headerlink" title="tag"></a>tag</h4><ol><li>获取远程tag<pre><code class="bash"> git checkout -b branch_name tag_name</code></pre></li><li>删除本地tag<pre><code class="bash"> git tag -d tagname</code></pre></li><li>删除远程tag<pre><code class="bash"> git push origin :tagname</code></pre> 或者<pre><code class="bash"> git push origin --delete tagname</code></pre></li></ol><h4 id="stash"><a href="#stash" class="headerlink" title="stash"></a>stash</h4><ol><li>添加stash<br> git stash用于保存当前的工作进度，不用commit即可checkout到另外的branch<pre><code class="bash"> git stash</code></pre></li><li>显示stash列表<br> git stash list用于显示所有的stash列表<pre><code class="bash"> git stash list</code></pre></li><li>恢复stash<br> git stash pop用于恢复某一次的改动，默认不加hash代表恢复最近的一次改动<pre><code class="bash"> git stash pop --hash</code></pre></li><li>删除stash<br> git stash drop用于删除某一次的改动，默认不加hash代表删除最近的一次改动<pre><code class="bash"> git stash pop --hash</code></pre></li><li>git stash pop和git stash apply区别<br> pop命令从stash列表中<strong>恢复并删除</strong>某一次改动<br> apply命令从stash<strong>恢复但不删除</strong>某一次改动</li></ol><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p class=&quot;description&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://&quot; alt=&quot;&quot; style=&quot;width:100%&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="philosophy" scheme="http://aimiyoo.github.io/categories/philosophy/"/>
+    
+      <category term="how" scheme="http://aimiyoo.github.io/categories/philosophy/how/"/>
+    
+    
+      <category term="git" scheme="http://aimiyoo.github.io/tags/git/"/>
     
   </entry>
   
