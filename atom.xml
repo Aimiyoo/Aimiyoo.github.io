@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://aimiyoo.github.io/"/>
-  <updated>2019-03-01T10:11:08.837Z</updated>
+  <updated>2019-03-01T11:07:39.389Z</updated>
   <id>http://aimiyoo.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vscode安装go依赖</title>
+    <link href="http://aimiyoo.github.io/philosophy/how/2019/03/01/vscode%E5%AE%89%E8%A3%85go%E4%BE%9D%E8%B5%96.html"/>
+    <id>http://aimiyoo.github.io/philosophy/how/2019/03/01/vscode安装go依赖.html</id>
+    <published>2019-03-01T11:02:55.000Z</published>
+    <updated>2019-03-01T11:07:39.389Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p class="description"></p><p><img src="https://" alt="" style="width:100%"></p><a id="more"></a><h2 id="手动安装"><a href="#手动安装" class="headerlink" title="手动安装"></a>手动安装</h2><p>vscode配置go环境的时候，需要安装一些依赖，但是vscode如果不使用代理的话会特别慢，而且很大可能会失败。<br>所以咱们一键手动安装最为方便。</p><pre><code class="bash">echo &quot;github.com/nsf/gocodegithub.com/uudashr/gopkgs/cmd/gopkgsgithub.com/ramya-rao-a/go-outlinegithub.com/acroca/go-symbolsgolang.org/x/tools/cmd/gurugolang.org/x/tools/cmd/gorenamegithub.com/fatih/gomodifytagsgithub.com/haya14busa/goplay/cmd/goplaygithub.com/josharian/implgithub.com/rogpeppe/godefsourcegraph.com/sqs/goreturnsgithub.com/golang/lint/golintgithub.com/cweill/gotests/gotestsgithub.com/derekparker/delve/cmd/dlv&quot; | xargs go get -u -v</code></pre><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p class=&quot;description&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://&quot; alt=&quot;&quot; style=&quot;width:100%&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="philosophy" scheme="http://aimiyoo.github.io/categories/philosophy/"/>
+    
+      <category term="how" scheme="http://aimiyoo.github.io/categories/philosophy/how/"/>
+    
+    
+      <category term="go" scheme="http://aimiyoo.github.io/tags/go/"/>
+    
+      <category term="vscode" scheme="http://aimiyoo.github.io/tags/vscode/"/>
+    
+  </entry>
   
   <entry>
     <title>neovim配置</title>
@@ -253,9 +281,9 @@
     <link href="http://aimiyoo.github.io/philosophy/what/2018/10/22/vscode%E6%8F%92%E4%BB%B6.html"/>
     <id>http://aimiyoo.github.io/philosophy/what/2018/10/22/vscode插件.html</id>
     <published>2018-10-22T06:37:32.000Z</published>
-    <updated>2019-01-16T09:42:05.493Z</updated>
+    <updated>2019-03-01T11:15:03.046Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p class="description">vscode插件推荐</p><p><img src="https://" alt="" style="width:100%"></p><a id="more"></a><h2 id="polacode"><a href="#polacode" class="headerlink" title="polacode"></a>polacode</h2><p>[代码截图]</p><h2 id="Beautify"><a href="#Beautify" class="headerlink" title="Beautify"></a>Beautify</h2><p>[代码格式化]</p><h2 id="One-Dark-Pro"><a href="#One-Dark-Pro" class="headerlink" title="One Dark Pro"></a>One Dark Pro</h2><p>[深色主题]</p><h2 id="vscode-icons"><a href="#vscode-icons" class="headerlink" title="vscode-icons"></a>vscode-icons</h2><p>[图标]</p><h2 id="markdownlint"><a href="#markdownlint" class="headerlink" title="markdownlint"></a>markdownlint</h2><p>[markdown风格检查]</p><h2 id="Markdown-Math"><a href="#Markdown-Math" class="headerlink" title="Markdown+Math"></a>Markdown+Math</h2><p>[LaTeX Math for Markdown]</p><h2 id="Code-Runner"><a href="#Code-Runner" class="headerlink" title="Code Runner"></a>Code Runner</h2><p>[执行代码]</p><hr>]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p class="description">vscode插件推荐</p><p><img src="https://" alt="" style="width:100%"></p><a id="more"></a><table><thead><tr><th style="text-align:center">*</th><th style="text-align:center">*</th></tr></thead><tbody><tr><td style="text-align:center">polacode</td><td style="text-align:center">代码截图</td></tr><tr><td style="text-align:center">Beautify</td><td style="text-align:center">代码格式化</td></tr><tr><td style="text-align:center">One Dark Pro</td><td style="text-align:center">深色主题</td></tr><tr><td style="text-align:center">vscode-icons</td><td style="text-align:center">图标</td></tr><tr><td style="text-align:center">markdownlint</td><td style="text-align:center">markdown风格检查</td></tr><tr><td style="text-align:center">Markdown+Math</td><td style="text-align:center">LaTeX Math for Markdown</td></tr><tr><td style="text-align:center">Code Runner</td><td style="text-align:center">执行代码</td></tr><tr><td style="text-align:center">JetBrains IDE Keymap</td><td style="text-align:center">JetBrains快捷键</td></tr><tr><td style="text-align:center">python</td><td style="text-align:center">支持python</td></tr><tr><td style="text-align:center">go</td><td style="text-align:center">支持go</td></tr></tbody></table><hr>]]></content>
     
     <summary type="html">
     
