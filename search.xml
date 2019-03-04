@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Docker使用]]></title>
+    <url>%2Fphilosophy%2Fhow%2F2019%2F03%2F04%2FDocker%E4%BD%BF%E7%94%A8.html</url>
+    <content type="text"><![CDATA[分享一下docker使用 安装docker# 安装docker sudo zypper in docker # 启动/停止/重启docker sudo service docker start/stop/restart # 查看所有的container sudo docker container ls -a # 查看正在运行的container docker ps # 查看本地的image sudo docker images # 查看container日志 docker logs myredis 安装redis# 查找image docker search redis # 从镜像仓库拉取image docker pull redis # 启动image docker run \ -p 6379:6379 \ -v /home/data/applications/docker/redis/data:/data/redis \ --name myredis \ -d redis redis-server \ --appendonly yes # 连接redis docker exec -it myredis bash redis-cli # 或者（如果本地安装了redis，可以直接连接） redis-cli # 停止image docker stop myredis # 移除image docker rmi myredis 安装mongo# 查找image docker search mongo # 从镜像仓库拉取image docker pull mongo # 启动image docker run \ -p 27017:27017 \ -v /home/data/applications/docker/mongo/db:/data/mongo \ --name mymongo \ -d mongo # 连接mongo docker exec -it mymongo mongo admin 安装elasticsearch# 查找image docker search elasticsearch # 从镜像仓库拉取image docker pull elasticsearch:6.5.0 # 启动es docker run -d --name myes -p 9200:9200 -p 9300:9300 -e &quot;discovery.type=single-node&quot; elasticsearch:6.5.0 # 安装插件 docker exec -it myes bash # 登录 ./bin/elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v6.5.0/elasticsearch-analysis-ik-6.5.0.zip # 查看es是否启动 http://localhost:9200]]></content>
+      <categories>
+        <category>philosophy</category>
+        <category>how</category>
+      </categories>
+      <tags>
+        <tag>docker</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[vscode安装go依赖]]></title>
     <url>%2Fphilosophy%2Fhow%2F2019%2F03%2F01%2Fvscode%E5%AE%89%E8%A3%85go%E4%BE%9D%E8%B5%96.html</url>
     <content type="text"><![CDATA[手动安装vscode配置go环境的时候，需要安装一些依赖，但是vscode如果不使用代理的话会特别慢，而且很大可能会失败。所以咱们一键手动安装最为方便。 echo &quot; github.com/nsf/gocode github.com/uudashr/gopkgs/cmd/gopkgs github.com/ramya-rao-a/go-outline github.com/acroca/go-symbols golang.org/x/tools/cmd/guru golang.org/x/tools/cmd/gorename github.com/fatih/gomodifytags github.com/haya14busa/goplay/cmd/goplay github.com/josharian/impl github.com/rogpeppe/godef sourcegraph.com/sqs/goreturns github.com/golang/lint/golint github.com/cweill/gotests/gotests github.com/derekparker/delve/cmd/dlv&quot; | xargs go get -u -v]]></content>

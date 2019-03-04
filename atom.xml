@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://aimiyoo.github.io/"/>
-  <updated>2019-03-01T11:07:39.389Z</updated>
+  <updated>2019-03-04T12:44:56.051Z</updated>
   <id>http://aimiyoo.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Docker使用</title>
+    <link href="http://aimiyoo.github.io/philosophy/how/2019/03/04/Docker%E4%BD%BF%E7%94%A8.html"/>
+    <id>http://aimiyoo.github.io/philosophy/how/2019/03/04/Docker使用.html</id>
+    <published>2019-03-04T12:13:25.000Z</published>
+    <updated>2019-03-04T12:44:56.051Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p class="description">分享一下docker使用</p><p><img src="http://wx3.sinaimg.cn/large/a151a781ly1g0r1r9vdn4j210u0gzq7l.jpg" alt="" style="width:100%"></p><a id="more"></a><h2 id="安装docker"><a href="#安装docker" class="headerlink" title="安装docker"></a>安装docker</h2><pre><code class="bash"># 安装dockersudo zypper in docker# 启动/停止/重启dockersudo service docker start/stop/restart# 查看所有的containersudo docker container ls -a# 查看正在运行的containerdocker ps# 查看本地的imagesudo docker images# 查看container日志docker logs myredis</code></pre><h2 id="安装redis"><a href="#安装redis" class="headerlink" title="安装redis"></a>安装redis</h2><pre><code class="bash"># 查找imagedocker search redis# 从镜像仓库拉取imagedocker pull redis# 启动imagedocker run \-p 6379:6379 \ -v /home/data/applications/docker/redis/data:/data/redis \ --name myredis \-d redis redis-server \ --appendonly yes# 连接redisdocker exec -it myredis bash redis-cli# 或者（如果本地安装了redis，可以直接连接）redis-cli# 停止imagedocker stop myredis# 移除imagedocker rmi myredis</code></pre><h2 id="安装mongo"><a href="#安装mongo" class="headerlink" title="安装mongo"></a>安装mongo</h2><pre><code class="bash"># 查找imagedocker search mongo# 从镜像仓库拉取imagedocker pull mongo# 启动imagedocker run \-p 27017:27017 \-v /home/data/applications/docker/mongo/db:/data/mongo \--name mymongo \-d mongo# 连接mongodocker exec -it mymongo mongo admin</code></pre><h2 id="安装elasticsearch"><a href="#安装elasticsearch" class="headerlink" title="安装elasticsearch"></a>安装elasticsearch</h2><pre><code class="bash"># 查找imagedocker search elasticsearch# 从镜像仓库拉取imagedocker pull elasticsearch:6.5.0# 启动esdocker run -d --name myes -p 9200:9200 -p 9300:9300 -e &quot;discovery.type=single-node&quot; elasticsearch:6.5.0# 安装插件docker exec -it myes bash # 登录./bin/elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v6.5.0/elasticsearch-analysis-ik-6.5.0.zip# 查看es是否启动http://localhost:9200</code></pre><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p class=&quot;description&quot;&gt;分享一下docker使用&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://wx3.sinaimg.cn/large/a151a781ly1g0r1r9vdn4j210u0gzq7l.jpg&quot; alt=&quot;&quot; style=&quot;width:100%&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="philosophy" scheme="http://aimiyoo.github.io/categories/philosophy/"/>
+    
+      <category term="how" scheme="http://aimiyoo.github.io/categories/philosophy/how/"/>
+    
+    
+      <category term="docker" scheme="http://aimiyoo.github.io/tags/docker/"/>
+    
+  </entry>
   
   <entry>
     <title>vscode安装go依赖</title>
