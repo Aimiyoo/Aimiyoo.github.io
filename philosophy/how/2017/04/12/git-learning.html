@@ -147,7 +147,7 @@
 <meta property="og:description" content="hello git">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https:///">
-<meta property="og:updated_time" content="2019-03-15T15:25:16.000Z">
+<meta property="og:updated_time" content="2019-09-04T08:23:17.971Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git-learning">
 <meta name="twitter:description" content="hello git">
@@ -459,7 +459,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  440
+                  453
                 </span>
               
 
@@ -523,14 +523,17 @@
 </code></pre>
  pull相当于git fetch和git merge</li>
 </ol>
-<h4 id="关联远程分支"><a href="#关联远程分支" class="headerlink" title="关联远程分支"></a>关联远程分支</h4><pre><code class="bash">git init
-git add .
-git commit -m &#39;[WIP]&#39;
-git remote add origin remoteName
-git remote -v # 查看上游分支
-git pull origin master --allow-unrelated-histories
-git push -u origin master
+<h4 id="关联远程分支"><a href="#关联远程分支" class="headerlink" title="关联远程分支"></a>关联远程分支</h4><ol>
+<li>将本地分支与远程分支关联<pre><code class="bash"> git init
+ git add .
+ git commit -m &#39;[WIP]&#39;
+ git remote add origin remoteName
+ git remote -v # 查看上游分支
+ git pull origin master --allow-unrelated-histories
+ git push -u origin master
 </code></pre>
+</li>
+</ol>
 <h4 id="更新远程分支列表"><a href="#更新远程分支列表" class="headerlink" title="更新远程分支列表"></a>更新远程分支列表</h4><ol>
 <li>更新远程分支列表<pre><code class="bash"> git fetch -t -p -f
 </code></pre>
