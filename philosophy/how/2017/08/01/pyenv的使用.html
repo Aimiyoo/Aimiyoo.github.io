@@ -147,7 +147,7 @@
 <meta property="og:description" content="pyenv，神器神器">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https:///">
-<meta property="og:updated_time" content="2019-03-15T15:43:46.524Z">
+<meta property="og:updated_time" content="2019-10-08T03:14:34.561Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="pyenv的使用">
 <meta name="twitter:description" content="pyenv，神器神器">
@@ -459,7 +459,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  164
+                  200
                 </span>
               
 
@@ -502,10 +502,12 @@
 <a id="more"></a>
 <h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p><strong>pyenv lets you easily switch between multiple versions of Python. It’s simple, unobtrusive, and follows the UNIX tradition of single-purpose tools that do one thing well.</strong></p>
 <h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><ol>
-<li><strong>check out pyenv where you want it installed</strong><pre><code class="bash"> git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+<li><p><strong>check out pyenv where you want it installed</strong></p>
+<pre><code class="bash"> git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 </code></pre>
 </li>
-<li><strong>define environment</strong><pre><code class="bash"> echo &#39;export PYENV_ROOT=&quot;$HOME/.pyenv&quot;&#39; &gt;&gt; ~/.bashrc
+<li><p><strong>define environment</strong></p>
+<pre><code class="bash"> echo &#39;export PYENV_ROOT=&quot;$HOME/.pyenv&quot;&#39; &gt;&gt; ~/.bashrc
  echo &#39;export PATH=&quot;$PYENV_ROOT/bin:$PATH&quot;&#39; &gt;&gt; ~/.bashrc
  echo &#39;eval &quot;$(pyenv init -)&quot;&#39; &gt;&gt; ~/.bashrc
  source ~/.bashrc
@@ -513,17 +515,35 @@
 </li>
 </ol>
 <h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><ol>
-<li><strong>view available python versions</strong><pre><code class="bash"> pyenv install --list
+<li><p><strong>view available python versions</strong></p>
+<pre><code class="bash"> pyenv install --list
 </code></pre>
 </li>
-<li><strong>install python</strong><pre><code class="bash"> pyenv install 2.7.13 -v
+<li><p><strong>install python</strong></p>
+<pre><code class="bash"> pyenv install 2.7.13 -v
  pyevn install 3.6.2 -v
  pyenv rehash
 </code></pre>
 </li>
-<li><strong>select the vesion which you want to use</strong><br> now you have two python versions in your system, you can select the version which you want to use<pre><code class="bash"> pyenv global 2.7.9
+<li><p><strong>select the vesion which you want to use</strong></p>
+<p> now you have two python versions in your system, you can select the version which you want to use</p>
+<pre><code class="bash"> pyenv global 2.7.9
 </code></pre>
-<h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2></li>
+</li>
+</ol>
+<h2 id="change-pip-source"><a href="#change-pip-source" class="headerlink" title="change pip source"></a>change pip source</h2><pre><code class="bash">mkdir ~/.pip
+vim ~/.pip/pip.conf
+
+# content
+[global]
+timeout = 6000
+index-url = http://e.pypi.python.org/simple
+trusted-host = pypi.douban.com
+[install]
+use-mirrors = true
+mirrors = http://e.pypi.python.org
+</code></pre>
+<h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><ol>
 <li><p><strong>pyenv global {version} not work</strong></p>
 <pre><code class="bash"> pyenv local --unset
 </code></pre>
@@ -772,7 +792,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Installation"><span class="nav-number">2.</span> <span class="nav-text">Installation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Usage"><span class="nav-number">3.</span> <span class="nav-text">Usage</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Note"><span class="nav-number">4.</span> <span class="nav-text">Note</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">5.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Installation"><span class="nav-number">2.</span> <span class="nav-text">Installation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Usage"><span class="nav-number">3.</span> <span class="nav-text">Usage</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#change-pip-source"><span class="nav-number">4.</span> <span class="nav-text">change pip source</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Note"><span class="nav-number">5.</span> <span class="nav-text">Note</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">6.</span> <span class="nav-text">Reference</span></a></li></ol></div>
             
 
           </div>
