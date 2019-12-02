@@ -2,8 +2,17 @@
 <search>
   <entry>
     <title><![CDATA[日期转换全攻略]]></title>
-    <url>%2Funcategorized%2F2019%2F11%2F30%2F%E6%97%A5%E6%9C%9F%E8%BD%AC%E6%8D%A2%E5%85%A8%E6%94%BB%E7%95%A5.html</url>
+    <url>%2Fphilosophy%2Fhow%2F2019%2F11%2F30%2F%E6%97%A5%E6%9C%9F%E8%BD%AC%E6%8D%A2%E5%85%A8%E6%94%BB%E7%95%A5.html</url>
     <content type="text"><![CDATA[日期转换全攻略 Python时间戳转时间import time def timestamp_2_date(timestamp): struct_time = time.localtime(timestamp) result = time.strftime(&#39;%Y-%m-%d %H:%M:%S&#39;, struct_time) return result now = int(time.time()) print(timestamp_2_date(now)) import datetime def timestamp_2_date(timestamp): result = timestamp.strftime(&#39;%Y-%m-%d %H:%M:%S&#39;) return result now = datetime.datetime.now() print(timestamp_2_date(now)) 时间转时间戳import time def date_2_timestamp(date_str): struct_time = time.strptime(date_str, &#39;%Y-%m-%d %H:%M:%S&#39;) result = time.mktime(struct_time) return result date_str = &#39;2019-02-26 13:04:41&#39; print(date_2_timestamp(date_str)) import datetime def date_2_timestamp(date_str): tuple_time = datetime.datetime.strptime(date_str, &#39;%Y-%m-%d %H:%M:%S&#39;).timetuple() result = time.mktime(tuple_time) return result date_str = &#39;2019-02-26 13:04:41&#39; print(date_2_timestamp(date_str)) Java时间戳转时间private static String timestamp2Date(long timestamp) { DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd&quot;); LocalDateTime localDateTime = LocalDateTime.ofInstant(Instant.ofEpochMilli(timestamp), ZoneId.systemDefault()); return localDateTime.format(dateTimeFormatter); } timestamp2Date(1575014366000L); 时间转时间戳private static long date2Timestamp(String dateStr){ DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd HH:mm:ss&quot;); LocalDateTime localDateTime = LocalDateTime.parse(dateStr, dateTimeFormatter); return LocalDateTime.from(localDateTime).atZone(ZoneId.systemDefault()).toInstant().toEpochMilli(); } date2Timestamp(&quot;2019-11-29 15:00:00&quot;) Golang时间戳转时间func timestamp2Date(timestamp int64) string { tm := time.Unix(timestamp, 0) return tm.Format(&quot;2006-01-02 15:04:05&quot;) } timestamp2Date(1531293019) 时间转时间戳func date2Timestamp(dateStr string) int64 { //设置时区 loc, _ := time.LoadLocation(&quot;Asia/Shanghai&quot;) //2006-01-02 15:04:05是转换的格式如php的&quot;Y-m-d H:i:s&quot; tt, _ := time.ParseInLocation(&quot;2006-01-02 15:04:05&quot;, dateStr, loc) return tt.Unix() } date2Timestamp(&quot;2018-07-11 15:07:51&quot;)]]></content>
+      <categories>
+        <category>philosophy</category>
+        <category>how</category>
+      </categories>
+      <tags>
+        <tag>timestamp</tag>
+        <tag>date</tag>
+        <tag>transform</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[架构师之路]]></title>
