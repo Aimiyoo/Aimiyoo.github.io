@@ -147,7 +147,7 @@
 <meta property="og:description" content="hello git">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https:///">
-<meta property="og:updated_time" content="2019-09-04T08:23:17.971Z">
+<meta property="og:updated_time" content="2019-12-02T03:38:48.068Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git-learning">
 <meta name="twitter:description" content="hello git">
@@ -501,30 +501,40 @@
 <p><img src="https://" alt="" style="width:100%"></p>
 <a id="more"></a>
 <h4 id="查看分支"><a href="#查看分支" class="headerlink" title="查看分支"></a>查看分支</h4><ol>
-<li>追踪本地分支<pre><code class="bash"> git branch -vv
+<li><p>追踪本地分支</p>
+<pre><code class="bash"> git branch -vv
 </code></pre>
 </li>
 </ol>
 <h4 id="删除分支"><a href="#删除分支" class="headerlink" title="删除分支"></a>删除分支</h4><ol>
-<li>删除本地分支<pre><code class="bash"> git branch -D branch-name
+<li><p>删除本地分支</p>
+<pre><code class="bash"> git branch -D branch-name
 </code></pre>
 </li>
-<li>删除远程分支<pre><code class="bash"> git branch -r -d origin/branch-name
+<li><p>删除远程分支</p>
+<pre><code class="bash"> git branch -r -d origin/branch-name
  git push origin :branch-name
 </code></pre>
- <em>中间的空格不能少，相当于把一个空分支push到server上，等于删除该分支</em></li>
+<p> <em>中间的空格不能少，相当于把一个空分支push到server上，等于删除该分支</em></p>
+</li>
 </ol>
 <h4 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h4><ol>
-<li>fetch<br> 相当于从远程获取最新版本到本地，不会自动merge<pre><code class="bash"> git fetch origin remoteName:branchname
+<li><p>fetch</p>
+<p> 相当于从远程获取最新版本到本地，不会自动merge</p>
+<pre><code class="bash"> git fetch origin remoteName:branchname
 </code></pre>
 </li>
-<li>checkout<br> 获取远程分支remoteName到本地新分支localName，并跳到localName分支<pre><code class="bash"> git checkout origin/remoteName -b localName
+<li><p>checkout</p>
+<p> 获取远程分支remoteName到本地新分支localName，并跳到localName分支</p>
+<pre><code class="bash"> git checkout origin/remoteName -b localName
  git pull origin remoteName:localName
 </code></pre>
- pull相当于git fetch和git merge</li>
+<p> pull相当于git fetch和git merge</p>
+</li>
 </ol>
 <h4 id="关联远程分支"><a href="#关联远程分支" class="headerlink" title="关联远程分支"></a>关联远程分支</h4><ol>
-<li>将本地分支与远程分支关联<pre><code class="bash"> git init
+<li><p>将本地分支与远程分支关联</p>
+<pre><code class="bash"> git init
  git add .
  git commit -m &#39;[WIP]&#39;
  git remote add origin remoteName
@@ -535,7 +545,8 @@
 </li>
 </ol>
 <h4 id="更新远程分支列表"><a href="#更新远程分支列表" class="headerlink" title="更新远程分支列表"></a>更新远程分支列表</h4><ol>
-<li>更新远程分支列表<pre><code class="bash"> git fetch -t -p -f
+<li><p>更新远程分支列表</p>
+<pre><code class="bash"> git fetch -t -p -f
 </code></pre>
 </li>
 <li><p>修改远程分支地址</p>
@@ -547,32 +558,43 @@
 </li>
 </ol>
 <h4 id="tag"><a href="#tag" class="headerlink" title="tag"></a>tag</h4><ol>
-<li>获取远程tag<pre><code class="bash"> git checkout -b branch_name tag_name
+<li><p>获取远程tag</p>
+<pre><code class="bash"> git checkout -b branch_name tag_name
 </code></pre>
 </li>
-<li>删除本地tag<pre><code class="bash"> git tag -d tagname
+<li><p>删除本地tag</p>
+<pre><code class="bash"> git tag -d tagname
 </code></pre>
 </li>
-<li>删除远程tag<pre><code class="bash"> git push origin :tagname
+<li><p>删除远程tag</p>
+<pre><code class="bash"> git push origin :tagname
 </code></pre>
- 或者<pre><code class="bash"> git push origin --delete tagname
+<p> 或者</p>
+<pre><code class="bash"> git push origin --delete tagname
 </code></pre>
 </li>
 </ol>
 <h4 id="stash"><a href="#stash" class="headerlink" title="stash"></a>stash</h4><ol>
-<li>添加stash<br> git stash用于保存当前的工作进度，不用commit即可checkout到另外的branch<pre><code class="bash"> git stash
+<li><p>添加stash<br> git stash用于保存当前的工作进度，不用commit即可checkout到另外的branch</p>
+<pre><code class="bash"> git stash
 </code></pre>
 </li>
-<li>显示stash列表<br> git stash list用于显示所有的stash列表<pre><code class="bash"> git stash list
+<li><p>显示stash列表</p>
+<p> git stash list用于显示所有的stash列表</p>
+<pre><code class="bash"> git stash list
 </code></pre>
 </li>
-<li>恢复stash<br> git stash pop用于恢复某一次的改动，默认不加hash代表恢复最近的一次改动<pre><code class="bash"> git stash pop --hash
+<li><p>恢复stash</p>
+<p> git stash pop用于恢复某一次的改动，默认不加hash代表恢复最近的一次改动</p>
+<pre><code class="bash"> git stash pop --hash
 </code></pre>
 </li>
-<li>删除stash<br> git stash drop用于删除某一次的改动，默认不加hash代表删除最近的一次改动<pre><code class="bash"> git stash pop --hash
+<li><p>删除stash<br> git stash drop用于删除某一次的改动，默认不加hash代表删除最近的一次改动</p>
+<pre><code class="bash"> git stash pop --hash
 </code></pre>
 </li>
-<li>git stash pop和git stash apply区别<br> pop命令从stash列表中<strong>恢复并删除</strong>某一次改动<br> apply命令从stash<strong>恢复但不删除</strong>某一次改动</li>
+<li><p>git stash pop和git stash apply区别<br> pop命令从stash列表中<strong>恢复并删除</strong>某一次改动<br> apply命令从stash<strong>恢复但不删除</strong>某一次改动</p>
+</li>
 </ol>
 <hr>
       
@@ -614,8 +636,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/beautiful/share/2017/02/22/老人与火.html" rel="next" title="老人与火">
-                <i class="fa fa-chevron-left"></i> 老人与火
+              <a href="/philosophy/how/2017/04/12/hello-world.html" rel="next" title="Hello Hexo">
+                <i class="fa fa-chevron-left"></i> Hello Hexo
               </a>
             
           </div>
@@ -624,8 +646,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/philosophy/how/2017/04/12/hello-world.html" rel="prev" title="Hello Hexo">
-                Hello Hexo <i class="fa fa-chevron-right"></i>
+              <a href="/philosophy/what/2017/04/27/Terminator.html" rel="prev" title="Terminator">
+                Terminator <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -711,7 +733,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">26</span>
+                  <span class="site-state-item-count">27</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

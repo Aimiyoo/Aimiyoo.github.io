@@ -2,6 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://aimiyoo.github.io/uncategorized/2019/11/30/%E6%97%A5%E6%9C%9F%E8%BD%AC%E6%8D%A2%E5%85%A8%E6%94%BB%E7%95%A5.html</loc>
+    
+    <lastmod>2019-12-02T03:39:34.926Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://aimiyoo.github.io/philosophy/how/2017/04/12/git-learning.html</loc>
+    
+    <lastmod>2019-12-02T03:38:48.068Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://aimiyoo.github.io/philosophy/how/2019/03/04/Docker%E4%BD%BF%E7%94%A8.html</loc>
+    
+    <lastmod>2019-11-29T17:00:45.167Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://aimiyoo.github.io/philosophy/how/2019/03/01/vscode%E5%AE%89%E8%A3%85go%E4%BE%9D%E8%B5%96.html</loc>
+    
+    <lastmod>2019-11-29T16:34:34.522Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://aimiyoo.github.io/beautiful/share/2018/09/22/%E7%9B%B8%E5%A3%B0%E4%BC%A0%E6%89%BF%E8%A1%A8.html</loc>
+    
+    <lastmod>2019-11-29T16:34:34.522Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://aimiyoo.github.io/philosophy/what/2017/04/27/Terminator.html</loc>
+    
+    <lastmod>2019-11-29T16:34:34.522Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://aimiyoo.github.io/philosophy/what/2019/01/16/%E5%8A%9B%E8%8D%9050%E4%B8%AA%E6%9C%80%E5%AE%9E%E7%94%A8%E7%9A%84%E5%85%8D%E8%B4%B9%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%95%B0%E6%8D%AE%E9%9B%86.html</loc>
+    
+    <lastmod>2019-11-29T15:44:24.901Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://aimiyoo.github.io/philosophy/how/2017/08/01/pyenv%E7%9A%84%E4%BD%BF%E7%94%A8.html</loc>
     
     <lastmod>2019-10-08T03:16:44.242Z</lastmod>
@@ -30,13 +79,6 @@
   </url>
   
   <url>
-    <loc>http://aimiyoo.github.io/beautiful/share/2018/09/22/%E7%9B%B8%E5%A3%B0%E4%BC%A0%E6%89%BF%E8%A1%A8.html</loc>
-    
-    <lastmod>2019-09-04T08:23:17.971Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://aimiyoo.github.io/beautiful/share/2017/10/23/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91.html</loc>
     
     <lastmod>2019-09-04T08:23:17.971Z</lastmod>
@@ -45,13 +87,6 @@
   
   <url>
     <loc>http://aimiyoo.github.io/philosophy/how/2017/08/10/ftp%E8%B6%85%E6%97%B6%E5%81%87%E6%AD%BB%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html</loc>
-    
-    <lastmod>2019-09-04T08:23:17.971Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://aimiyoo.github.io/philosophy/how/2017/04/12/git-learning.html</loc>
     
     <lastmod>2019-09-04T08:23:17.971Z</lastmod>
     
@@ -75,20 +110,6 @@
     <loc>http://aimiyoo.github.io/philosophy/what/2018/10/22/vscode%E6%8F%92%E4%BB%B6.html</loc>
     
     <lastmod>2019-03-15T15:46:09.852Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://aimiyoo.github.io/philosophy/how/2019/03/01/vscode%E5%AE%89%E8%A3%85go%E4%BE%9D%E8%B5%96.html</loc>
-    
-    <lastmod>2019-03-15T15:45:44.240Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://aimiyoo.github.io/philosophy/what/2017/04/27/Terminator.html</loc>
-    
-    <lastmod>2019-03-15T15:44:57.000Z</lastmod>
     
   </url>
   
@@ -149,13 +170,6 @@
   </url>
   
   <url>
-    <loc>http://aimiyoo.github.io/philosophy/how/2019/03/04/Docker%E4%BD%BF%E7%94%A8.html</loc>
-    
-    <lastmod>2019-03-15T15:22:05.019Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://aimiyoo.github.io/beautiful/share/2017/02/22/%E8%80%81%E4%BA%BA%E4%B8%8E%E7%81%AB.html</loc>
     
     <lastmod>2019-03-15T15:17:49.407Z</lastmod>
@@ -173,13 +187,6 @@
     <loc>http://aimiyoo.github.io/philosophy/how/2019/02/18/Go%E4%B9%8Bjson-iterator.html</loc>
     
     <lastmod>2019-02-18T12:42:49.963Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://aimiyoo.github.io/philosophy/what/2019/01/16/%E5%8A%9B%E8%8D%9050%E4%B8%AA%E6%9C%80%E5%AE%9E%E7%94%A8%E7%9A%84%E5%85%8D%E8%B4%B9%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%95%B0%E6%8D%AE%E9%9B%86.html</loc>
-    
-    <lastmod>2019-01-16T09:42:25.377Z</lastmod>
     
   </url>
   
@@ -205,14 +212,14 @@
   </url>
   
   <url>
-    <loc>http://aimiyoo.github.io/material/index.html</loc>
+    <loc>http://aimiyoo.github.io/top/index.html</loc>
     
     <lastmod>2018-11-21T02:23:17.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://aimiyoo.github.io/tags/index.html</loc>
+    <loc>http://aimiyoo.github.io/material/index.html</loc>
     
     <lastmod>2018-11-21T02:23:17.000Z</lastmod>
     
@@ -226,7 +233,7 @@
   </url>
   
   <url>
-    <loc>http://aimiyoo.github.io/top/index.html</loc>
+    <loc>http://aimiyoo.github.io/tags/index.html</loc>
     
     <lastmod>2018-11-21T02:23:17.000Z</lastmod>
     
