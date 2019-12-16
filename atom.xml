@@ -51,9 +51,9 @@
     <link href="http://aimiyoo.github.io/philosophy/how/2019/11/30/%E6%97%A5%E6%9C%9F%E8%BD%AC%E6%8D%A2%E5%85%A8%E6%94%BB%E7%95%A5.html"/>
     <id>http://aimiyoo.github.io/philosophy/how/2019/11/30/日期转换全攻略.html</id>
     <published>2019-11-29T17:02:14.000Z</published>
-    <updated>2019-12-02T03:42:04.807Z</updated>
+    <updated>2019-12-16T03:11:36.781Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p class="description">日期转换全攻略</p><p><img src="https://" alt="" style="width:100%"></p><a id="more"></a><h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><h3 id="时间戳转时间"><a href="#时间戳转时间" class="headerlink" title="时间戳转时间"></a>时间戳转时间</h3><pre><code class="python">import timedef timestamp_2_date(timestamp):    struct_time = time.localtime(timestamp)    result = time.strftime(&#39;%Y-%m-%d %H:%M:%S&#39;, struct_time)    return resultnow = int(time.time())print(timestamp_2_date(now))</code></pre><pre><code class="python">import datetimedef timestamp_2_date(timestamp):    result = timestamp.strftime(&#39;%Y-%m-%d %H:%M:%S&#39;)    return resultnow = datetime.datetime.now()print(timestamp_2_date(now))</code></pre><h3 id="时间转时间戳"><a href="#时间转时间戳" class="headerlink" title="时间转时间戳"></a>时间转时间戳</h3><pre><code class="python">import timedef date_2_timestamp(date_str):    struct_time = time.strptime(date_str, &#39;%Y-%m-%d %H:%M:%S&#39;)    result = time.mktime(struct_time)    return resultdate_str = &#39;2019-02-26 13:04:41&#39;print(date_2_timestamp(date_str))</code></pre><pre><code class="python">import datetimedef date_2_timestamp(date_str):    tuple_time = datetime.datetime.strptime(date_str, &#39;%Y-%m-%d %H:%M:%S&#39;).timetuple()    result = time.mktime(tuple_time)    return resultdate_str = &#39;2019-02-26 13:04:41&#39;print(date_2_timestamp(date_str))</code></pre><h2 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h2><h3 id="时间戳转时间-1"><a href="#时间戳转时间-1" class="headerlink" title="时间戳转时间"></a>时间戳转时间</h3><pre><code class="java">private static String timestamp2Date(long timestamp) {    DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd&quot;);    LocalDateTime localDateTime = LocalDateTime.ofInstant(Instant.ofEpochMilli(timestamp), ZoneId.systemDefault());    return localDateTime.format(dateTimeFormatter);}timestamp2Date(1575014366000L);</code></pre><h3 id="时间转时间戳-1"><a href="#时间转时间戳-1" class="headerlink" title="时间转时间戳"></a>时间转时间戳</h3><pre><code class="java">private static long date2Timestamp(String dateStr){    DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd HH:mm:ss&quot;);    LocalDateTime localDateTime = LocalDateTime.parse(dateStr, dateTimeFormatter);    return LocalDateTime.from(localDateTime).atZone(ZoneId.systemDefault()).toInstant().toEpochMilli();}date2Timestamp(&quot;2019-11-29 15:00:00&quot;)</code></pre><h2 id="Golang"><a href="#Golang" class="headerlink" title="Golang"></a>Golang</h2><h3 id="时间戳转时间-2"><a href="#时间戳转时间-2" class="headerlink" title="时间戳转时间"></a>时间戳转时间</h3><pre><code class="golang">func timestamp2Date(timestamp int64) string {    tm := time.Unix(timestamp, 0)    return tm.Format(&quot;2006-01-02 15:04:05&quot;)}timestamp2Date(1531293019)</code></pre><h3 id="时间转时间戳-2"><a href="#时间转时间戳-2" class="headerlink" title="时间转时间戳"></a>时间转时间戳</h3><pre><code class="golang">func date2Timestamp(dateStr string) int64 {    //设置时区    loc, _ := time.LoadLocation(&quot;Asia/Shanghai&quot;)    //2006-01-02 15:04:05是转换的格式如php的&quot;Y-m-d H:i:s&quot;    tt, _ := time.ParseInLocation(&quot;2006-01-02 15:04:05&quot;, dateStr, loc)    return tt.Unix()}date2Timestamp(&quot;2018-07-11 15:07:51&quot;)</code></pre><hr>]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p class="description">日期转换全攻略</p><p><img src="https://" alt="" style="width:100%"></p><a id="more"></a><h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><h3 id="时间戳转时间"><a href="#时间戳转时间" class="headerlink" title="时间戳转时间"></a>时间戳转时间</h3><pre><code class="python">import timedef timestamp_2_date(timestamp):    struct_time = time.localtime(timestamp)    result = time.strftime(&#39;%Y-%m-%d %H:%M:%S&#39;, struct_time)    return resultnow = int(time.time())print(timestamp_2_date(now))</code></pre><pre><code class="python">import datetimedef timestamp_2_date(timestamp):    result = timestamp.strftime(&#39;%Y-%m-%d %H:%M:%S&#39;)    return resultnow = datetime.datetime.now()print(timestamp_2_date(now))</code></pre><h3 id="时间转时间戳"><a href="#时间转时间戳" class="headerlink" title="时间转时间戳"></a>时间转时间戳</h3><pre><code class="python">import timedef date_2_timestamp(date_str):    struct_time = time.strptime(date_str, &#39;%Y-%m-%d %H:%M:%S&#39;)    result = time.mktime(struct_time)    return resultdate_str = &#39;2019-02-26 13:04:41&#39;print(date_2_timestamp(date_str))</code></pre><pre><code class="python">import datetimedef date_2_timestamp(date_str):    tuple_time = datetime.datetime.strptime(date_str, &#39;%Y-%m-%d %H:%M:%S&#39;).timetuple()    result = time.mktime(tuple_time)    return resultdate_str = &#39;2019-02-26 13:04:41&#39;print(date_2_timestamp(date_str))</code></pre><h3 id="上一个小时，其他同理"><a href="#上一个小时，其他同理" class="headerlink" title="上一个小时，其他同理"></a>上一个小时，其他同理</h3><pre><code class="python">from datetime import timedelta, datetimelast_hour=datetime.now()-timedelta(hours=1)print(last_hour.strftime(&#39;%Y-%m-%d&#39;))print(last_hour.strftime(&#39;%H&#39;))</code></pre><h2 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h2><h3 id="时间戳转时间-1"><a href="#时间戳转时间-1" class="headerlink" title="时间戳转时间"></a>时间戳转时间</h3><pre><code class="java">private static String timestamp2Date(long timestamp) {    DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd&quot;);    LocalDateTime localDateTime = LocalDateTime.ofInstant(Instant.ofEpochMilli(timestamp), ZoneId.systemDefault());    return localDateTime.format(dateTimeFormatter);}timestamp2Date(1575014366000L);</code></pre><h3 id="时间转时间戳-1"><a href="#时间转时间戳-1" class="headerlink" title="时间转时间戳"></a>时间转时间戳</h3><pre><code class="java">private static long date2Timestamp(String dateStr){    DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd HH:mm:ss&quot;);    LocalDateTime localDateTime = LocalDateTime.parse(dateStr, dateTimeFormatter);    return LocalDateTime.from(localDateTime).atZone(ZoneId.systemDefault()).toInstant().toEpochMilli();}date2Timestamp(&quot;2019-11-29 15:00:00&quot;)</code></pre><h2 id="Golang"><a href="#Golang" class="headerlink" title="Golang"></a>Golang</h2><h3 id="时间戳转时间-2"><a href="#时间戳转时间-2" class="headerlink" title="时间戳转时间"></a>时间戳转时间</h3><pre><code class="golang">func timestamp2Date(timestamp int64) string {    tm := time.Unix(timestamp, 0)    return tm.Format(&quot;2006-01-02 15:04:05&quot;)}timestamp2Date(1531293019)</code></pre><h3 id="时间转时间戳-2"><a href="#时间转时间戳-2" class="headerlink" title="时间转时间戳"></a>时间转时间戳</h3><pre><code class="golang">func date2Timestamp(dateStr string) int64 {    //设置时区    loc, _ := time.LoadLocation(&quot;Asia/Shanghai&quot;)    //2006-01-02 15:04:05是转换的格式如php的&quot;Y-m-d H:i:s&quot;    tt, _ := time.ParseInLocation(&quot;2006-01-02 15:04:05&quot;, dateStr, loc)    return tt.Unix()}date2Timestamp(&quot;2018-07-11 15:07:51&quot;)</code></pre><hr>]]></content>
     
     <summary type="html">
     
@@ -719,6 +719,32 @@
   </entry>
   
   <entry>
+    <title>Hello Hexo</title>
+    <link href="http://aimiyoo.github.io/philosophy/how/2017/04/12/hello-world.html"/>
+    <id>http://aimiyoo.github.io/philosophy/how/2017/04/12/hello-world.html</id>
+    <published>2017-04-12T04:26:52.000Z</published>
+    <updated>2019-12-16T03:11:36.796Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p class="description">hello world</p><p><img src="https://" alt="" style="width:100%"></p><a id="more"></a><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">hexo new &quot;My New Post&quot;</code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p class=&quot;description&quot;&gt;hello world&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://&quot; alt=&quot;&quot; style=&quot;width:100%&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="philosophy" scheme="http://aimiyoo.github.io/categories/philosophy/"/>
+    
+      <category term="how" scheme="http://aimiyoo.github.io/categories/philosophy/how/"/>
+    
+    
+      <category term="hexo" scheme="http://aimiyoo.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>git-learning</title>
     <link href="http://aimiyoo.github.io/philosophy/how/2017/04/12/git-learning.html"/>
     <id>http://aimiyoo.github.io/philosophy/how/2017/04/12/git-learning.html</id>
@@ -741,32 +767,6 @@
     
     
       <category term="git" scheme="http://aimiyoo.github.io/tags/git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello Hexo</title>
-    <link href="http://aimiyoo.github.io/philosophy/how/2017/04/12/hello-world.html"/>
-    <id>http://aimiyoo.github.io/philosophy/how/2017/04/12/hello-world.html</id>
-    <published>2017-04-12T04:26:52.000Z</published>
-    <updated>2019-03-15T15:25:47.000Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p class="description">hello world</p><p><img src="https://" alt="" style="width:100%"></p><a id="more"></a><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p><hr>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p class=&quot;description&quot;&gt;hello world&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://&quot; alt=&quot;&quot; style=&quot;width:100%&quot;&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="philosophy" scheme="http://aimiyoo.github.io/categories/philosophy/"/>
-    
-      <category term="how" scheme="http://aimiyoo.github.io/categories/philosophy/how/"/>
-    
-    
-      <category term="hexo" scheme="http://aimiyoo.github.io/tags/hexo/"/>
     
   </entry>
   

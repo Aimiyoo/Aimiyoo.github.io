@@ -147,7 +147,7 @@
 <meta property="og:description" content="日期转换全攻略">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https:///">
-<meta property="og:updated_time" content="2019-12-02T03:42:04.807Z">
+<meta property="og:updated_time" content="2019-12-16T03:11:36.781Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="日期转换全攻略">
 <meta name="twitter:description" content="日期转换全攻略">
@@ -459,7 +459,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  305
+                  335
                 </span>
               
 
@@ -538,6 +538,12 @@ def date_2_timestamp(date_str):
 
 date_str = &#39;2019-02-26 13:04:41&#39;
 print(date_2_timestamp(date_str))
+</code></pre>
+<h3 id="上一个小时，其他同理"><a href="#上一个小时，其他同理" class="headerlink" title="上一个小时，其他同理"></a>上一个小时，其他同理</h3><pre><code class="python">from datetime import timedelta, datetime
+
+last_hour=datetime.now()-timedelta(hours=1)
+print(last_hour.strftime(&#39;%Y-%m-%d&#39;))
+print(last_hour.strftime(&#39;%H&#39;))
 </code></pre>
 <h2 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h2><h3 id="时间戳转时间-1"><a href="#时间戳转时间-1" class="headerlink" title="时间戳转时间"></a>时间戳转时间</h3><pre><code class="java">private static String timestamp2Date(long timestamp) {
     DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd&quot;);
@@ -814,7 +820,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Python"><span class="nav-number">1.</span> <span class="nav-text">Python</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#时间戳转时间"><span class="nav-number">1.1.</span> <span class="nav-text">时间戳转时间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#时间转时间戳"><span class="nav-number">1.2.</span> <span class="nav-text">时间转时间戳</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Java"><span class="nav-number">2.</span> <span class="nav-text">Java</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#时间戳转时间-1"><span class="nav-number">2.1.</span> <span class="nav-text">时间戳转时间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#时间转时间戳-1"><span class="nav-number">2.2.</span> <span class="nav-text">时间转时间戳</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Golang"><span class="nav-number">3.</span> <span class="nav-text">Golang</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#时间戳转时间-2"><span class="nav-number">3.1.</span> <span class="nav-text">时间戳转时间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#时间转时间戳-2"><span class="nav-number">3.2.</span> <span class="nav-text">时间转时间戳</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Python"><span class="nav-number">1.</span> <span class="nav-text">Python</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#时间戳转时间"><span class="nav-number">1.1.</span> <span class="nav-text">时间戳转时间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#时间转时间戳"><span class="nav-number">1.2.</span> <span class="nav-text">时间转时间戳</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#上一个小时，其他同理"><span class="nav-number">1.3.</span> <span class="nav-text">上一个小时，其他同理</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Java"><span class="nav-number">2.</span> <span class="nav-text">Java</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#时间戳转时间-1"><span class="nav-number">2.1.</span> <span class="nav-text">时间戳转时间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#时间转时间戳-1"><span class="nav-number">2.2.</span> <span class="nav-text">时间转时间戳</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Golang"><span class="nav-number">3.</span> <span class="nav-text">Golang</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#时间戳转时间-2"><span class="nav-number">3.1.</span> <span class="nav-text">时间戳转时间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#时间转时间戳-2"><span class="nav-number">3.2.</span> <span class="nav-text">时间转时间戳</span></a></li></ol></li></ol></div>
             
 
           </div>
