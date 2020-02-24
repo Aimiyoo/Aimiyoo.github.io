@@ -147,7 +147,7 @@
 <meta property="og:description" content="hello git">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https:///">
-<meta property="og:updated_time" content="2019-12-02T03:38:48.068Z">
+<meta property="og:updated_time" content="2020-02-24T03:12:48.310Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git-learning">
 <meta name="twitter:description" content="hello git">
@@ -459,7 +459,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  453
+                  628
                 </span>
               
 
@@ -475,7 +475,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  3
                 </span>
               
             </div>
@@ -500,6 +500,20 @@
 
 <p><img src="https://" alt="" style="width:100%"></p>
 <a id="more"></a>
+<h4 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h4><ol>
+<li><p>fetch</p>
+<p> 相当于从远程获取最新版本到本地，不会自动merge</p>
+<pre><code class="bash"> git fetch origin remoteName:branchname
+</code></pre>
+</li>
+<li><p>checkout</p>
+<p> 获取远程分支remoteName到本地新分支localName，并跳到localName分支</p>
+<pre><code class="bash"> git checkout origin/remoteName -b localName
+ git pull origin remoteName:localName
+</code></pre>
+<p> pull相当于git fetch和git merge</p>
+</li>
+</ol>
 <h4 id="查看分支"><a href="#查看分支" class="headerlink" title="查看分支"></a>查看分支</h4><ol>
 <li><p>追踪本地分支</p>
 <pre><code class="bash"> git branch -vv
@@ -516,20 +530,6 @@
  git push origin :branch-name
 </code></pre>
 <p> <em>中间的空格不能少，相当于把一个空分支push到server上，等于删除该分支</em></p>
-</li>
-</ol>
-<h4 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h4><ol>
-<li><p>fetch</p>
-<p> 相当于从远程获取最新版本到本地，不会自动merge</p>
-<pre><code class="bash"> git fetch origin remoteName:branchname
-</code></pre>
-</li>
-<li><p>checkout</p>
-<p> 获取远程分支remoteName到本地新分支localName，并跳到localName分支</p>
-<pre><code class="bash"> git checkout origin/remoteName -b localName
- git pull origin remoteName:localName
-</code></pre>
-<p> pull相当于git fetch和git merge</p>
 </li>
 </ol>
 <h4 id="关联远程分支"><a href="#关联远程分支" class="headerlink" title="关联远程分支"></a>关联远程分支</h4><ol>
@@ -596,6 +596,20 @@
 <li><p>git stash pop和git stash apply区别<br> pop命令从stash列表中<strong>恢复并删除</strong>某一次改动<br> apply命令从stash<strong>恢复但不删除</strong>某一次改动</p>
 </li>
 </ol>
+<h4 id="撤销改动"><a href="#撤销改动" class="headerlink" title="撤销改动"></a>撤销改动</h4><p>写完代码，add、commit两连  </p>
+<pre><code class="bash">git add .
+git commit -m &#39;[FEATURE]...&#39;
+</code></pre>
+<p>执行完commit后，想撤回commit怎么办<br>正确做法：</p>
+<pre><code class="bash">git reset --soft HEAD^
+</code></pre>
+<p><strong>关于reset参数：</strong>  </p>
+<ol>
+<li>–soft<br> 不删除工作空间改动代码，撤销commit，不撤销git add .</li>
+<li>–mixed<br> 不删除工作空间改动代码，撤销commit，撤销git add .<br> 这个为默认参数,git reset –mixed HEAD^ 和 git reset HEAD^ 效果是一样的</li>
+<li>–hard<br> 删除工作空间改动代码，撤销commit，撤销git add .<br> 注意完成该操作，就恢复到了上一次commit状态</li>
+</ol>
+<p>HEAD^表示上一个版本，也可以写成HEAD~1<br>如果你进行了2次commit，想都撤回，可以使用HEAD~2</p>
 <hr>
       
     </div>
@@ -834,7 +848,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#查看分支"><span class="nav-number">1.</span> <span class="nav-text">查看分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#删除分支"><span class="nav-number">2.</span> <span class="nav-text">删除分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建分支"><span class="nav-number">3.</span> <span class="nav-text">创建分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关联远程分支"><span class="nav-number">4.</span> <span class="nav-text">关联远程分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#更新远程分支列表"><span class="nav-number">5.</span> <span class="nav-text">更新远程分支列表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#tag"><span class="nav-number">6.</span> <span class="nav-text">tag</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#stash"><span class="nav-number">7.</span> <span class="nav-text">stash</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#创建分支"><span class="nav-number">1.</span> <span class="nav-text">创建分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查看分支"><span class="nav-number">2.</span> <span class="nav-text">查看分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#删除分支"><span class="nav-number">3.</span> <span class="nav-text">删除分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关联远程分支"><span class="nav-number">4.</span> <span class="nav-text">关联远程分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#更新远程分支列表"><span class="nav-number">5.</span> <span class="nav-text">更新远程分支列表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#tag"><span class="nav-number">6.</span> <span class="nav-text">tag</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#stash"><span class="nav-number">7.</span> <span class="nav-text">stash</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#撤销改动"><span class="nav-number">8.</span> <span class="nav-text">撤销改动</span></a></li></ol></div>
             
 
           </div>
@@ -854,7 +868,7 @@ show_date_time();
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2020</span>
   <span class="with-love" id="heart">
     <i class="fa fa-heart"></i>
   </span>
