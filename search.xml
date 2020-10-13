@@ -151,7 +151,7 @@
   <entry>
     <title><![CDATA[Node.js升级]]></title>
     <url>%2Fphilosophy%2Fhow%2F2018%2F11%2F07%2FNode.js%E5%8D%87%E7%BA%A7.html</url>
-    <content type="text"><![CDATA[来给Node.js升个级吧（说ji不说ba，文明你我他） Node.js升级的两种方法版本管理工具——n# n本身一个node模块，可以用npm安装 # 安装n模块 npm install -g n # 升级到最新稳定版 n stable # 升级到最新版 n lastest # 升级到指定版本 n v11.0.0 # 查看当前安装的node版本列表 n # 切换版本 n 11.0.0 # 删除指定版本 n rm 11.0.0 # 用指定版本执行脚本 n use 11.0.0 some.js # 安装的node在/usr/local/n/versions/node/11.0.0目录下 # 最后可能需要修改环境变量才能生效 版本管理工具——nvm# nvm是独立于node/nmp之外的shell脚本 # 安装nvm curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh|bash # 安装指定版本 npm install v11.0.0 # 查看当前安装的node版本列表 nvm ls # 切换版本 nvm use v11.0.0 # 删除指定版本 nvm uninstall v11.0.0 # 显示当前node版本 nvm current 一些Node.js知识关于Node.js版本自从Node.js基金会成立以来，Node.js就有一个发布计划，就是同时发布两个版本：稳定版和试验版在Node.js中，带有长期支持（LTS）的稳定版是以偶数开始（4,6,8,10…），而试验版是以奇数开始（5,7,11…） 所以推荐在生产环境中用LTS版本，尝试新东西用试验版本 Node.js和Javascript的区别Javascript是一种web前端语言，主要用于web开发，由浏览器解析执行Node.js是一个可以快速构建网络服务及应用的平台，使用Javascript语言构建的服务平台，可用于后端建立服务器 它们都是js语法，前者主要应用于前端，后者主要应用于后端： 1. Node.js和Javasript，一个是平台，一个是编程语言 2. Javasript是客户端编程语言，需要浏览器的javascript解释器解释执行 3. Node.js is a JavaScript runtime built on Chrome&#39;s V8 JavaScript engine 4. 简单的说Node.js就是把浏览器的解释器封装起来作为服务器运行平台，用类似Javascript的结构语法进行编程，在Node.js上运行]]></content>
+    <content type="text"><![CDATA[来给Node.js升个级吧 Node.js升级的两种方法版本管理工具——n# n本身一个node模块，可以用npm安装 # 安装n模块 npm install -g n # 升级到最新稳定版 n stable # 升级到最新版 n lastest # 升级到指定版本 n v11.0.0 # 查看当前安装的node版本列表 n # 切换版本 n 11.0.0 # 删除指定版本 n rm 11.0.0 # 用指定版本执行脚本 n use 11.0.0 some.js # 安装的node在/usr/local/n/versions/node/11.0.0目录下 # 最后可能需要修改环境变量才能生效 版本管理工具——nvm# nvm是独立于node/nmp之外的shell脚本 # 安装nvm curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh|bash # 安装指定版本 npm install v11.0.0 # 查看当前安装的node版本列表 nvm ls # 切换版本 nvm use v11.0.0 # 删除指定版本 nvm uninstall v11.0.0 # 显示当前node版本 nvm current 一些Node.js知识关于Node.js版本自从Node.js基金会成立以来，Node.js就有一个发布计划，就是同时发布两个版本：稳定版和试验版在Node.js中，带有长期支持（LTS）的稳定版是以偶数开始（4,6,8,10…），而试验版是以奇数开始（5,7,11…） 所以推荐在生产环境中用LTS版本，尝试新东西用试验版本 Node.js和Javascript的区别Javascript是一种web前端语言，主要用于web开发，由浏览器解析执行Node.js是一个可以快速构建网络服务及应用的平台，使用Javascript语言构建的服务平台，可用于后端建立服务器 它们都是js语法，前者主要应用于前端，后者主要应用于后端： 1. Node.js和Javasript，一个是平台，一个是编程语言 2. Javasript是客户端编程语言，需要浏览器的javascript解释器解释执行 3. Node.js is a JavaScript runtime built on Chrome&#39;s V8 JavaScript engine 4. 简单的说Node.js就是把浏览器的解释器封装起来作为服务器运行平台，用类似Javascript的结构语法进行编程，在Node.js上运行]]></content>
       <categories>
         <category>philosophy</category>
         <category>how</category>
@@ -229,7 +229,7 @@
   <entry>
     <title><![CDATA[navigation]]></title>
     <url>%2Ftechnology%2Finternet%2Fblog%2F2018%2F09%2F17%2Fnavigation.html</url>
-    <content type="text"><![CDATA[我自己的网站导航 * * * * * * * * 程序员 Github infoq Medium Hacker News 社交 新浪微博 知乎 豆瓣 直播 斗鱼 虎牙 bilibili 购物 京东 淘宝 聚美 咸鱼 新闻 网易新闻 腾讯新闻 新浪图片 影视 人人字幕组 电影天堂 天天看美剧 嘀哩哩 邮箱 163邮箱 Gmail QQ邮箱 摄影 蜂鸟网 色影无忌 图虫 fotomen 好玩 v2ex youtube CNTV feedly IPV6 六维空间 北邮人 IPV6导航 投资 投资界 36氪 IT桔子 工具 zlibrary 百度脑图 drawio]]></content>
+    <content type="text"><![CDATA[我 自 己 的 导 航 网 站 程序员 Github infoq Medium Hacker News 社交 新浪微博 知乎 豆瓣 36氪 直播 斗鱼 虎牙 bilibili 购物 京东 淘宝 聚美 咸鱼 新闻 网易新闻 腾讯新闻 新浪图片 影视 人人字幕组 电影天堂 天天看美剧 嘀哩哩 邮箱 163邮箱 Gmail QQ邮箱 摄影 蜂鸟网 色影无忌 图虫 fotomen 好玩 v2ex youtube CNTV feedly IPV6 六维空间 北邮人 IPV6导航 工具 zlibrary drawio gitmind]]></content>
       <categories>
         <category>technology</category>
         <category>internet</category>
