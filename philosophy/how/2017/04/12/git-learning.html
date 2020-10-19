@@ -146,12 +146,12 @@
 <meta property="og:site_name" content="The Peach Colony">
 <meta property="og:description" content="hello git">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https:///">
-<meta property="og:updated_time" content="2020-10-13T12:15:35.134Z">
+<meta property="og:image" content="https://images.unsplash.com/photo-1517059224940-d4af9eec41b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2067&q=80">
+<meta property="og:updated_time" content="2020-10-19T09:02:38.475Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git-learning">
 <meta name="twitter:description" content="hello git">
-<meta name="twitter:image" content="https:///">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1517059224940-d4af9eec41b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2067&q=80">
 
 
 
@@ -459,7 +459,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  628
+                  734
                 </span>
               
 
@@ -498,7 +498,7 @@
       
         <script src="/assets/js/APlayer.min.js"> </script><p class="description">hello git</p>
 
-<p><img src="https://" alt="" style="width:100%"></p>
+<p><img src="https://images.unsplash.com/photo-1517059224940-d4af9eec41b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2067&q=80" alt="" style="width:100%"></p>
 <a id="more"></a>
 <h4 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h4><ol>
 <li><p>fetch</p>
@@ -596,20 +596,44 @@
 <li><p>git stash pop和git stash apply区别<br> pop命令从stash列表中<strong>恢复并删除</strong>某一次改动<br> apply命令从stash<strong>恢复但不删除</strong>某一次改动</p>
 </li>
 </ol>
-<h4 id="撤销改动"><a href="#撤销改动" class="headerlink" title="撤销改动"></a>撤销改动</h4><p>写完代码，add、commit两连  </p>
-<pre><code class="bash">git add .
-git commit -m &#39;[FEATURE]...&#39;
+<h4 id="reset"><a href="#reset" class="headerlink" title="reset"></a>reset</h4><ol>
+<li><p>写完代码，add、commit两连  </p>
+<pre><code class="bash"> git add .
+ git commit -m &#39;[FEATURE]...&#39;
 </code></pre>
-<p>执行完commit后，想撤回commit怎么办<br>正确做法：</p>
-<pre><code class="bash">git reset --soft HEAD^
+<p> 执行完commit后，想撤回commit怎么办<br> 正确做法：</p>
+<pre><code class="bash"> git reset --soft HEAD^
 </code></pre>
-<p><strong>关于reset参数：</strong>  </p>
-<ol>
-<li>–soft<br> 不删除工作空间改动代码，撤销commit，不撤销git add .</li>
-<li>–mixed<br> 不删除工作空间改动代码，撤销commit，撤销git add .<br> 这个为默认参数,git reset –mixed HEAD^ 和 git reset HEAD^ 效果是一样的</li>
-<li>–hard<br> 删除工作空间改动代码，撤销commit，撤销git add .<br> 注意完成该操作，就恢复到了上一次commit状态</li>
+</li>
+<li><p><strong>关于reset参数：</strong>  </p>
+<p> 1). –soft  </p>
+<pre><code> 不删除工作空间改动代码，撤销commit，不撤销git add .
+</code></pre><p> 2). –mixed  </p>
+<pre><code> 不删除工作空间改动代码，撤销commit，撤销git add .  
+ 这个为默认参数，git reset –mixed HEAD^ 和 git reset HEAD^ 效果是一样的
+</code></pre><p> 3). –hard  </p>
+<pre><code> 删除工作空间改动代码，撤销commit，撤销git add .  
+ 注意完成该操作，就恢复到了上一次commit状态
+</code></pre><p> HEAD^表示上一个版本，也可以写成HEAD~1<br> 如果你进行了2次commit，想都撤回，可以使用HEAD~2</p>
+</li>
 </ol>
-<p>HEAD^表示上一个版本，也可以写成HEAD~1<br>如果你进行了2次commit，想都撤回，可以使用HEAD~2</p>
+<h4 id="revert"><a href="#revert" class="headerlink" title="revert"></a>revert</h4><ol>
+<li><p>新增一个commit来取消另外一个commit，原来的commit还会保留在历史记录中</p>
+<pre><code class="bash"> git revert --hash
+</code></pre>
+</li>
+<li><p>如果想要取消一个revert，继续增加一个revert，取消上次revert就好了</p>
+<pre><code class="bash"> git revert --hash(上次revert的hash)
+</code></pre>
+</li>
+</ol>
+<h4 id="rebase"><a href="#rebase" class="headerlink" title="rebase"></a>rebase</h4><ol>
+<li><p>合并主要有两个操作，merge和rebase，rebase命令将提交到某一分支上的所有修改都移至另一分支上</p>
+<pre><code class="bash"> git checkout experiment
+ git rebase master
+</code></pre>
+</li>
+</ol>
 <hr>
       
     </div>
@@ -848,7 +872,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#创建分支"><span class="nav-number">1.</span> <span class="nav-text">创建分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查看分支"><span class="nav-number">2.</span> <span class="nav-text">查看分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#删除分支"><span class="nav-number">3.</span> <span class="nav-text">删除分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关联远程分支"><span class="nav-number">4.</span> <span class="nav-text">关联远程分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#更新远程分支列表"><span class="nav-number">5.</span> <span class="nav-text">更新远程分支列表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#tag"><span class="nav-number">6.</span> <span class="nav-text">tag</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#stash"><span class="nav-number">7.</span> <span class="nav-text">stash</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#撤销改动"><span class="nav-number">8.</span> <span class="nav-text">撤销改动</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#创建分支"><span class="nav-number">1.</span> <span class="nav-text">创建分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查看分支"><span class="nav-number">2.</span> <span class="nav-text">查看分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#删除分支"><span class="nav-number">3.</span> <span class="nav-text">删除分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关联远程分支"><span class="nav-number">4.</span> <span class="nav-text">关联远程分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#更新远程分支列表"><span class="nav-number">5.</span> <span class="nav-text">更新远程分支列表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#tag"><span class="nav-number">6.</span> <span class="nav-text">tag</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#stash"><span class="nav-number">7.</span> <span class="nav-text">stash</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#reset"><span class="nav-number">8.</span> <span class="nav-text">reset</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#revert"><span class="nav-number">9.</span> <span class="nav-text">revert</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#rebase"><span class="nav-number">10.</span> <span class="nav-text">rebase</span></a></li></ol></div>
             
 
           </div>
