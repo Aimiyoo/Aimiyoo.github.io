@@ -325,18 +325,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[git-learning]]></title>
-    <url>%2Fphilosophy%2Fhow%2F2017%2F04%2F12%2Fgit-learning.html</url>
-    <content type="text"><![CDATA[hello git 创建分支 fetch 相当于从远程获取最新版本到本地，不会自动merge git fetch origin remoteName:branchname checkout 获取远程分支remoteName到本地新分支localName，并跳到localName分支 git checkout origin/remoteName -b localName git pull origin remoteName:localName pull相当于git fetch和git merge 查看分支 追踪本地分支 git branch -vv 删除分支 删除本地分支 git branch -D branch-name 删除远程分支 git branch -r -d origin/branch-name git push origin :branch-name 中间的空格不能少，相当于把一个空分支push到server上，等于删除该分支 关联远程分支 将本地分支与远程分支关联 git init git add . git commit -m &#39;[WIP]&#39; git remote add origin remoteName git remote -v # 查看上游分支 git pull origin master --allow-unrelated-histories git push -u origin master 更新远程分支列表 更新远程分支列表 git fetch -t -p -f 修改远程分支地址 # 查看远程分支地址 git remote -v git remote origin set-url [url] tag 获取远程tag git checkout -b branch_name tag_name 删除本地tag git tag -d tagname 删除远程tag git push origin :tagname 或者 git push origin --delete tagname stash 添加stash git stash用于保存当前的工作进度，不用commit即可checkout到另外的branch git stash 显示stash列表 git stash list用于显示所有的stash列表 git stash list 恢复stash git stash pop用于恢复某一次的改动，默认不加hash代表恢复最近的一次改动 git stash pop --hash 删除stash git stash drop用于删除某一次的改动，默认不加hash代表删除最近的一次改动 git stash pop --hash git stash pop和git stash apply区别 pop命令从stash列表中恢复并删除某一次改动 apply命令从stash恢复但不删除某一次改动 reset 写完代码，add、commit两连 git add . git commit -m &#39;[FEATURE]...&#39; 执行完commit后，想撤回commit怎么办 正确做法： git reset --soft HEAD^ 关于reset参数： 1). –soft 不删除工作空间改动代码，撤销commit，不撤销git add . 2). –mixed 不删除工作空间改动代码，撤销commit，撤销git add . 这个为默认参数，git reset –mixed HEAD^ 和 git reset HEAD^ 效果是一样的 3). –hard 删除工作空间改动代码，撤销commit，撤销git add . 注意完成该操作，就恢复到了上一次commit状态 HEAD^表示上一个版本，也可以写成HEAD~1 如果你进行了2次commit，想都撤回，可以使用HEAD~2 revert 新增一个commit来取消另外一个commit，原来的commit还会保留在历史记录中 git revert --hash 如果想要取消一个revert，继续增加一个revert，取消上次revert就好了 git revert --hash(上次revert的hash) rebase 合并主要有两个操作，merge和rebase，rebase命令将提交到某一分支上的所有修改都移至另一分支上 git checkout experiment git rebase master]]></content>
-      <categories>
-        <category>philosophy</category>
-        <category>how</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Hello Hexo]]></title>
     <url>%2Fphilosophy%2Fhow%2F2017%2F04%2F12%2Fhello-world.html</url>
     <content type="text"><![CDATA[hello world Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new posthexo new &quot;My New Post&quot; More info: Writing Run serverhexo server More info: Server Generate static fileshexo generate More info: Generating Deploy to remote siteshexo deploy More info: Deployment]]></content>
@@ -346,6 +334,18 @@
       </categories>
       <tags>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[git-learning]]></title>
+    <url>%2Fphilosophy%2Fhow%2F2017%2F04%2F12%2Fgit-learning.html</url>
+    <content type="text"><![CDATA[hello git 创建分支 fetch 相当于从远程获取最新版本到本地，不会自动merge git fetch origin remoteName:branchname checkout 获取远程分支remoteName到本地新分支localName，并跳到localName分支 git checkout origin/remoteName -b localName git pull origin remoteName:localName pull相当于git fetch和git merge 查看分支 追踪本地分支 git branch -vv 删除分支 删除本地分支 git branch -D branch-name 删除远程分支 git branch -r -d origin/branch-name git push origin :branch-name 中间的空格不能少，相当于把一个空分支push到server上，等于删除该分支 关联远程分支 将本地分支与远程分支关联 git init git add . git commit -m &#39;[WIP]&#39; git remote add origin remoteName git remote -v # 查看上游分支 git pull origin master --allow-unrelated-histories git push -u origin master 更新远程分支列表 更新远程分支列表 git fetch -t -p -f 修改远程分支地址 # 查看远程分支地址 git remote -v git remote origin set-url [url] tag 获取远程tag git checkout -b branch_name tag_name 删除本地tag git tag -d tagname 删除远程tag git push origin :tagname 或者 git push origin --delete tagname stash 添加stash git stash用于保存当前的工作进度，不用commit即可checkout到另外的branch git stash 显示stash列表 git stash list用于显示所有的stash列表 git stash list 恢复stash git stash pop用于恢复某一次的改动，默认不加hash代表恢复最近的一次改动 git stash pop --hash 删除stash git stash drop用于删除某一次的改动，默认不加hash代表删除最近的一次改动 git stash drop --hash git stash pop和git stash apply区别 pop命令从stash列表中恢复并删除某一次改动 apply命令从stash恢复但不删除某一次改动 reset 写完代码，add、commit两连 git add . git commit -m &#39;[FEATURE]...&#39; 执行完commit后，想撤回commit怎么办 正确做法： git reset --soft HEAD^ 关于reset参数： 1). –soft 不删除工作空间改动代码，撤销commit，不撤销git add . 2). –mixed 不删除工作空间改动代码，撤销commit，撤销git add . 这个为默认参数，git reset –mixed HEAD^ 和 git reset HEAD^ 效果是一样的 3). –hard 删除工作空间改动代码，撤销commit，撤销git add . 注意完成该操作，就恢复到了上一次commit状态 HEAD^表示上一个版本，也可以写成HEAD~1 如果你进行了2次commit，想都撤回，可以使用HEAD~2 revert 新增一个commit来取消另外一个commit，原来的commit还会保留在历史记录中 git revert --hash 如果想要取消一个revert，继续增加一个revert，取消上次revert就好了 git revert --hash(上次revert的hash) rebase 合并主要有两个操作，merge和rebase，rebase命令将提交到某一分支上的所有修改都移至另一分支上 git checkout experiment git rebase master]]></content>
+      <categories>
+        <category>philosophy</category>
+        <category>how</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
       </tags>
   </entry>
   <entry>
